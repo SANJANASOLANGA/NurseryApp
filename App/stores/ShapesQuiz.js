@@ -1,5 +1,4 @@
-/* eslint-disable react-native/no-inline-styles */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -10,11 +9,11 @@ import {
   Animated,
   ImageBackground,
 } from 'react-native';
-import {COLORS} from '../constants';
+import { COLORS } from '../constants';
 import shapesData from './shapesData/shapesData';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const ShapesQuiz = ({navigation}) => {
+const ShapesQuiz = ({ navigation }) => {
   const allQuestions = shapesData;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentOptionSelected, setCurrentOptionSelected] = useState(null);
@@ -92,7 +91,7 @@ const ShapesQuiz = ({navigation}) => {
             }}>
             {currentQuestionIndex + 1}
           </Text>
-          <Text style={{fontSize: 18, opacity: 0.6}}>
+          <Text style={{ fontSize: 18, opacity: 0.6 }}>
             / {allQuestions.length}
           </Text>
         </View>
@@ -121,14 +120,14 @@ const ShapesQuiz = ({navigation}) => {
                 option === correctOption
                   ? COLORS.success
                   : option === currentOptionSelected
-                  ? COLORS.error
-                  : COLORS.secondary + '40',
+                    ? COLORS.error
+                    : COLORS.secondary + '40',
               backgroundColor:
                 option === correctOption
                   ? COLORS.success + '20'
                   : option === currentOptionSelected
-                  ? COLORS.error + '20'
-                  : COLORS.secondary + '20',
+                    ? COLORS.error + '20'
+                    : COLORS.secondary + '20',
               height: 60,
               borderRadius: 20,
               flexDirection: 'row',
@@ -137,7 +136,7 @@ const ShapesQuiz = ({navigation}) => {
               paddingHorizontal: 20,
               marginVertical: 10,
             }}>
-            <Text style={{fontSize: 25}}>{option}</Text>
+            <Text style={{ fontSize: 25 }}>{option}</Text>
 
             {/* Show Check Or Cross Icon based on correct answer*/}
             {option === correctOption ? (
@@ -196,7 +195,7 @@ const ShapesQuiz = ({navigation}) => {
             marginLeft: 42,
             elevation: 10,
           }}>
-          <Text style={{fontSize: 20, textAlign: 'center'}}>Next</Text>
+          <Text style={{ fontSize: 20, textAlign: 'center' }}>Next</Text>
         </TouchableOpacity>
       );
     } else {
@@ -281,7 +280,7 @@ const ShapesQuiz = ({navigation}) => {
                 padding: 25,
                 alignItems: 'center',
               }}>
-              <Text style={{fontSize: 30, fontWeight: 'bold'}}>
+              <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
                 {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
               </Text>
 
@@ -352,7 +351,7 @@ const ShapesQuiz = ({navigation}) => {
                   </Text>
                 </TouchableOpacity>
                 <Modal transparent={true} visible={show1}>
-                  <View style={{backgroundColor: '#000000aa', flex: 1}}>
+                  <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
                     <View style={styles.modal_view}>
                       <Text style={styles.modal_Text}>
                         Are you sure, you want to exit from quiz ?
@@ -410,7 +409,7 @@ const ShapesQuiz = ({navigation}) => {
           </ImageBackground>
         </Modal>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 20, marginLeft: 130}}>
+      <View style={{ flexDirection: 'row', marginBottom: 20, marginLeft: 130 }}>
         <TouchableOpacity
           onPress={() => navigation.navigate('ShapesScreen')}
           style={styles.button}>
