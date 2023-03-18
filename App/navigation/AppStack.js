@@ -4,11 +4,19 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileScreen from '../screens/ProfileScreen';
 import HomeScreen from '../screens/HomeScreen';
 import ActivityScreen from '../screens/ActivityScreen';
+import ColorsQuiz from '../stores/ColorsQuiz';
+import ShapesQuiz from '../stores/ShapesQuiz';
+import NumbersQuiz from '../stores/NumbersQuiz';
+import PhrasesQuiz from '../stores/PhrasesQuiz';
+import AlphabetQuiz from '../stores/AlphabetQuiz';
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
 function TabStack(){
 // const TabStack = () => {
     return (
@@ -59,4 +67,91 @@ function TabStack(){
       </Tab.Navigator>
     );
   };
+
+  function ActivityStack({navigation}) {
+    // const {user, logout} = useContext(AuthContext);
+    return (
+      <Stack.Navigator initialRouteName="ActivityScreen">
+        <Stack.Screen
+          name="ActivityScreen"
+          component={ActivityScreen}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+        <Stack.Screen
+          name="AlphabetQuiz"
+          component={AlphabetQuiz}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+        <Stack.Screen
+          name="PhrasesQuiz"
+          component={PhrasesQuiz}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+        <Stack.Screen
+          name="NumbersQuiz"
+          component={NumbersQuiz}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+        <Stack.Screen
+          name="ShapesQuiz"
+          component={ShapesQuiz}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+        <Stack.Screen
+          name="ColorsQuiz"
+          component={ColorsQuiz}
+          options={() => ({
+            headerTitle: '',
+            // headerLeft: () => (
+            //   <NavigationDrawerStructure navigationProps={navigation} />
+            // ),
+            headerStyle: {
+              backgroundColor: '#b1d2c7',
+            },
+          })}
+        />
+      </Stack.Navigator>
+    );
+  }
+
   export default TabStack;
