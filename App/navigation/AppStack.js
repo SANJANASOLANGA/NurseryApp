@@ -25,6 +25,10 @@ import PhrasesScreen from '../screens/PhrasesScreen';
 import PoemsScreen from '../screens/PoemsScreen';
 import MyFamScreen from '../screens/MyFamScreen';
 import SchoolScreen from '../screens/SchoolScreen';
+import EnglishScreen from '../screens/EnglishScreen'
+import MathsScreen from '../screens/MathsScreen';
+import CreativeScreen from '../screens/CreativeScreen';
+import CommunityScreen from '../screens/CommunityScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -54,22 +58,45 @@ const TabStack = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeScreen"
+      // screenOptions={{
+      //   activeTintColor: '#fff',
+      //   inactiveTintColor: '#000000aa',
+      //   headerShown:false,
+      //   style: {
+      //     backgroundColor: '#faa692',
+      //     height: 50,
+      //   },
+      // }}
       screenOptions={{
-        activeTintColor: '#fff',
-        inactiveTintColor: '#000000aa',
-        headerShown:false,
-        style: {
-          backgroundColor: '#faa692',
-          height: 50,
-        },
-      }}>
+        activeTintColor: 'red',
+        inactiveTintColor: 'yellow',
+        headerShown: false,
+        headerTransparent: true,
+        tabBarShowLabel: false,
+        tabBarStyle: [
+          {
+            backgroundColor: 'transparent',
+            borderTopWidth: 0,
+            position: 'absolute',
+            height:70,
+            left: 10,
+            right: 10,
+            bottom: 20,
+            height: 80
+          },
+          null
+        ]
+      }}
+    >
       <Tab.Screen
         name="ProfileScreen"
         component={ProfileScreen}
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({color, size}) => (
-            <FontAwesome name="user" color={color} size={size} />
+            <FontAwesome name="user" 
+            color={color} size={size} 
+            />
           ),
         }}
       />
@@ -79,7 +106,9 @@ const TabStack = () => {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="home" 
+            color={color} size={size} 
+            />
           ),
         }}
       />
@@ -142,7 +171,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="EnglishScreen"
-        component={AlphabetScreen}
+        component={EnglishScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -152,7 +181,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="MathsScreen"
-        component={AlphabetScreen}
+        component={MathsScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -272,7 +301,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="CreativeScreen"
-        component={AlphabetQuiz}
+        component={CreativeScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -282,7 +311,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="CommunityScreen"
-        component={AlphabetScreen}
+        component={CommunityScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
