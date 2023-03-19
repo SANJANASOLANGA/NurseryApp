@@ -12,14 +12,7 @@ export default function NavigationCard({ text, image, onPress }) {
     <ImageBackground
       style={styles.card}
       source={image}
-      imageStyle={{
-        width: 350,
-        height: 320,
-        borderRadius: 50,
-        marginLeft: 25,
-        marginTop: 40,
-        elevation: 10,
-      }}>
+    >
       <View>
         <TouchableHighlight
           underlayColor={'white'}
@@ -46,6 +39,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginBottom: 125,
     marginLeft: 12,
+    elevation: 10,
+    width: 350,
+    height: 320,
+    borderRadius: 50,
+    marginLeft: 25,
+    marginTop: 40,
     elevation: 10,
   },
   button: {
