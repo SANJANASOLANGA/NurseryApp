@@ -6,6 +6,7 @@ export default function Card({text, main, onPress, name}) {
   return (
     <TouchableHighlight onPress={onPress} underlayColor={'none'}>
       <View style={styles.card}>
+      <Text style={styles.text2}>{text}</Text>
         <View style={styles.vector}>
           <AntDesign name={name} size={45} />
         </View>
@@ -23,6 +24,12 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 6,
+  },
+  text2: {
+    fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 6,
