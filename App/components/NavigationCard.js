@@ -7,7 +7,7 @@ import {
   ImageBackground,
 } from 'react-native';
 
-export default function NavigationCard({text, image, onPress}) {
+export default function NavigationCard({ text, image, onPress }) {
   return (
     <ImageBackground
       style={styles.card}
@@ -20,12 +20,14 @@ export default function NavigationCard({text, image, onPress}) {
         marginTop: 40,
         elevation: 10,
       }}>
-      <TouchableHighlight
-        underlayColor={'white'}
-        style={styles.button}
-        onPress={onPress}>
-        <Text style={styles.textArea_text}>{text}</Text>
-      </TouchableHighlight>
+      <View>
+        <TouchableHighlight
+          underlayColor={'white'}
+          style={styles.button}
+          onPress={onPress}>
+          <Text style={styles.textArea_text}>{text}</Text>
+        </TouchableHighlight>
+      </View>
     </ImageBackground>
   );
 }
