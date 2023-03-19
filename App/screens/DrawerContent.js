@@ -21,7 +21,7 @@ export function DrawerContent(props) {
   const paperTheme = useTheme();
   // const {user, logout} = useContext(AuthContext);
 
-  const {signOut, toggleTheme} = React.useContext(AuthContext);
+  // const {signOut, toggleTheme} = React.useContext(AuthContext);
 
   return (
     <View style={{flex: 1}}>
@@ -42,8 +42,8 @@ export function DrawerContent(props) {
                 size={50}
               />
               <View style={{marginLeft: 15}}>
-                <Title style={styles.title}>{user.email}</Title>
-                <Caption style={styles.caption}>@{user.uid}</Caption>
+                {/* <Title style={styles.title}>{user.email}</Title>
+                <Caption style={styles.caption}>@{user.uid}</Caption> */}
               </View>
             </View>
           </View>
