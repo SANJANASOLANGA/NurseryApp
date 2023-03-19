@@ -54,7 +54,7 @@ const TabStack = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeScreen"
-      tabBarOptions={{
+      screenOptions={{
         activeTintColor: '#fff',
         inactiveTintColor: '#000000aa',
         style: {
@@ -765,7 +765,7 @@ const App = () => {
     <PaperProvider>
       <Drawer.Navigator
         drawerContent={props => <DrawerContent {...props} />}
-        drawerContentOptions={{
+        screenOptions={{
           activeTintColor: '#faa08c',
           itemStyle: {marginVertical: 10},
           backgroundColor: '#eeeed1',
