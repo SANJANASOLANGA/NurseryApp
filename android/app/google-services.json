@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992403560552",
+    "project_id": "edukids-d90d9",
+    "storage_bucket": "edukids-d90d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992403560552:android:2ac62cb72cab2eba3343dd",
+        "android_client_info": {
+          "package_name": "com.edukids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992403560552-qhe9jq6d9p01tlr0fp76etbqd7d58clm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxmf8QRtFMAbLfzZGuAjA-IJy85NScTmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992403560552-qhe9jq6d9p01tlr0fp76etbqd7d58clm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
