@@ -57,6 +57,7 @@ const TabStack = () => {
       screenOptions={{
         activeTintColor: '#fff',
         inactiveTintColor: '#000000aa',
+        headerShown:false,
         style: {
           backgroundColor: '#faa692',
           height: 50,
@@ -66,7 +67,7 @@ const TabStack = () => {
         name="ProfileScreen"
         component={ProfileScreen}
         options={{
-          tabBarLabel: '',
+          tabBarLabel: 'Profile',
           tabBarIcon: ({color, size}) => (
             <FontAwesome name="user" color={color} size={size} />
           ),
@@ -76,7 +77,7 @@ const TabStack = () => {
         name="HomeScreen"
         component={HomeScreen}
         options={{
-          tabBarLabel: '',
+          tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
@@ -86,7 +87,7 @@ const TabStack = () => {
         name="ActivityScreen"
         component={ActivityScreen}
         options={{
-          tabBarLabel: '',
+          tabBarLabel: 'Activity',
           tabBarIcon: ({color, size}) => (
             <MaterialCommunityIcons
               name="script-text"
@@ -103,7 +104,12 @@ const TabStack = () => {
 const HomeScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="HomeScreen">
+    <Stack.Navigator 
+      initialRouteName="HomeScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="TabStack"
         component={TabStack}
@@ -112,9 +118,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -125,9 +128,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -138,9 +138,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -151,9 +148,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -164,9 +158,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -177,9 +168,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -190,9 +178,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -203,9 +188,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -216,9 +198,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -229,9 +208,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -242,9 +218,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -255,9 +228,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -268,9 +238,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -281,9 +248,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -294,9 +258,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -307,9 +268,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -320,9 +278,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -333,9 +288,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -346,9 +298,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -359,9 +308,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -372,9 +318,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -385,9 +328,6 @@ const HomeScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -397,7 +337,12 @@ const HomeScreenStack = ({navigation}) => {
 const AlphabetScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="AlphabetScreen">
+    <Stack.Navigator 
+      initialRouteName="AlphabetScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="AlphabetScreen"
         component={AlphabetScreen}
@@ -406,9 +351,6 @@ const AlphabetScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -419,9 +361,6 @@ const AlphabetScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -431,7 +370,12 @@ const AlphabetScreenStack = ({navigation}) => {
 const PhrasesScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="PhrasesScreen">
+    <Stack.Navigator 
+      initialRouteName="PhrasesScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="PhrasesScreen"
         component={PhrasesScreen}
@@ -440,9 +384,6 @@ const PhrasesScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -453,9 +394,6 @@ const PhrasesScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -465,7 +403,12 @@ const PhrasesScreenStack = ({navigation}) => {
 const NumbersScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="NumbersScreen">
+    <Stack.Navigator 
+      initialRouteName="NumbersScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="NumbersScreen"
         component={NumbersScreen}
@@ -473,10 +416,7 @@ const NumbersScreenStack = ({navigation}) => {
           headerTitle: '',
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
-          ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
+          )
         })}
       />
       <Stack.Screen
@@ -487,9 +427,6 @@ const NumbersScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -499,7 +436,12 @@ const NumbersScreenStack = ({navigation}) => {
 const ShapesScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="ShapesScreen">
+    <Stack.Navigator 
+      initialRouteName="ShapesScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="ShapesScreen"
         component={ShapesScreen}
@@ -508,9 +450,6 @@ const ShapesScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -521,9 +460,6 @@ const ShapesScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -533,7 +469,12 @@ const ShapesScreenStack = ({navigation}) => {
 const ColorsScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="ColorsScreen">
+    <Stack.Navigator 
+      initialRouteName="ColorsScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="ColorsScreen"
         component={ColorsScreen}
@@ -542,9 +483,6 @@ const ColorsScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
       <Stack.Screen
@@ -555,9 +493,6 @@ const ColorsScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -567,7 +502,12 @@ const ColorsScreenStack = ({navigation}) => {
 const PoemsScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="PoemsScreen">
+    <Stack.Navigator 
+      initialRouteName="PoemsScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="PoemsScreen"
         component={PoemsScreen}
@@ -576,9 +516,6 @@ const PoemsScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
     </Stack.Navigator>
@@ -588,7 +525,12 @@ const PoemsScreenStack = ({navigation}) => {
 const MyFamScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="MyFamScreen">
+    <Stack.Navigator 
+      initialRouteName="MyFamScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="MyFamScreen"
         component={MyFamScreen}
@@ -597,9 +539,6 @@ const MyFamScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
     </Stack.Navigator>
@@ -609,7 +548,12 @@ const MyFamScreenStack = ({navigation}) => {
 const SchoolScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="SchoolScreen">
+    <Stack.Navigator 
+      initialRouteName="SchoolScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="SchoolScreen"
         component={SchoolScreen}
@@ -618,9 +562,6 @@ const SchoolScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#fed176',
-          },
         })}
       />
     </Stack.Navigator>
@@ -630,7 +571,12 @@ const SchoolScreenStack = ({navigation}) => {
 const ProfileScreenStack = ({navigation}) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="ProfileScreen">
+    <Stack.Navigator 
+      initialRouteName="ProfileScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
       <Stack.Screen
         name="ProfileScreen"
         component={ProfileScreen}
@@ -639,9 +585,6 @@ const ProfileScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -652,9 +595,6 @@ const ProfileScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -665,9 +605,6 @@ const ProfileScreenStack = ({navigation}) => {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -677,7 +614,12 @@ const ProfileScreenStack = ({navigation}) => {
 function ActivityStack({navigation}) {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator initialRouteName="ActivityScreen">
+    <Stack.Navigator 
+      initialRouteName="ActivityScreen" 
+      screenOptions={{
+        headerTransparent: true,
+      }}  
+    >
       <Stack.Screen
         name="ActivityScreen"
         component={ActivityScreen}
@@ -686,9 +628,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -699,9 +638,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -712,9 +648,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -725,9 +658,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -738,9 +668,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
       <Stack.Screen
@@ -751,9 +678,6 @@ function ActivityStack({navigation}) {
           headerLeft: () => (
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
-          headerStyle: {
-            backgroundColor: '#b1d2c7',
-          },
         })}
       />
     </Stack.Navigator>
@@ -769,7 +693,16 @@ const App = () => {
           activeTintColor: '#faa08c',
           itemStyle: {marginVertical: 10},
           backgroundColor: '#eeeed1',
-        }}>
+          headerTransparent: true,
+          headerShown: false,
+          inactiveBackgroundColor:'transparent',
+          // drawerActiveBackgroundColor: "transparent",
+          drawerIcon: true,
+          headerTransparent: true,
+          // drawerStyle: { backgroundColor: 'transparent'}
+        }}
+          
+      >
         <Drawer.Screen name="HomeScreenDrawer" component={HomeScreenStack} />
         <Drawer.Screen
           name="ProfileScreenDrawer"
