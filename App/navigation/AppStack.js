@@ -29,6 +29,7 @@ import EnglishScreen from '../screens/EnglishScreen'
 import MathsScreen from '../screens/MathsScreen';
 import CreativeScreen from '../screens/CreativeScreen';
 import CommunityScreen from '../screens/CommunityScreen';
+import AboutScreen from '../screens/About';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -764,7 +765,7 @@ const App = () => {
           component={SchoolScreenStack}
         />
         <Drawer.Screen name="ActivityScreenDrawer" component={ActivityStack} />
-        {/* <Drawer.Screen name="AboutScreen" component={AboutScreen} /> */}
+        <Drawer.Screen name="AboutScreen" component={AboutScreen} />
       </Drawer.Navigator>
     </PaperProvider>
   );
