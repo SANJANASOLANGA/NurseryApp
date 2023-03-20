@@ -1775,6 +1775,11 @@
   resolved "https://registry.npmjs.org/@react-native-firebase/firestore/-/firestore-17.3.2.tgz"
   integrity sha512-ZqdtYcZExAdfFXIntfy5/hTRK8jAyZnQCbpCyvC3O8f1m4C2pDo57xLzTdukORtJjiBGkxBpcULLBrSbOJ/SXw==
 
+"@react-native-firebase/storage@^17.3.2":
+  version "17.3.2"
+  resolved "https://registry.npmjs.org/@react-native-firebase/storage/-/storage-17.3.2.tgz"
+  integrity sha512-Pojwd5SuM8lvJBDfVV9ylyTOb8bwildhdAetLgyIdvyVwE9QqzpZoOebb283ceJ0h6OdznHiR66JJStcyclUwg==
+
 "@react-native/assets@1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@react-native/assets/-/assets-1.0.0.tgz"
