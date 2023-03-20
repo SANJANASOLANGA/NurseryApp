@@ -15,13 +15,13 @@ import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-// import {AuthContext} from '../navigation/AuthProvider';
+import {AuthContext} from '../navigation/AuthProvider';
 
 export function DrawerContent(props) {
   const paperTheme = useTheme();
-  // const {user, logout} = useContext(AuthContext);
+  const {user, logout} = useContext(AuthContext);
 
-  // const {signOut, toggleTheme} = React.useContext(AuthContext);
+  const {signOut, toggleTheme} = React.useContext(AuthContext);
 
   return (
     <View style={{flex: 1}}>
