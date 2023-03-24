@@ -1,13 +1,12 @@
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
-// import {createStackNavigator} from '@react-navigation/stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 // import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-// import OnboardingScreen from '../screens/OnboardingScreen';
+import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignupScreen from '../screens/SignupScreen';
 
@@ -41,12 +40,16 @@ const AuthStack = () => {
   // }
 
   return (
-    <Stack.Navigator initialRouteName={routeName}>
-      {/* <Stack.Screen
+    <Stack.Navigator initialRouteName={routeName}
+      screenOptions={{
+        headerTransparent: true
+      }}
+    >
+      <Stack.Screen
         name="Onboarding"
         component={OnboardingScreen}
         options={{header: () => null}}
-      /> */}
+      />
       <Stack.Screen
         name="Login"
         component={LoginScreen}
@@ -56,10 +59,10 @@ const AuthStack = () => {
         name="Signup"
         component={SignupScreen}
         options={({navigation}) => ({
-          title: 'Signup',
+          title: 'Sign Up',
           headerStyle: {
-            backgroundColor: '#faecbf',
-            shadowColor: '#faecbf',
+            backgroundColor: 'transparent',
+            shadowColor: 'transparent',
             elevation: 0,
           },
           headerLeft: () => (
@@ -67,7 +70,7 @@ const AuthStack = () => {
               <FontAwesome.Button
                 name="chevron-left"
                 size={23}
-                backgroundColor="#faecbf"
+                backgroundColor="transparent"
                 color="#333"
                 marginLeft={5}
                 onPress={() => navigation.navigate('Login')}
