@@ -30,6 +30,8 @@ import MathsScreen from '../screens/MathsScreen';
 import CreativeScreen from '../screens/CreativeScreen';
 import CommunityScreen from '../screens/CommunityScreen';
 import AboutScreen from '../screens/About';
+import EditProfileScreen from '../screens/EditProfileScreen';
+import AddMarkscreen from '../screens/AddMarksScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -332,7 +334,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="AddMarksScreen"
-        component={AlphabetQuiz}
+        component={AddMarkscreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -342,7 +344,7 @@ const HomeScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="EditProfileScreen"
-        component={AlphabetScreen}
+        component={EditProfileScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -619,7 +621,7 @@ const ProfileScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="EditProfileScreen"
-        component={AlphabetScreen}
+        component={EditProfileScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -629,7 +631,7 @@ const ProfileScreenStack = ({navigation}) => {
       />
       <Stack.Screen
         name="AddMarksScreen"
-        component={AlphabetQuiz}
+        component={AddMarkscreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
