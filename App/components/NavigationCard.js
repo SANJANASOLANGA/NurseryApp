@@ -27,9 +27,10 @@ export default function NavigationCard({ text, image, onPress }) {
 
 const styles = StyleSheet.create({
   textArea_text: {
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
+    color: 'white',
   },
   card: {
     width: 400,
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
   button: {
     width: 350,
     height: 65,
-    backgroundColor: '#eff3dd',
+    backgroundColor: '#8a36d1',
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
