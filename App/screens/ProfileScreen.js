@@ -9,89 +9,88 @@ import {
   ImageBackground,
   Modal,
 } from 'react-native';
-// import {AuthContext} from '../navigation/AuthProvider';
+import {AuthContext} from '../navigation/AuthProvider';
 import {windowHeight, windowWidth} from '../constants/Dimensions';
-// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-// import firestore from '@react-native-firebase/firestore';
-// import PostCard from '../components/PostCard';
+import firestore from '@react-native-firebase/firestore';
+import PostCard from '../components/PostCard';
 
 const ProfileScreen = ({navigation, route}) => {
-//   const {user, logout} = useContext(AuthContext);
+  const {user, logout} = useContext(AuthContext);
 
-//   const [posts, setPosts] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [deleted, setDeleted] = useState(false);
-//   const [userData, setUserData] = useState(null);
-//   const [show1, setShow1] = useState(false);
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [deleted, setDeleted] = useState(false);
+  const [userData, setUserData] = useState(null);
+  const [show1, setShow1] = useState(false);
 
-//   const fetchPosts = async () => {
-//     try {
-//       const list = [];
+  const fetchPosts = async () => {
+    try {
+      const list = [];
 
-//       await firestore()
-//         .collection('posts')
-//         .where('userId', '==', route.params ? route.params.userId : user.uid)
-//         .orderBy('postTime', 'desc')
-//         .get()
-//         .then(querySnapshot => {
-//           // console.log('Total Posts: ', querySnapshot.size);
+      await firestore()
+        .collection('posts')
+        .where('userId', '==', route.params ? route.params.userId : user.uid)
+        .orderBy('postTime', 'desc')
+        .get()
+        .then(querySnapshot => {
+          // console.log('Total Posts: ', querySnapshot.size);
 
-//           querySnapshot.forEach(doc => {
-//             const {userId, post, postImg, postTime} = doc.data();
-//             list.push({
-//               id: doc.id,
-//               userId,
-//               userName: 'Test Name',
-//               userImg:
-//                 'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg',
-//               postTime: postTime,
-//               post,
-//               postImg,
-//               liked: false,
-//             });
-//           });
-//         });
+          querySnapshot.forEach(doc => {
+            const {userId, post, postImg, postTime} = doc.data();
+            list.push({
+              id: doc.id,
+              userId,
+              userName: 'Test Name',
+              userImg:
+                'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg',
+              postTime: postTime,
+              post,
+              postImg,
+              liked: false,
+            });
+          });
+        });
 
-//       setPosts(list);
+      setPosts(list);
 
-//       if (loading) {
-//         setLoading(false);
-//       }
+      if (loading) {
+        setLoading(false);
+      }
 
-//       console.log('Posts: ', posts);
-//     } catch (e) {
-//       console.log(e);
-//     }
-//   };
+      console.log('Posts: ', posts);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
-//   const getUser = async () => {
-//     await firestore()
-//       .collection('users')
-//       .doc(route.params ? route.params.userId : user.uid)
-//       .get()
-//       .then(documentSnapshot => {
-//         if (documentSnapshot.exists) {
-//           console.log('User Data', documentSnapshot.data());
-//           setUserData(documentSnapshot.data());
-//         }
-//       });
-//   };
+  const getUser = async () => {
+    await firestore()
+      .collection('users')
+      .doc(route.params ? route.params.userId : user.uid)
+      .get()
+      .then(documentSnapshot => {
+        if (documentSnapshot.exists) {
+          console.log('User Data', documentSnapshot.data());
+          setUserData(documentSnapshot.data());
+        }
+      });
+  };
 
-//   useEffect(() => {
-//     getUser();
-//     fetchPosts();
-//     navigation.addListener('focus', () => setLoading(!loading));
-//   }, [navigation, loading]);
+  useEffect(() => {
+    getUser();
+    fetchPosts();
+    navigation.addListener('focus', () => setLoading(!loading));
+  }, [navigation, loading]);
 
-//   const handleDelete = () => {};
+  const handleDelete = () => {};
 
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={{flex: 1}}>
-        <Text>ProfileScreen</Text>
-      {/* <ScrollView>
+      <ScrollView>
         <View style={{justifyContent: 'center', alignItems: 'center'}}>
           <Image
             style={styles.userImg}
@@ -187,7 +186,7 @@ const ProfileScreen = ({navigation, route}) => {
             <Text style={styles.buttonText}>Feed</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView> */}
+      </ScrollView>
     </ImageBackground>
   );
 };
@@ -246,7 +245,7 @@ const styles = StyleSheet.create({
     margin: 20,
     width: '35%',
     height: windowHeight / 15,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -256,6 +255,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white'
   },
   modal_view: {
     flex: 0.3,
