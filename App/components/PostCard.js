@@ -1,9 +1,4 @@
-/* eslint-disable react-native/no-inline-styles */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-undef */
 import React, {useContext, useEffect, useState} from 'react';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import {
   Container,
@@ -25,7 +20,7 @@ import ProgressiveImage from '../components/ProgressiveImage';
 
 import {AuthContext} from '../navigation/AuthProvider';
 
-import moment from 'moment';
+// import moment from 'moment';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import firestore from '@react-native-firebase/firestore';
 
@@ -70,7 +65,7 @@ const PostCard = ({item, onDelete, onPress}) => {
               {userData ? userData.lname || 'User' : 'User'}
             </UserName>
           </TouchableOpacity>
-          <PostTime>{moment(item.postTime.toDate()).fromNow()}</PostTime>
+          {/* <PostTime>{moment(item.postTime.toDate()).fromNow()}</PostTime> */}
         </UserInfoText>
       </UserInfo>
       <PostText>{item.post}</PostText>
