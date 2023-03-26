@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     marginTop: 25,
     width: '75%',
     height: windowHeight / 11,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -29,5 +29,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'white'
   },
 });
