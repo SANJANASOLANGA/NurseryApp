@@ -6,7 +6,7 @@ import {
   Platform,
   StyleSheet,
   ScrollView,
-  Image,
+  Image, ImageBackground
 } from 'react-native';
 import {AuthContext} from '../navigation/AuthProvider';
 
@@ -19,15 +19,18 @@ const LoginScreen = ({navigation}) => {
   const [password, setPassword] = useState();
 
   // const {login, googleLogin, fbLogin} = useContext(AuthContext);
-  const {login} = useContext(AuthContext);
+  const {login, googleLogin} = useContext(AuthContext);
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ImageBackground
+      source={require('../assets/images/bg.jpg')}
+      style={styles.container}>
+    {/* <ScrollView contentContainerStyle={styles.container}> */}
       <Image
         style={styles.logo}
-        source={require('../assets/images/logo.png')}
+        source={require('../assets/images/logo-no-background.png')}
       />
-      <Text style={styles.text}>Little Kingdom Education</Text>
+      <Text style={styles.text}>EduKids</Text>
       <Text />
       <Text />
 
@@ -60,7 +63,25 @@ const LoginScreen = ({navigation}) => {
         <Text style={styles.navButtonText}>Forgot Password?</Text>
       </TouchableOpacity>
 
-      {/*  */}
+      {Platform.OS === 'android' ? (
+        <View>
+          {/* <SocialButton
+            buttonTitle="Sign In with Facebook"
+            btnType="facebook"
+            color="#4867aa"
+            backgroundColor="#bfd4e7"
+            onPress={() => fbLogin()}
+          /> */}
+
+          <SocialButton
+            buttonTitle="Sign In with Google"
+            btnType="google"
+            color="#de4d41"
+            backgroundColor="#bfd4e7"
+            onPress={() => googleLogin()}
+          />
+        </View>
+      ) : null}
 
       <TouchableOpacity
         style={styles.forgotButton}
@@ -69,7 +90,8 @@ const LoginScreen = ({navigation}) => {
           Don't have an account? Create here
         </Text>
       </TouchableOpacity>
-    </ScrollView>
+      </ImageBackground>
+    // </ScrollView>
   );
 };
 
@@ -82,7 +104,7 @@ const styles = StyleSheet.create({
     padding: 25,
     paddingTop: 60,
     paddingBottom: 100,
-    backgroundColor: '#faecbf',
+    backgroundColor: 'red',
   },
   logo: {
     height: 100,
@@ -93,6 +115,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 28,
     marginTop: 10,
+    // color: "#8a36d1"
   },
   navButton: {
     marginTop: 15,
