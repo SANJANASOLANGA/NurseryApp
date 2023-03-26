@@ -78,10 +78,9 @@ const TabStack = () => {
         tabBarShowLabel: false,
         tabBarStyle: [
           {
-            backgroundColor: 'transparent',
+            backgroundColor: '#8a36d1',
             borderTopWidth: 0,
             position: 'absolute',
-            height:70,
             left: 10,
             right: 10,
             bottom: 20,
