@@ -1,7 +1,7 @@
 import React, {createContext, useState} from 'react';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
-// import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
 // import {LoginManager, AccessToken} from 'react-native-fbsdk-next';
 
 export const AuthContext = createContext();
@@ -26,32 +26,26 @@ export const AuthProvider = ({children}) => {
             alert(e);
           }
         },
-        // register: async (email, password) => {
-        //   try{
-        //     await auth().signInWithEmailAndPassword(email, password);
-        //   }catch(e){
-        //     console.log(e)
-        //   }
-        // },
-        // googleLogin: async () => {
-        //   try {
-        //     // Get the users ID token
-        //     const {idToken} = await GoogleSignin.signIn();
+        googleLogin: async () => {
+          try {
+            // Get the users ID token
+            const {idToken} = await GoogleSignin.signIn();
 
-        //     // Create a Google credential with the token
-        //     const googleCredential =
-        //       auth.GoogleAuthProvider.credential(idToken);
+            // Create a Google credential with the token
+            const googleCredential =
+              auth.GoogleAuthProvider.credential(idToken);
 
-        //     // Sign-in the user with the credential
-        //     await auth()
-        //       .signInWithCredential(googleCredential)
-        //       .catch(error => {
-        //         alert('Something went wrong with signin:\n\n' + error);
-        //       });
-        //   } catch (error) {
-        //     alert({error});
-        //   }
-        // },
+            // Sign-in the user with the credential
+            await auth()
+              .signInWithCredential(googleCredential)
+              .catch(error => {
+                alert('Something went wrong with signin:\n\n' + error);
+              });
+          } catch (error) {
+            alert({error});
+            console.log({error})
+          }
+        },
         // fbLogin: async () => {
         //   try {
         //     // Attempt login with permissions
