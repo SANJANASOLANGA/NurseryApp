@@ -191,7 +191,7 @@ const EditProfileScreen = ({navigation}) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.container}>
       <ScrollView>
         {/* <BottomSheet
@@ -428,7 +428,7 @@ const styles = StyleSheet.create({
     margin: 20,
     width: '35%',
     height: windowHeight / 15,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -438,5 +438,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white'
   },
 });
