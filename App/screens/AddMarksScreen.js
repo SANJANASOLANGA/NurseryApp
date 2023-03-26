@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {
   TouchableOpacity,
   Text,
@@ -12,7 +12,7 @@ import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ImagePicker from 'react-native-image-crop-picker';
 import {windowHeight, windowWidth} from '../constants/Dimensions';
-
+import { LogBox } from 'react-native';
 import storage from '@react-native-firebase/storage';
 import firestore from '@react-native-firebase/firestore';
 
@@ -26,7 +26,6 @@ import {
 } from '../styles/Addpost';
 
 import {AuthContext} from '../navigation/AuthProvider';
-import NavigationCard from '../components/NavigationCard';
 
 const AddMarkscreen = ({navigation}) => {
   const {user, logout} = useContext(AuthContext);
@@ -35,6 +34,10 @@ const AddMarkscreen = ({navigation}) => {
   const [uploading, setUploading] = useState(false);
   const [transferred, setTransferred] = useState(0);
   const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    LogBox.ignoreLogs(['Animated: `useNativeDriver`']);
+}, [])
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -130,7 +133,7 @@ const AddMarkscreen = ({navigation}) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/13.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.container}>
       <InputWrapper>
         {image != null ? <AddImage source={{uri: image}} /> : null}
@@ -145,7 +148,7 @@ const AddMarkscreen = ({navigation}) => {
         {uploading ? (
           <StatusWrapper>
             <Text>{transferred} % Completed!</Text>
-            <ActivityIndicator size="large" color="#faecbf" />
+            <ActivityIndicator size="large" color="#8a36d1" />
           </StatusWrapper>
         ) : (
           <TouchableOpacity style={styles.buttonContainer} onPress={submitPost}>
@@ -158,9 +161,9 @@ const AddMarkscreen = ({navigation}) => {
           <Text style={styles.buttonText}>Back</Text>
         </TouchableOpacity>
       </InputWrapper>
-      <ActionButton buttonColor="#faecbf">
+      <ActionButton buttonColor="#8a36d1">
         <ActionButton.Item
-          buttonColor="#faecbf"
+          buttonColor="#8a36d1"
           title="Choose Photo"
           onPress={choosePhotoFromLibrary}>
           <Icon name="md-images-outline" style={styles.actionButtonIcon} />
@@ -185,7 +188,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     width: '60%',
     height: windowHeight / 15,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 13,
@@ -196,5 +199,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white'
   },
 });
