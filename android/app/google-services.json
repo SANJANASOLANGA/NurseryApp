@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "992403560552",
+    "firebase_url": "https://edukids-d90d9-default-rtdb.firebaseio.com",
     "project_id": "edukids-d90d9",
     "storage_bucket": "edukids-d90d9.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "992403560552-61t2eivj3gmnp633ogrvqohi36j7q64p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edukids",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
         {
           "client_id": "992403560552-qhe9jq6d9p01tlr0fp76etbqd7d58clm.apps.googleusercontent.com",
           "client_type": 3
