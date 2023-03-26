@@ -130,13 +130,13 @@ const AddMarkscreen = ({navigation}) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/13.jpg')}
       style={styles.container}>
       <InputWrapper>
         {image != null ? <AddImage source={{uri: image}} /> : null}
 
         <InputField
-          placeholder="Feed Your Profile with Marks                   Add something. ..."
+          placeholder="Add your Marks"
           multiline
           numberOfLines={4}
           value={post}

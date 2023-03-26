@@ -11,7 +11,7 @@ import ActivityButton from '../components/ActivityButton';
 const ActivityScreen = ({navigation}) => {
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.safearea}>
       <Text style={styles.heading}>Fun Activities</Text>
       <View style={styles.button_container}>
