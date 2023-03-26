@@ -236,7 +236,7 @@ const AlphabetQuiz = ({ navigation }) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={{
         flex: 1,
       }}>
@@ -266,7 +266,7 @@ const AlphabetQuiz = ({ navigation }) => {
           transparent={true}
           visible={showScoreModal}>
           <ImageBackground
-            source={require('../assets/images/background.jpg')}
+            source={require('../assets/images/bg.jpg')}
             style={{
               flex: 1,
               alignItems: 'center',
@@ -317,7 +317,7 @@ const AlphabetQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={restartQuiz}
                   style={{
-                    backgroundColor: '#fcf1d1',
+                    backgroundColor: 'green',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -328,6 +328,7 @@ const AlphabetQuiz = ({ navigation }) => {
                     style={{
                       textAlign: 'center',
                       fontSize: 20,
+                      color:'white'
                     }}>
                     Retry
                   </Text>
@@ -335,7 +336,7 @@ const AlphabetQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={() => setShow1(true)}
                   style={{
-                    backgroundColor: '#fcf1d1',
+                    backgroundColor: 'red',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -346,6 +347,7 @@ const AlphabetQuiz = ({ navigation }) => {
                     style={{
                       textAlign: 'center',
                       fontSize: 20,
+                      color: 'white'
                     }}>
                     Exit
                   </Text>
@@ -390,7 +392,7 @@ const AlphabetQuiz = ({ navigation }) => {
               <TouchableOpacity
                 onPress={() => navigation.navigate('ProfileScreen')}
                 style={{
-                  backgroundColor: '#a6cebe',
+                  backgroundColor: '#8a36d1',
                   padding: 20,
                   width: '90%',
                   borderRadius: 20,
@@ -401,6 +403,7 @@ const AlphabetQuiz = ({ navigation }) => {
                   style={{
                     textAlign: 'center',
                     fontSize: 20,
+                    color: 'white'
                   }}>
                   Feed Profile
                 </Text>
@@ -463,7 +466,7 @@ const styles = StyleSheet.create({
   button: {
     width: 120,
     height: 50,
-    backgroundColor: '#fecda2',
+    backgroundColor: '#8a36d1',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
@@ -472,5 +475,6 @@ const styles = StyleSheet.create({
   },
   btn_txt: {
     fontSize: 20,
+    color: 'white'
   },
 });
