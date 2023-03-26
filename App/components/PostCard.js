@@ -71,7 +71,7 @@ const PostCard = ({item, onDelete, onPress}) => {
       <PostText>{item.post}</PostText>
       {item.postImg != null ? (
         <ProgressiveImage
-          defaultImageSource={require('../assets/images/logo.png')}
+          defaultImageSource={require('../assets/images/logo-no-background.png')}
           source={{uri: item.postImg}}
           style={{width: '100%', height: 325}}
         />
