@@ -8,19 +8,19 @@ import {
   ScrollView,
   View,
 } from 'react-native';
-// import {AuthContext} from '../navigation/AuthProvider';
+import {AuthContext} from '../navigation/AuthProvider';
 import NavigationCard from '../components/NavigationCard';
 
 const HomeScreen = ({navigation}) => {
-//   const {user, logout} = useContext(AuthContext);
+  const {user, logout} = useContext(AuthContext);
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.safearea}>
-      <Image
+      {/* <Image
         style={styles.logo}
         source={require('../assets/images/logo.png')}
-      />
+      /> */}
       <Text style={styles.text}>Hello !</Text>
       <Text style={styles.heading}>Let's Start Your</Text>
       <Text style={styles.heading}>Learning Journey !</Text>
