@@ -42,8 +42,8 @@ export function DrawerContent(props) {
                 size={50}
               />
               <View style={{marginLeft: 15}}>
-                {/* <Title style={styles.title}>{user.email}</Title>
-                <Caption style={styles.caption}>@{user.uid}</Caption> */}
+                <Title style={styles.title}>{user.email}</Title>
+                <Caption style={styles.caption}>@{user.uid}</Caption>
               </View>
             </View>
           </View>
@@ -157,7 +157,7 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title="Little Kingdom">
+          <Drawer.Section title="EduKids">
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="account-check-outline" color={color} size={size} />
