@@ -6,7 +6,7 @@ import {
   Modal,
   StyleSheet,
   Image,
-  ScrollView,
+  ScrollView, ImageBackground
 } from 'react-native';
 import {AuthContext} from '../navigation/AuthProvider';
 import FormInput from '../components/FormInput';
@@ -22,11 +22,18 @@ const SignupScreen = ({navigation}) => {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
 
+  const onPressSignUp = () => {
+    register(email, password, confirmPassword)
+    navigation.navigate('Login')
+  } 
+
   return (
-    <View style={styles.container}>
+    <ImageBackground
+      source={require('../assets/images/bg.jpg')}
+      style={styles.container}>
       <Image
         style={styles.logo}
-        source={require('../assets/images/logo.png')}
+        source={require('../assets/images/logo-no-background.png')}
       />
       <Text style={styles.text}>Create an account</Text>
 
@@ -59,7 +66,7 @@ const SignupScreen = ({navigation}) => {
       <FormButton
         buttonTitle="Sign Up"
         onPress={() => register(email, password, confirmPassword)}
-        // onPress={() => register(email, password)}
+        // onPress = {onPressSignUp}
       />
 
       <View style={styles.textPrivate}>
@@ -313,7 +320,7 @@ const SignupScreen = ({navigation}) => {
         onPress={() => navigation.navigate('Login')}>
         <Text style={styles.navButtonText}>Have an account? Sign In</Text>
       </TouchableOpacity>
-    </View>
+    </ImageBackground>
   );
 };
 
