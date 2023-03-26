@@ -16,7 +16,7 @@ const PoemsScreen = ({navigation}) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/background2.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.main}>
       <View style={styles.header}>
         <Text style={styles.text}>Little Poems</Text>
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   button: {
     width: 120,
     height: 50,
-    backgroundColor: '#bfebce',
+    backgroundColor: '#8a36d1',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
@@ -118,5 +118,6 @@ const styles = StyleSheet.create({
   },
   btn_txt: {
     fontSize: 20,
+    color: 'white'
   },
 });

@@ -7,6 +7,7 @@ import {
   ImageBackground,
 } from 'react-native';
 
+// import ScreenButton from '../components/screenButton';
 import Slider_Num from '../stores/Slider_Num';
 export default class NumbersScreen extends Component {
   constructor() {
@@ -26,7 +27,7 @@ export default class NumbersScreen extends Component {
   render() {
     return (
       <ImageBackground
-        source={require('../assets/images/background2.jpg')}
+        source={require('../assets/images/bg.jpg')}
         style={styles.screen}>
         <View style={styles.header}>
           <Text style={styles.heading}>Let's Learn Numbers</Text>
@@ -35,6 +36,7 @@ export default class NumbersScreen extends Component {
           <Slider_Num />
         </View>
         <View style={styles.footer}>
+          {/* <ScreenButton onPress={this.NavigateToMath} buttonTitle ={'ssssssss'}/> */}
           <TouchableOpacity onPress={this.NavigateToMath} style={styles.button}>
             <Text style={styles.btn_txt}>Menu</Text>
           </TouchableOpacity>
@@ -88,7 +90,7 @@ const styles = StyleSheet.create({
   button: {
     width: 120,
     height: 50,
-    backgroundColor: '#bfebce',
+    backgroundColor: '#8a36d1',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
@@ -97,5 +99,6 @@ const styles = StyleSheet.create({
   },
   btn_txt: {
     fontSize: 20,
+    color:'white'
   },
 });

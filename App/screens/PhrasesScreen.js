@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -8,16 +7,15 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-// import {AuthContext} from '../navigation/AuthProvider';
+
 import Card2 from '../components/card2';
 import {windowHeight, windowWidth} from '../constants/Dimensions';
 
 const PhrasesScreen = ({navigation}) => {
-  // const {user, logout} = useContext(AuthContext);
 
   return (
     <ImageBackground
-      source={require('../assets/images/background2.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={styles.main}>
       <View style={styles.header}>
         <Text style={styles.text}>Essential Phrases</Text>
@@ -123,15 +121,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     textAlign: 'center',
   },
-  buttonContainer: {
-    width: '40%',
-    height: windowHeight / 15,
-    backgroundColor: '#faecbf',
-    padding: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 13,
-  },
   buttonText: {
     fontSize: 18,
     fontWeight: 'bold',
@@ -139,7 +128,7 @@ const styles = StyleSheet.create({
   button: {
     width: 120,
     height: 50,
-    backgroundColor: '#bfebce',
+    backgroundColor: '#8a36d1',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
@@ -148,5 +137,6 @@ const styles = StyleSheet.create({
   },
   btn_txt: {
     fontSize: 20,
+    color: 'white'
   },
 });
