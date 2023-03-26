@@ -189,13 +189,13 @@ const NumbersQuiz = ({ navigation }) => {
           style={{
             marginTop: 20,
             width: '80%',
-            backgroundColor: '#faecbf',
+            backgroundColor: '#8a36d1',
             padding: 20,
             borderRadius: 15,
             marginLeft: 42,
             elevation: 10,
           }}>
-          <Text style={{ fontSize: 20, textAlign: 'center' }}>Next</Text>
+          <Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>Next</Text>
         </TouchableOpacity>
       );
     } else {
@@ -236,7 +236,7 @@ const NumbersQuiz = ({ navigation }) => {
 
   return (
     <ImageBackground
-      source={require('../assets/images/background.jpg')}
+      source={require('../assets/images/bg.jpg')}
       style={{
         flex: 1,
       }}>
@@ -266,7 +266,7 @@ const NumbersQuiz = ({ navigation }) => {
           transparent={true}
           visible={showScoreModal}>
           <ImageBackground
-            source={require('../assets/images/background.jpg')}
+            source={require('../assets/images/bg.jpg')}
             style={{
               flex: 1,
               alignItems: 'center',
@@ -274,11 +274,12 @@ const NumbersQuiz = ({ navigation }) => {
             }}>
             <View
               style={{
-                backgroundColor: '#fff',
+                backgroundColor: '#eed9fa',
                 width: '75%',
                 borderRadius: 50,
                 padding: 25,
                 alignItems: 'center',
+                elevation: 25
               }}>
               <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
                 {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
@@ -317,7 +318,7 @@ const NumbersQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={restartQuiz}
                   style={{
-                    backgroundColor: '#fcf1d1',
+                    backgroundColor: '#00C851',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -328,6 +329,7 @@ const NumbersQuiz = ({ navigation }) => {
                     style={{
                       textAlign: 'center',
                       fontSize: 20,
+                      color: 'white'
                     }}>
                     Retry
                   </Text>
@@ -335,7 +337,7 @@ const NumbersQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={() => setShow1(true)}
                   style={{
-                    backgroundColor: '#fcf1d1',
+                    backgroundColor: '#ff4444',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -346,6 +348,7 @@ const NumbersQuiz = ({ navigation }) => {
                     style={{
                       textAlign: 'center',
                       fontSize: 20,
+                      color: 'white'
                     }}>
                     Exit
                   </Text>
@@ -390,7 +393,7 @@ const NumbersQuiz = ({ navigation }) => {
               <TouchableOpacity
                 onPress={() => navigation.navigate('ProfileScreen')}
                 style={{
-                  backgroundColor: '#a6cebe',
+                  backgroundColor: '#8a36d1',
                   padding: 20,
                   width: '90%',
                   borderRadius: 20,
@@ -401,6 +404,7 @@ const NumbersQuiz = ({ navigation }) => {
                   style={{
                     textAlign: 'center',
                     fontSize: 20,
+                    color: 'white'
                   }}>
                   Feed Profile
                 </Text>
@@ -431,7 +435,7 @@ const styles = StyleSheet.create({
   modal_view: {
     flex: 0.3,
     width: 350,
-    backgroundColor: '#fff',
+    backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
     marginTop: 300,
@@ -456,14 +460,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginHorizontal: 10,
     marginTop: 60,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     borderRadius: 15,
     elevation: 5,
+    color: 'white'
   },
   button: {
     width: 120,
     height: 50,
-    backgroundColor: '#fecda2',
+    backgroundColor: '#8a36d1',
     borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
@@ -472,5 +477,6 @@ const styles = StyleSheet.create({
   },
   btn_txt: {
     fontSize: 20,
+    color: 'white'
   },
 });

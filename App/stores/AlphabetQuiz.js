@@ -189,13 +189,13 @@ const AlphabetQuiz = ({ navigation }) => {
           style={{
             marginTop: 20,
             width: '80%',
-            backgroundColor: '#faecbf',
+            backgroundColor: '#8a36d1',
             padding: 20,
             borderRadius: 15,
             marginLeft: 42,
             elevation: 10,
           }}>
-          <Text style={{ fontSize: 20, textAlign: 'center' }}>Next</Text>
+          <Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>Next</Text>
         </TouchableOpacity>
       );
     } else {
@@ -274,11 +274,12 @@ const AlphabetQuiz = ({ navigation }) => {
             }}>
             <View
               style={{
-                backgroundColor: '#fff',
+                backgroundColor: '#eed9fa',
                 width: '75%',
                 borderRadius: 50,
                 padding: 25,
                 alignItems: 'center',
+                elevation: 25
               }}>
               <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
                 {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
@@ -317,7 +318,7 @@ const AlphabetQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={restartQuiz}
                   style={{
-                    backgroundColor: 'green',
+                    backgroundColor: '#00C851',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -336,7 +337,7 @@ const AlphabetQuiz = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={() => setShow1(true)}
                   style={{
-                    backgroundColor: 'red',
+                    backgroundColor: '#ff4444',
                     padding: 20,
                     width: '40%',
                     borderRadius: 20,
@@ -434,7 +435,7 @@ const styles = StyleSheet.create({
   modal_view: {
     flex: 0.3,
     width: 350,
-    backgroundColor: '#fff',
+    backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
     marginTop: 300,
@@ -459,9 +460,10 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginHorizontal: 10,
     marginTop: 60,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     borderRadius: 15,
     elevation: 5,
+    color: 'white'
   },
   button: {
     width: 120,
