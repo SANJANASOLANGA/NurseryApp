@@ -11,9 +11,10 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 export default function PoemCard({text1, text2, text3, name}) {
   return (
     <ImageBackground
-      source={{
-        uri: 'https://www.ppt-backgrounds.net/thumbs/children-powerpoint-template-to-educate-your-children--mutimedia---background.jpeg',
-      }}
+      source={
+        // uri: 'https://www.pexels.com/photo/photo-of-purple-paint-3527786/',
+        require('../assets/images/poem2.jpeg')
+      }
       imageStyle={{borderRadius: 15, width: 375, height: 500}}
       style={styles.card}>
       <Text style={styles.text}>{text1}</Text>
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
     marginLeft: 150,
     fontStyle: 'italic',
     marginTop: 60,
+    color: 'white'
   },
   card: {
     width: 375,
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
   card2: {
     width: 335,
     height: 270,
-    backgroundColor: '#fff',
+    backgroundColor: '#eecdf7',
     borderRadius: 15,
     marginTop: 20,
     alignItems: 'center',
