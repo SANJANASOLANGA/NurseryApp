@@ -47,9 +47,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     margin: 20,
     marginTop: 70,
-    backgroundColor: '#dfedcb',
+    backgroundColor: '#d29ffc',
     borderRadius: 15,
-    elevation: 10,
+    elevation: 20,
   },
   card2: {
     width: 300,

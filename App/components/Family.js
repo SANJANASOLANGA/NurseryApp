@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     margin: 20,
     marginTop: 70,
-    backgroundColor: '#dfedcb',
+    backgroundColor: '#eecdf7',
     borderRadius: 15,
     elevation: 10,
   },
