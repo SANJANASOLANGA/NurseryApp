@@ -216,14 +216,14 @@ const AlphabetQuiz = ({ navigation }) => {
           height: 20,
           borderRadius: 20,
           borderWidth: 0.1,
-          backgroundColor: '#faecbf',
+          backgroundColor: '#f4d9fc',
         }}>
         <Animated.View
           style={[
             {
               height: 20,
               borderRadius: 20,
-              backgroundColor: '#faa692',
+              backgroundColor: '#8a36d1',
             },
             {
               width: progressAnim,
