@@ -38,7 +38,7 @@ export default class MathsScreen extends Component {
   render() {
     return (
       <ImageBackground
-        source={require('../assets/images/background2.jpg')}
+        source={require('../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
           <Text style={styles.heading}>Happy English</Text>
@@ -75,8 +75,8 @@ export default class MathsScreen extends Component {
         <FontAwesome.Button
             name="chevron-left"
             size={25}
-            backgroundColor="#88d9ca"
-            color="#000000aa"
+            backgroundColor="#8a36d1"
+            color="white"
             onPress={this.NavigateToBack}
             borderRadius={10}
           />
@@ -84,14 +84,14 @@ export default class MathsScreen extends Component {
             onPress={this.NavigateToHome}
             name="home"
             size={25}
-            backgroundColor="#88d9ca"
-            color="#000000aa"
+            backgroundColor="#8a36d1"
+            color="white"
           />
           <FontAwesome.Button
             name="chevron-right"
             size={25}
-            color="#000000aa"
-            backgroundColor="#88d9ca"
+            color="white"
+            backgroundColor="#8a36d1"
             borderRadius={10}
             onPress={this.NavigateToNext}
           />
