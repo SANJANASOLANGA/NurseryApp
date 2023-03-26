@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
   modal_view: {
     flex: 0.3,
     width: 350,
-    backgroundColor: '#fff',
+    backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
     marginTop: 300,
@@ -284,7 +284,8 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginHorizontal: 10,
     marginTop: 60,
-    backgroundColor: '#faecbf',
+    backgroundColor: '#8a36d1',
     borderRadius: 15,
+    color: 'white'
   },
 });
