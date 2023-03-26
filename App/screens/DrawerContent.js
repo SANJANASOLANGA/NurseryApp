@@ -37,11 +37,11 @@ export function DrawerContent(props) {
               }}>
               <Avatar.Image
                 source={{
-                  uri: 'https://api.adorable.io/avatars/50/abott@adorable.png',
+                  uri: 'https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                 }}
                 size={50}
               />
-              <View style={{marginLeft: 15}}>
+              <View style={{marginLeft: 15, alignItems: 'center', alignContent: 'center'}}>
                 <Title style={styles.title}>{user.email}</Title>
                 <Caption style={styles.caption}>@{user.uid}</Caption>
               </View>
