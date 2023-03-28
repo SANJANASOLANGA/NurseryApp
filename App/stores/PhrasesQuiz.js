@@ -188,11 +188,11 @@ const PhrasesQuiz = ({ navigation }) => {
           onPress={handleNext}
           style={{
             marginTop: 20,
-            width: '80%',
-            backgroundColor: '#8a36d1',
-            padding: 20,
-            borderRadius: 15,
-            marginLeft: 42,
+            width: '35%',
+            backgroundColor: '#c055e0',
+            padding: 10,
+            borderRadius: 25,
+            alignSelf: 'center',
             elevation: 10,
           }}>
           <Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>Next</Text>
