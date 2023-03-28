@@ -26,16 +26,12 @@ export default class ShapesScreen extends Component {
         style={styles.screen}>
         <Text style={styles.heading}>SHAPES</Text>
         <View style={styles.body}>
-          <ScrollView>
+          <ScrollView horizontal={true}>
             <View style={styles.card_container}>
-              <Text style={styles.card_text}>Square</Text>
-              <ShapesCard image={require('../assets/images/square.jpg')} />
-              <Text style={styles.card_text}>Triangle</Text>
-              <ShapesCard image={require('../assets/images/triangle.jpg')} />
-              <Text style={styles.card_text}>Rectangle</Text>
-              <ShapesCard image={require('../assets/images/rectangle.jpg')} />
-              <Text style={styles.card_text}> Circle</Text>
-              <ShapesCard image={require('../assets/images/circle.jpg')} />
+              <ShapesCard image={require('../assets/images/square.jpg')}  text='Square'/>
+              <ShapesCard image={require('../assets/images/triangle.jpg')} text='Triangle' />
+              <ShapesCard image={require('../assets/images/rectangle.jpg')} text='Rectangle'/>
+              <ShapesCard image={require('../assets/images/circle.jpg')} text='Circle'/>
             </View>
           </ScrollView>
         </View>
