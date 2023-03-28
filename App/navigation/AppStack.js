@@ -61,34 +61,20 @@ const TabStack = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeScreen"
-      // screenOptions={{
-      //   activeTintColor: '#fff',
-      //   inactiveTintColor: '#000000aa',
-      //   headerShown:false,
-      //   style: {
-      //     backgroundColor: '#faa692',
-      //     height: 50,
-      //   },
-      // }}
-      screenOptions={{
-        activeTintColor: 'red',
-        inactiveTintColor: 'yellow',
+      screenOptions={() => ({
         headerShown: false,
-        headerTransparent: true,
-        tabBarShowLabel: false,
+        tabBarActiveTintColor: '#c055e0',
+        tabBarInactiveTintColor: '#666565',
+        tabBarLabelStyle: {
+          fontSize: 15,
+        },
         tabBarStyle: [
           {
-            backgroundColor: '#8a36d1',
-            borderTopWidth: 0,
-            position: 'absolute',
-            left: 10,
-            right: 10,
-            bottom: 20,
-            height: 80
+            backgroundColor: '#faedfc'
           },
           null
-        ]
-      }}
+        ],
+      })}
     >
       <Tab.Screen
         name="ProfileScreen"
