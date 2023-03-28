@@ -56,7 +56,11 @@ const AddMarkscreen = ({navigation}) => {
     console.log('Image Url: ', imageUrl);
     console.log('Post: ', post);
 
-    firestore()
+    if (imageUrl == null){
+      Alert.alert('Add your feed first')
+    }
+    else{
+      firestore()
       .collection('posts')
       .add({
         userId: user.uid,
@@ -80,6 +84,7 @@ const AddMarkscreen = ({navigation}) => {
           error,
         );
       });
+    }
   };
 
   const uploadImage = async () => {
