@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 import {
   View,
   Text,
@@ -7,13 +7,11 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-// import {AuthContext} from '../navigation/AuthProvider';
-import {windowHeight, windowWidth} from '../constants/Dimensions';
+import { windowHeight, windowWidth } from '../constants/Dimensions';
 
 import DescriptionCard from '../components/DescriptionCard';
 
-const AlphabetScreen = ({navigation}) => {
-  // const {user, logout} = useContext(AuthContext);
+const AlphabetScreen = ({ navigation }) => {
 
   return (
     <ImageBackground
@@ -23,110 +21,108 @@ const AlphabetScreen = ({navigation}) => {
         <View style={styles.header}>
           <Text style={styles.text}>Let's Learn Alphabet</Text>
         </View>
-        <View style={styles.body}>
-          <ScrollView horizontal={true}>
-            <DescriptionCard
-              image={require('../assets/images/A.jpg')}
-              text1={'A for Apple'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/B.jpg')}
-              text1={'B for Bird'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/C.jpg')}
-              text1={'C for Crab'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/D.jpg')}
-              text1={'D for Dog'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/E.jpg')}
-              text1={'E for Elephant'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/F.jpg')}
-              text1={'F for Fox'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/G.jpg')}
-              text1={'G for Giraffe'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/H.jpg')}
-              text1={'H for Horse'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/I.jpg')}
-              text1={'I for Iguana'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/J.jpg')}
-              text1={'J for Jelly'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/K.jpg')}
-              text1={'K for Kangaroo'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/L.jpg')}
-              text1={'L for Lion'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/M.jpg')}
-              text1={'M for Monkey'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/O.jpg')}
-              text1={'O for Owl'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/P.jpg')}
-              text1={'P for Penguin'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/Q.jpg')}
-              text1={'Q for Queen'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/R.jpg')}
-              text1={'R for Rabbit'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/S.jpg')}
-              text1={'S for Sheep'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/T.jpg')}
-              text1={'T for Turtle'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/U.jpg')}
-              text1={'U for Umbrella'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/V.jpg')}
-              text1={'V for Vulture'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/W.jpg')}
-              text1={'W for Whale'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/X.jpg')}
-              text1={'X for Xiphias'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/Y.jpg')}
-              text1={'Y for Yak'}
-            />
-            <DescriptionCard
-              image={require('../assets/images/Z.jpg')}
-              text1={'Z for Zebra'}
-            />
-          </ScrollView>
-        </View>
+        <ScrollView horizontal={true}>
+          <DescriptionCard
+            image={require('../assets/images/A.jpg')}
+            text1={'A for Apple'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/B.jpg')}
+            text1={'B for Bird'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/C.jpg')}
+            text1={'C for Crab'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/D.jpg')}
+            text1={'D for Dog'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/E.jpg')}
+            text1={'E for Elephant'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/F.jpg')}
+            text1={'F for Fox'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/G.jpg')}
+            text1={'G for Giraffe'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/H.jpg')}
+            text1={'H for Horse'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/I.jpg')}
+            text1={'I for Iguana'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/J.jpg')}
+            text1={'J for Jelly'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/K.jpg')}
+            text1={'K for Kangaroo'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/L.jpg')}
+            text1={'L for Lion'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/M.jpg')}
+            text1={'M for Monkey'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/O.jpg')}
+            text1={'O for Owl'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/P.jpg')}
+            text1={'P for Penguin'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/Q.jpg')}
+            text1={'Q for Queen'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/R.jpg')}
+            text1={'R for Rabbit'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/S.jpg')}
+            text1={'S for Sheep'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/T.jpg')}
+            text1={'T for Turtle'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/U.jpg')}
+            text1={'U for Umbrella'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/V.jpg')}
+            text1={'V for Vulture'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/W.jpg')}
+            text1={'W for Whale'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/X.jpg')}
+            text1={'X for Xiphias'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/Y.jpg')}
+            text1={'Y for Yak'}
+          />
+          <DescriptionCard
+            image={require('../assets/images/Z.jpg')}
+            text1={'Z for Zebra'}
+          />
+        </ScrollView>
         <View style={styles.bottom}>
           <TouchableOpacity
             onPress={() => navigation.navigate('EnglishScreen')}
@@ -151,7 +147,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   body: {
-    flex: 8,
+    flex: 5,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 10,
@@ -168,11 +164,8 @@ const styles = StyleSheet.create({
   bottom: {
     flex: 1,
     flexDirection: 'row',
-    alignItems: 'flex-end',
-    justifyContent: 'center',
-    marginBottom: 10,
-    marginLeft: 100,
-    marginTop: 20,
+    marginBottom: '3%',
+    alignSelf: 'flex-end'
   },
   text: {
     fontSize: 33,
