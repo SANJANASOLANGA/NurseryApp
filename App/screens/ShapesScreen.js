@@ -8,7 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 import ShapesCard from '../components/shapesCard';
-
+import {windowHeight, windowWidth} from '../constants/Dimensions';
 export default class ShapesScreen extends Component {
   NavigateToMath = () => {
     this.props.navigation.navigate('MathsScreen');
@@ -74,14 +74,13 @@ const styles = StyleSheet.create({
   footer: {
     flex: 1,
     flexDirection: 'row',
-    marginBottom: 30,
-    marginLeft: 115,
+    marginBottom: '3%',
+    alignSelf: 'flex-end'
   },
   heading: {
     fontSize: 33,
     marginTop: 10,
     textAlign: 'center',
-    marginBottom: 20,
   },
   card_text: {
     fontSize: 33,
