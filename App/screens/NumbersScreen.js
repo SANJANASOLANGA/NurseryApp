@@ -75,11 +75,8 @@ const styles = StyleSheet.create({
   footer: {
     flex: 1,
     flexDirection: 'row',
-    marginTop: 20,
-    alignItems: 'flex-end',
-    justifyContent: 'center',
-    marginBottom: 25,
-    marginLeft: 100,
+    marginBottom: '3%',
+    alignSelf: 'flex-end'
   },
   heading: {
     fontSize: 33,
