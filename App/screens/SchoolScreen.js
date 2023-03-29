@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
   footer: {
     flex: 1,
     alignItems: 'flex-end',
-    marginRight: 25,
-    marginBottom: 50,
+    alignSelf: 'flex-end',
+    marginBottom: '3%',
   },
   images: {
     width: 60,
