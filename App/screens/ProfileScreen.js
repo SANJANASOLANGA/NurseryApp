@@ -168,8 +168,8 @@ const ProfileScreen = ({navigation, route}) => {
             justifyContent: 'center',
             alignItems: 'center',
           }}
-          showsVerticalScrollIndicator={true}>
-          <Text />
+          showsVerticalScrollIndicator={true}
+        >
           {posts.map(item => (
             <PostCard key={item.id} item={item} onDelete={handleDelete} />
           ))}
