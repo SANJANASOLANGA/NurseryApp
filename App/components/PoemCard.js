@@ -6,14 +6,14 @@ import {
   TouchableHighlight,
   ImageBackground,
 } from 'react-native';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 
 export default function PoemCard({text1, text2, text3, name}) {
   return (
     <ImageBackground
       source={
-        // uri: 'https://www.pexels.com/photo/photo-of-purple-paint-3527786/',
-        require('../assets/images/poem2.jpeg')
+{        uri: 'https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+}        // uri: 'https://www.pexels.com/photo/photo-of-purple-paint-3527786/',
+        // require('../assets/images/poem2.jpeg')
       }
       imageStyle={{borderRadius: 15, width: 375, height: 500}}
       style={styles.card}>
