@@ -43,7 +43,7 @@ export default class ColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Yellow</Text>
+                <Text style={styles.card_text}><Text style={{color: 'black'}}>Yellow</Text></Text>
               </View>
               <View
                 style={{
@@ -98,7 +98,7 @@ export default class ColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Pink</Text>
+                <Text style={styles.card_text}><Text style={{color: 'black'}}>Pink</Text></Text>
               </View>
               <View
                 style={{
@@ -153,7 +153,8 @@ export default class ColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>White</Text>
+                  <Text style={styles.card_text}>
+                <Text style={{color: 'black'}}>White</Text></Text>
               </View>
               <View
                 style={{
@@ -238,6 +239,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     textAlign: 'center',
     marginTop: 30,
+    color: 'white'
   },
   button: {
     width: 120,
