@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import {
+  Alert,
   View,
   Text,
   TouchableOpacity,
@@ -20,6 +21,10 @@ const LoginScreen = ({navigation}) => {
 
   // const {login, googleLogin, fbLogin} = useContext(AuthContext);
   const {login, googleLogin} = useContext(AuthContext);
+
+  const checkLogin = () =>{
+    login(email, password)
+  }
 
   return (
     <ImageBackground
@@ -54,7 +59,8 @@ const LoginScreen = ({navigation}) => {
 
       <FormButton
         buttonTitle="Sign In"
-        onPress={() => login(email, password)}
+        // onPress={() => login(email, password)}
+        onPress={checkLogin}
       />
 
       <TouchableOpacity
