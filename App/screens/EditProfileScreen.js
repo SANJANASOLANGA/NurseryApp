@@ -8,7 +8,7 @@ import {
   StyleSheet,
   Alert,
   Platform,
-  ScrollView,
+  ScrollView, Animated
 } from 'react-native';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -17,7 +17,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {windowHeight, windowWidth} from '../constants/Dimensions';
 
-import Animated from 'react-native-reanimated';
+// import Animated from 'react-native-reanimated';
 import BottomSheet from 'reanimated-bottom-sheet';
 import ImagePicker from 'react-native-image-crop-picker';
 
@@ -187,7 +187,7 @@ const EditProfileScreen = ({navigation}) => {
   );
 
   bs = React.createRef();
-  // fall = new Animated.Value(1);
+  fall = new Animated.Value(1);
 
   return (
     <ImageBackground
@@ -206,7 +206,7 @@ const EditProfileScreen = ({navigation}) => {
         <Animated.View
           style={{
             margin: 20,
-            // opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
+            opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
           }}>
           <View style={{alignItems: 'center'}}>
             <TouchableOpacity onPress={() => this.bs.current.snapTo(0)}>
@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#f2f2f2',
+    borderBottomColor: '#bfafc7',
     paddingBottom: 5,
     marginLeft: 28,
     marginRight: 28,
