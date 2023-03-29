@@ -413,7 +413,7 @@ const PhrasesQuiz = ({ navigation }) => {
           </ImageBackground>
         </Modal>
       </View>
-      <View style={{ flexDirection: 'row', marginBottom: 20, marginLeft: 130 }}>
+      <View style={styles.footer}>
         <TouchableOpacity
           onPress={() => navigation.navigate('PhrasesScreen')}
           style={styles.button}>
@@ -479,4 +479,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white'
   },
+  footer: {
+    flexDirection: 'row',
+    marginBottom: '3%',
+    alignSelf: 'flex-end'
+  }
 });

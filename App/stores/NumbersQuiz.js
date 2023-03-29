@@ -413,7 +413,7 @@ const NumbersQuiz = ({ navigation }) => {
           </ImageBackground>
         </Modal>
       </View>
-      <View style={{ flexDirection: 'row', marginBottom: 20, marginLeft: 130 }}>
+      <View style={styles.footer}>
         <TouchableOpacity
           onPress={() => navigation.navigate('NumbersScreen')}
           style={styles.button}>
@@ -478,5 +478,10 @@ const styles = StyleSheet.create({
   btn_txt: {
     fontSize: 20,
     color: 'white'
+  },
+  footer: {
+    flexDirection: 'row',
+    marginBottom: '3%',
+    alignSelf: 'flex-end'
   },
 });

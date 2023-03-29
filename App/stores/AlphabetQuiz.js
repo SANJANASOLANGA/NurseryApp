@@ -480,7 +480,6 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   footer: {
-    flex: -1,
     flexDirection: 'row',
     marginBottom: '3%',
     alignSelf: 'flex-end'
