@@ -108,13 +108,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   bottom: {
-    flex: 0.7,
+    flex: 1,
     flexDirection: 'row',
-    marginTop: 10,
-    alignItems: 'flex-end',
-    justifyContent: 'center',
-    marginBottom: 15,
-    marginLeft: 100,
+    marginBottom: '1%',
+    alignSelf: 'flex-end'
   },
   text: {
     fontSize: 33,
