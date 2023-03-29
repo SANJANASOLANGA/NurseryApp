@@ -30,9 +30,7 @@ export default class MyFamScreen extends Component {
       <ImageBackground
         source={require('../assets/images/bg.jpg')}
         style={styles.screen}>
-        <View style={styles.header}>
           <Text style={styles.heading}>Family Members</Text>
-        </View>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
@@ -93,13 +91,6 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
   },
-  header: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderBottomLeftRadius: 100,
-    borderBottomRightRadius: 100,
-  },
   body: {
     flex: 7.2,
     alignItems: 'center',
@@ -122,8 +113,8 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'flex-end',
     justifyContent: 'space-around',
-    marginLeft: 230,
-    marginBottom: 15,
+    alignSelf: 'flex-end',
+    marginBottom: '3%',
   },
   images: {
     width: 60,
