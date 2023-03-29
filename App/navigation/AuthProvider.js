@@ -2,13 +2,14 @@ import React, {createContext, useState} from 'react';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import {Alert} from 'react-native';
+
 // import {LoginManager, AccessToken} from 'react-native-fbsdk-next';
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({children}) => {
   const [user, setUser] = useState(null);
-  const [errortext, setErrortext] = useState('');
 
   return (
     <AuthContext.Provider
@@ -18,12 +19,13 @@ export const AuthProvider = ({children}) => {
         login: async (email, password) => {
           try {
             if (!email || !password) {
-              alert('Please fill Details');
+              Alert.alert('Please fill Details');
               return;
             }
             await auth().signInWithEmailAndPassword(email, password);
+            Alert.alert("Logged Successfully !")
           } catch (e) {
-            alert(e);
+            Alert.alert(e);
           }
         },
         googleLogin: async () => {
@@ -39,10 +41,10 @@ export const AuthProvider = ({children}) => {
             await auth()
               .signInWithCredential(googleCredential)
               .catch(error => {
-                alert('Something went wrong with signin:\n\n' + error);
+                Alert.alert('Something went wrong with signin:\n\n' + error);
               });
           } catch (error) {
-            alert({error});
+            Alert.alert({error});
             console.log({error})
           }
         },
@@ -83,11 +85,11 @@ export const AuthProvider = ({children}) => {
         register: async (email, password, confirmPassword) => {
           try {
             if (!email || !password || !confirmPassword) {
-              alert('Please fill Details');
+              Alert.alert('Please fill Details');
               return;
             }
             if (password !== confirmPassword) {
-              alert('Password not matched with the confirm password.');
+              Alert.alert('Password not matched with the confirm password.');
               return;
             }
             await auth()
@@ -105,7 +107,7 @@ export const AuthProvider = ({children}) => {
                   })
                   //ensure we catch any errors at this stage to advise us if something does go wrong
                   .catch(error => {
-                    alert(
+                    Alert.alert(
                       'Something went wrong with added user to firestore:\n\n' +
                         error,
                     );
@@ -113,17 +115,18 @@ export const AuthProvider = ({children}) => {
               })
               //we need to catch the whole sign up process if it fails too.
               .catch(error => {
-                alert('Something went wrong with sign up:\n\n' + error);
+                Alert.alert('Something went wrong with sign up:\n\n' + error);
               });
           } catch (e) {
-            alert(e);
+            Alert.alert(e);
           }
         },
         logout: async () => {
           try {
+            Alert.alert('Thank you for joinning !')
             await auth().signOut();
           } catch (e) {
-            alert(e);
+            Alert.alert(e);
           }
         },
       }}>
