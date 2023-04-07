@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { windowHeight, windowWidth } from '../constants/Dimensions';
 
-import DescriptionCard from '../components/DescriptionCard';
+import SinhalaDescriptionCard from '../components/SinhalaDescriptionCard';
 
 const SinhalaAlphabet = ({ navigation }) => {
 
@@ -22,105 +22,135 @@ const SinhalaAlphabet = ({ navigation }) => {
           <Text style={styles.text}>Let's Learn Alphabet</Text>
         </View>
         <ScrollView horizontal={true}>
-          <DescriptionCard
-            image={require('../assets/images/A.jpg')}
-            text1={'A for Apple'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/tier.jpeg')}
+            text1={'ට - ටයරය'}
           />
-          <DescriptionCard
-            image={require('../assets/images/B.jpg')}
-            text1={'B for Bird'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/wade.jpeg')}
+            text1={'ව - වඩේ'}
           />
-          <DescriptionCard
-            image={require('../assets/images/C.jpg')}
-            text1={'C for Crab'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/flower.jpeg')}
+            text1={'ම - මල'}
           />
-          <DescriptionCard
-            image={require('../assets/images/D.jpg')}
-            text1={'D for Dog'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/goat.jpeg')}
+            text1={'එ - එළුවා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/E.jpg')}
-            text1={'E for Elephant'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/duk.png')}
+            text1={'ඩ - duk.JPG'}
           />
-          <DescriptionCard
-            image={require('../assets/images/F.jpg')}
-            text1={'F for Fox'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/boat.jpg')}
+            text1={'ඔ - ඔරුව'}
           />
-          <DescriptionCard
-            image={require('../assets/images/G.jpg')}
-            text1={'G for Giraffe'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/mango.jpeg')}
+            text1={'ඹ - අඹ'}
           />
-          <DescriptionCard
-            image={require('../assets/images/H.jpg')}
-            text1={'H for Horse'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/dog.jpg')}
+            text1={'බ - බල්ලා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/I.jpg')}
-            text1={'I for Iguana'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/lamp.jpg')}
+            text1={'ප - පහන'}
           />
-          <DescriptionCard
-            image={require('../assets/images/J.jpg')}
-            text1={'J for Jelly'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/water.jpg')}
+            text1={'ජ - ජලය'}
           />
-          <DescriptionCard
-            image={require('../assets/images/K.jpg')}
-            text1={'K for Kangaroo'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/child.jpg')}
+            text1={'ද - දරුවා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/L.jpg')}
-            text1={'L for Lion'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/mom.png')}
+            text1={'අ - අම්මා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/M.jpg')}
-            text1={'M for Monkey'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/tree.jpeg')}
+            text1={'ග - ගස'}
           />
-          <DescriptionCard
-            image={require('../assets/images/O.jpg')}
-            text1={'O for Owl'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/swan.jpeg')}
+            text1={'හ - හංසයා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/P.jpg')}
-            text1={'P for Penguin'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/key.jpg')}
+            text1={'ය - යතුර'}
           />
-          <DescriptionCard
-            image={require('../assets/images/Q.jpg')}
-            text1={'Q for Queen'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/bf.jpeg')}
+            text1={'ස - සමනළයා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/R.jpg')}
-            text1={'R for Rabbit'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/rambutan.jpg')}
+            text1={'ර - රඹුටන්'}
           />
-          <DescriptionCard
-            image={require('../assets/images/S.jpg')}
-            text1={'S for Sheep'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/arrow.jpg')}
+            text1={'ඊ - ඊතලය'}
           />
-          <DescriptionCard
-            image={require('../assets/images/T.jpg')}
-            text1={'T for Turtle'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/broom.jpeg')}
+            text1={'ඉ - ඉදල'}
           />
-          <DescriptionCard
-            image={require('../assets/images/U.jpg')}
-            text1={'U for Umbrella'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/hoe.jpeg')}
+            text1={'උ - උදැල්ල'}
           />
-          <DescriptionCard
-            image={require('../assets/images/V.jpg')}
-            text1={'V for Vulture'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/rope.jpeg')}
+            text1={'ල - ලණුව'}
           />
-          <DescriptionCard
-            image={require('../assets/images/W.jpg')}
-            text1={'W for Whale'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/boy.jpeg')}
+            text1={'ළ - ළමයා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/X.jpg')}
-            text1={'X for Xiphias'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/fox.jpeg')}
+            text1={'න - නරියා'}
           />
-          <DescriptionCard
-            image={require('../assets/images/Y.jpg')}
-            text1={'Y for Yak'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/star.jpg')}
+            text1={'ත - තරුව'}
           />
-          <DescriptionCard
-            image={require('../assets/images/Z.jpg')}
-            text1={'Z for Zebra'}
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/scissor.jpg')}
+            text1={'ක - කතුර'}
+          />
+          <SinhalaDescriptionCard
+
+            image={require('../assets/images/sinhala/anaya.jpg')}
+            text1={'ණ - ඇණය'}
           />
         </ScrollView>
         <View style={styles.bottom}>
