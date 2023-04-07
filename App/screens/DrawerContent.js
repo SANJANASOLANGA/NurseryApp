@@ -72,15 +72,7 @@ export function DrawerContent(props) {
           </Drawer.Section>
           <Text />
           <Drawer.Section title="Learning Area">
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book" color={color} size={size} />
-              )}
-              label="Alphabet"
-              onPress={() => {
-                props.navigation.navigate('AlphabetScreenDrawer');
-              }}
-            />
+            <Text style={styles.subTitle}>සිංහල</Text>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
@@ -88,6 +80,79 @@ export function DrawerContent(props) {
               label="සිංහල හෝඩිය"
               onPress={() => {
                 props.navigation.navigate('SinhalaAlphabetScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="කෙටි වැකි"
+              onPress={() => {
+                props.navigation.navigate('PhrasesScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="ඉලක්කම්"
+              onPress={() => {
+                props.navigation.navigate('NumbersScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="හැඩ"
+              onPress={() => {
+                props.navigation.navigate('ShapesScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="පාට"
+              onPress={() => {
+                props.navigation.navigate('ColorsScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="කවි"
+              onPress={() => {
+                props.navigation.navigate('PoemsScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="පවුල"
+              onPress={() => {
+                props.navigation.navigate('MyFamScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="පාසල"
+              onPress={() => {
+                props.navigation.navigate('SchoolScreenDrawer');
+              }}
+            />
+            <Text style={styles.subTitle}>English</Text>
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="Alphabet"
+              onPress={() => {
+                props.navigation.navigate('AlphabetScreenDrawer');
               }}
             />
             <DrawerItem
@@ -233,4 +298,10 @@ const styles = StyleSheet.create({
     borderTopColor: '#f4f4f4',
     backgroundColor: '#eecdf7'
   },
+  subTitle:{
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
+    color:'#54225e'
+  }
 });
