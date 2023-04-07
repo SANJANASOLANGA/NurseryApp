@@ -32,6 +32,7 @@ import CommunityScreen from '../screens/CommunityScreen';
 import AboutScreen from '../screens/About';
 import EditProfileScreen from '../screens/EditProfileScreen';
 import AddMarkscreen from '../screens/AddMarksScreen';
+import SinhalaAlphabet from '../screens/SinhalaAlphabet';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -150,6 +151,16 @@ const HomeScreenStack = ({navigation}) => {
       <Stack.Screen
         name="AlphabetScreen"
         component={AlphabetScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -363,6 +374,39 @@ const AlphabetScreenStack = ({navigation}) => {
       <Stack.Screen
         name="AlphabetScreen"
         component={AlphabetScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const SinhalaAlphabetScreenStack = ({navigation}) => {
+  // const {user, logout} = useContext(AuthContext);
+  return (
+    <Stack.Navigator 
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -728,6 +772,10 @@ const App = () => {
         <Drawer.Screen
           name="AlphabetScreenDrawer"
           component={AlphabetScreenStack}
+        />
+        <Drawer.Screen
+          name="SinhalaAlphabetScreenStack"
+          component={SinhalaAlphabetScreenStack}
         />
         <Drawer.Screen
           name="PhrasesScreenDrawer"
