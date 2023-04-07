@@ -33,6 +33,7 @@ import AboutScreen from '../screens/About';
 import EditProfileScreen from '../screens/EditProfileScreen';
 import AddMarkscreen from '../screens/AddMarksScreen';
 import SinhalaAlphabet from '../screens/SinhalaAlphabet';
+import SinhalaNumbersScreen from '../screens/sinhala/SinhalaNumbersScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -780,14 +781,14 @@ const SinhalaPharasesScreenStack = ({ navigation }) => {
 const SinhalaNumbersScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaNumbersScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaNumbersScreen"
+        component={SinhalaNumbersScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
