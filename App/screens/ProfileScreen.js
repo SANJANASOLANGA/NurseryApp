@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
   View,
   Text,
@@ -9,15 +9,15 @@ import {
   ImageBackground,
   Modal,
 } from 'react-native';
-import {AuthContext} from '../navigation/AuthProvider';
-import {windowHeight, windowWidth} from '../constants/Dimensions';
+import { AuthContext } from '../navigation/AuthProvider';
+import { windowHeight, windowWidth } from '../constants/Dimensions';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import firestore from '@react-native-firebase/firestore';
 import PostCard from '../components/PostCard';
 
-const ProfileScreen = ({navigation, route}) => {
-  const {user, logout} = useContext(AuthContext);
+const ProfileScreen = ({ navigation, route }) => {
+  const { user, logout } = useContext(AuthContext);
 
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,7 +38,7 @@ const ProfileScreen = ({navigation, route}) => {
           // console.log('Total Posts: ', querySnapshot.size);
 
           querySnapshot.forEach(doc => {
-            const {userId, post, postImg, postTime} = doc.data();
+            const { userId, post, postImg, postTime } = doc.data();
             list.push({
               id: doc.id,
               userId,
@@ -59,7 +59,7 @@ const ProfileScreen = ({navigation, route}) => {
         setLoading(false);
       }
 
-      console.log('Posts: ', posts);
+      // console.log('Posts: ', posts);
     } catch (e) {
       console.log(e);
     }
@@ -72,7 +72,7 @@ const ProfileScreen = ({navigation, route}) => {
       .get()
       .then(documentSnapshot => {
         if (documentSnapshot.exists) {
-          console.log('User Data', documentSnapshot.data());
+          // console.log('User Data', documentSnapshot.data());
           setUserData(documentSnapshot.data());
         }
       });
@@ -84,62 +84,53 @@ const ProfileScreen = ({navigation, route}) => {
     navigation.addListener('focus', () => setLoading(!loading));
   }, [navigation, loading]);
 
-  const handleDelete = () => {};
+  const handleDelete = () => { };
 
   return (
     <ImageBackground
       source={require('../assets/images/bg.jpg')}
-      style={{flex: 1}}>
+      style={{ flex: 1 }}>
       <ScrollView>
-        <View style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Image
-            style={styles.userImg}
-            source={{
-              uri: userData
-                ? userData.userImg ||
-                  'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg'
-                : 'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg',
-            }}
-          />
-          <TouchableOpacity
-            onPress={() => setShow1(true)}
-            style={{
-              alignItems: 'center',
-            }}>
-            <MaterialCommunityIcons
-              name="logout-variant"
-              size={30}
-              style={{margin: 5}}
-            />
-            <Text>Logout</Text>
-          </TouchableOpacity>
-          <Modal transparent={true} visible={show1}>
-            <View style={{backgroundColor: '#000000aa', flex: 1}}>
-              <View style={styles.modal_view}>
-                <Text style={styles.modal_Text}>
-                  Are you sure, you want to logout ?
-                </Text>
-                <View style={styles.modal_btnWrap}>
-                  <Text />
-                  <TouchableOpacity onPress={() => logout()}>
-                    <Text style={styles.modal_btn}>Yes</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity onPress={() => setShow1(false)}>
-                    <Text style={styles.modal_btn}> No</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-            </View>
-          </Modal>
+        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+
           <Text style={styles.userName}>
-            {userData ? userData.fname || 'Test' : 'Test'}{' '}
+            {userData ? userData.fname || 'New' : 'New'}{' '}
             {userData ? userData.lname || 'User' : 'User'}
           </Text>
-          <Text>{route.params ? route.params.userId : user.uid}</Text>
           <Text style={styles.aboutUser}>
-            {userData ? userData.about || 'No details added.' : ''}
+            {userData ? userData.about || 'No about added.' : ''}
           </Text>
         </View>
+        <TouchableOpacity
+          onPress={() => setShow1(true)}
+          style={{
+            alignItems: 'center', marginTop: '7%'
+          }}>
+          <MaterialCommunityIcons
+            name="logout-variant"
+            size={30}
+            style={{ margin: 5 }}
+          />
+          <Text>Log Out</Text>
+        </TouchableOpacity>
+        <Modal transparent={true} visible={show1}>
+          <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
+            <View style={styles.modal_view}>
+              <Text style={styles.modal_Text}>
+                Are you sure, you want to logout ?
+              </Text>
+              <View style={styles.modal_btnWrap}>
+                <Text />
+                <TouchableOpacity onPress={() => logout()}>
+                  <Text style={styles.modal_btn}>Yes</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => setShow1(false)}>
+                  <Text style={styles.modal_btn}> No</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+        </Modal>
         <View
           style={{
             borderTopColor: 'black',
@@ -178,12 +169,12 @@ const ProfileScreen = ({navigation, route}) => {
           <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => navigation.navigate('EditProfileScreen')}>
-            <Text style={styles.buttonText}>Edit</Text>
+            <Text style={styles.buttonText}>Edit Profile</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => navigation.navigate('AddMarksScreen')}>
-            <Text style={styles.buttonText}>Feed</Text>
+            <Text style={styles.buttonText}>Add Your Marks</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -243,7 +234,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     margin: 20,
-    width: '35%',
+    width: '40%',
     height: windowHeight / 15,
     backgroundColor: '#8a36d1',
     padding: 10,
