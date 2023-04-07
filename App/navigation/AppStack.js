@@ -1,11 +1,11 @@
 import { Provider as PaperProvider } from 'react-native-paper'
-import React, {useContext} from 'react';
-import {View, TouchableOpacity, Image, Text} from 'react-native';
+import React, { useContext } from 'react';
+import { View, TouchableOpacity, Image, Text } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {DrawerContent} from '../screens/DrawerContent';
+import { DrawerContent } from '../screens/DrawerContent';
 
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -45,13 +45,13 @@ const NavigationDrawerStructure = props => {
   };
 
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={{ flexDirection: 'row' }}>
       <TouchableOpacity onPress={() => toggleDrawer()}>
         <MaterialCommunityIcons
           name="reorder-horizontal"
           color="black"
           size={30}
-          style={{marginLeft: 10}}
+          style={{ marginLeft: 10 }}
         />
       </TouchableOpacity>
     </View>
@@ -82,9 +82,9 @@ const TabStack = () => {
         component={ProfileScreen}
         options={{
           tabBarLabel: 'Profile',
-          tabBarIcon: ({color, size}) => (
-            <FontAwesome name="user" 
-            color={color} size={size} 
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="user"
+              color={color} size={size}
             />
           ),
         }}
@@ -94,9 +94,9 @@ const TabStack = () => {
         component={HomeScreen}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="home" 
-            color={color} size={size} 
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home"
+              color={color} size={size}
             />
           ),
         }}
@@ -106,7 +106,7 @@ const TabStack = () => {
         component={ActivityScreen}
         options={{
           tabBarLabel: 'Activity',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="script-text"
               color={color}
@@ -119,10 +119,10 @@ const TabStack = () => {
   );
 };
 
-const HomeScreenStack = ({navigation}) => {
+const HomeScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="HomeScreen"
       screenOptions={{
         headerTransparent: true,
@@ -362,10 +362,10 @@ const HomeScreenStack = ({navigation}) => {
   );
 };
 
-const AlphabetScreenStack = ({navigation}) => {
+const AlphabetScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="AlphabetScreen"
       screenOptions={{
         headerTransparent: true,
@@ -395,43 +395,10 @@ const AlphabetScreenStack = ({navigation}) => {
   );
 };
 
-const SinhalaAlphabetScreenStack = ({navigation}) => {
+const PhrasesScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
-      initialRouteName="SinhalaAlphabet"
-      screenOptions={{
-        headerTransparent: true,
-      }}
-    >
-      <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
-        options={() => ({
-          headerTitle: '',
-          headerLeft: () => (
-            <NavigationDrawerStructure navigationProps={navigation} />
-          ),
-        })}
-      />
-      <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
-        options={() => ({
-          headerTitle: '',
-          headerLeft: () => (
-            <NavigationDrawerStructure navigationProps={navigation} />
-          ),
-        })}
-      />
-    </Stack.Navigator>
-  );
-};
-
-const PhrasesScreenStack = ({navigation}) => {
-  // const {user, logout} = useContext(AuthContext);
-  return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="PhrasesScreen"
       screenOptions={{
         headerTransparent: true,
@@ -461,10 +428,10 @@ const PhrasesScreenStack = ({navigation}) => {
   );
 };
 
-const NumbersScreenStack = ({navigation}) => {
+const NumbersScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="NumbersScreen"
       screenOptions={{
         headerTransparent: true,
@@ -494,10 +461,10 @@ const NumbersScreenStack = ({navigation}) => {
   );
 };
 
-const ShapesScreenStack = ({navigation}) => {
+const ShapesScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="ShapesScreen"
       screenOptions={{
         headerTransparent: true,
@@ -527,10 +494,10 @@ const ShapesScreenStack = ({navigation}) => {
   );
 };
 
-const ColorsScreenStack = ({navigation}) => {
+const ColorsScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="ColorsScreen"
       screenOptions={{
         headerTransparent: true,
@@ -560,10 +527,10 @@ const ColorsScreenStack = ({navigation}) => {
   );
 };
 
-const PoemsScreenStack = ({navigation}) => {
+const PoemsScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="PoemsScreen"
       screenOptions={{
         headerTransparent: true,
@@ -583,10 +550,10 @@ const PoemsScreenStack = ({navigation}) => {
   );
 };
 
-const MyFamScreenStack = ({navigation}) => {
+const MyFamScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="MyFamScreen"
       screenOptions={{
         headerTransparent: true,
@@ -606,10 +573,10 @@ const MyFamScreenStack = ({navigation}) => {
   );
 };
 
-const SchoolScreenStack = ({navigation}) => {
+const SchoolScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="SchoolScreen"
       screenOptions={{
         headerTransparent: true,
@@ -629,10 +596,10 @@ const SchoolScreenStack = ({navigation}) => {
   );
 };
 
-const ProfileScreenStack = ({navigation}) => {
+const ProfileScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
+    <Stack.Navigator
       initialRouteName="ProfileScreen"
       screenOptions={{
         headerTransparent: true,
@@ -672,14 +639,14 @@ const ProfileScreenStack = ({navigation}) => {
   );
 };
 
-function ActivityStack({navigation}) {
+function ActivityStack({ navigation }) {
   // const {user, logout} = useContext(AuthContext);
   return (
-    <Stack.Navigator 
-      initialRouteName="ActivityScreen" 
+    <Stack.Navigator
+      initialRouteName="ActivityScreen"
       screenOptions={{
         headerTransparent: true,
-      }}  
+      }}
     >
       <Stack.Screen
         name="ActivityScreen"
@@ -745,6 +712,257 @@ function ActivityStack({navigation}) {
   );
 }
 
+const SinhalaAlphabetScreenStack = ({ navigation }) => {
+  // const {user, logout} = useContext(AuthContext);
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const SinhalaPharasesScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const SinhalaNumbersScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+const SinhalaShapesScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+const SinhalaColorsScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+const SinhalaPoemsScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+}; const SinhalaFamilyScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+const SinhalaScoolScreenStack = ({ navigation }) => {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaAlphabet"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+};
+
 const App = () => {
   return (
     <PaperProvider>
@@ -752,18 +970,59 @@ const App = () => {
         drawerContent={props => <DrawerContent {...props} />}
         screenOptions={{
           activeTintColor: '#faa08c',
-          itemStyle: {marginVertical: 10},
+          itemStyle: { marginVertical: 10 },
           backgroundColor: '#eeeed1',
           headerTransparent: true,
           headerShown: false,
-          inactiveBackgroundColor:'transparent',
+          inactiveBackgroundColor: 'transparent',
           // drawerActiveBackgroundColor: "transparent",
           drawerIcon: true,
           headerTransparent: true,
           // drawerStyle: { backgroundColor: 'transparent'}
         }}
-          
+
       >
+        
+        <Drawer.Screen
+          name="SinhalaAlphabetScreenStack"
+          component={SinhalaAlphabetScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaPharasesScreenStack"
+          component={SinhalaPharasesScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaNumbersScreenStack"
+          component={SinhalaNumbersScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaShapesScreenStack"
+          component={SinhalaShapesScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaColorsScreenStack"
+          component={SinhalaColorsScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaPoemsScreenStack"
+          component={SinhalaPoemsScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaFamilyScreenStack"
+          component={SinhalaFamilyScreenStack}
+        />
+        
+        <Drawer.Screen
+          name="SinhalaScoolScreenStack"
+          component={SinhalaScoolScreenStack}
+        />
+        
         <Drawer.Screen name="HomeScreenDrawer" component={HomeScreenStack} />
         <Drawer.Screen
           name="ProfileScreenDrawer"
@@ -772,10 +1031,6 @@ const App = () => {
         <Drawer.Screen
           name="AlphabetScreenDrawer"
           component={AlphabetScreenStack}
-        />
-        <Drawer.Screen
-          name="SinhalaAlphabetScreenStack"
-          component={SinhalaAlphabetScreenStack}
         />
         <Drawer.Screen
           name="PhrasesScreenDrawer"
