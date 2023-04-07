@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   card2: {
     width: 300,
     height: 100,
-    backgroundColor: '#fff',
+    backgroundColor: '#f8dcfc',
     borderRadius: 15,
     alignItems: 'center',
     justifyContent: 'center',
