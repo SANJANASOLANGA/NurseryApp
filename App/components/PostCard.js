@@ -35,7 +35,7 @@ const PostCard = ({item, onDelete, onPress}) => {
       .get()
       .then(documentSnapshot => {
         if (documentSnapshot.exists) {
-          console.log('User Data', documentSnapshot.data());
+          // console.log('User Data', documentSnapshot.data());
           setUserData(documentSnapshot.data());
         }
       });
@@ -54,6 +54,7 @@ const PostCard = ({item, onDelete, onPress}) => {
           source={{
             uri: userData
               ? userData.userImg ||
+              // '../assets/images/logo-no-background.png': '../assets/images/logo-no-background.png'
                 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'
               : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg',
           }}
