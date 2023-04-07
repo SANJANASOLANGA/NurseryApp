@@ -19,7 +19,7 @@ const SinhalaAlphabet = ({ navigation }) => {
       style={styles.main}>
       <ScrollView>
         <View style={styles.header}>
-          <Text style={styles.text}>Let's Learn Alphabet</Text>
+          <Text style={styles.text}>සිංහල හෝඩිය ඉගෙන ගනිමු</Text>
         </View>
         <ScrollView horizontal={true}>
           <SinhalaDescriptionCard
