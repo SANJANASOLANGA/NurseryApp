@@ -88,7 +88,7 @@ export function DrawerContent(props) {
               )}
               label="කෙටි වැකි"
               onPress={() => {
-                props.navigation.navigate('PhrasesScreenDrawer');
+                props.navigation.navigate('SinhalaPharasesScreenStack');
               }}
             />
             <DrawerItem
@@ -97,7 +97,7 @@ export function DrawerContent(props) {
               )}
               label="ඉලක්කම්"
               onPress={() => {
-                props.navigation.navigate('NumbersScreenDrawer');
+                props.navigation.navigate('SinhalaNumbersScreenStack');
               }}
             />
             <DrawerItem
@@ -106,7 +106,7 @@ export function DrawerContent(props) {
               )}
               label="හැඩ"
               onPress={() => {
-                props.navigation.navigate('ShapesScreenDrawer');
+                props.navigation.navigate('SinhalaShapesScreenStack');
               }}
             />
             <DrawerItem
@@ -115,7 +115,7 @@ export function DrawerContent(props) {
               )}
               label="පාට"
               onPress={() => {
-                props.navigation.navigate('ColorsScreenDrawer');
+                props.navigation.navigate('SinhalaColorsScreenStack');
               }}
             />
             <DrawerItem
@@ -124,7 +124,7 @@ export function DrawerContent(props) {
               )}
               label="කවි"
               onPress={() => {
-                props.navigation.navigate('PoemsScreenDrawer');
+                props.navigation.navigate('SinhalaPoemsScreenStack');
               }}
             />
             <DrawerItem
@@ -133,7 +133,7 @@ export function DrawerContent(props) {
               )}
               label="පවුල"
               onPress={() => {
-                props.navigation.navigate('MyFamScreenDrawer');
+                props.navigation.navigate('SinhalaFamilyScreenStack');
               }}
             />
             <DrawerItem
@@ -142,7 +142,7 @@ export function DrawerContent(props) {
               )}
               label="පාසල"
               onPress={() => {
-                props.navigation.navigate('SchoolScreenDrawer');
+                props.navigation.navigate('SinhalaScoolScreenStack');
               }}
             />
             <Text style={styles.subTitle}>English</Text>
