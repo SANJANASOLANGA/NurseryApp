@@ -43,7 +43,7 @@ export function DrawerContent(props) {
               />
               <View style={{marginLeft: 15, alignItems: 'center', alignContent: 'center'}}>
                 <Title style={styles.title}>{user.email}</Title>
-                <Caption style={styles.caption}>@{user.uid}</Caption>
+                {/* <Caption style={styles.caption}>@{user.uid}</Caption> */}
               </View>
             </View>
           </View>
@@ -79,6 +79,15 @@ export function DrawerContent(props) {
               label="Alphabet"
               onPress={() => {
                 props.navigation.navigate('AlphabetScreenDrawer');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book" color={color} size={size} />
+              )}
+              label="සිංහල හෝඩිය"
+              onPress={() => {
+                props.navigation.navigate('SinhalaAlphabetScreenStack');
               }}
             />
             <DrawerItem
