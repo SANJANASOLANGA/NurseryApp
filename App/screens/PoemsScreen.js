@@ -1,5 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import firestore from '@react-native-firebase/firestore';
+import { windowHeight, windowWidth } from '../constants/Dimensions';
 import {
+  FlatList,
   View,
   Text,
   StyleSheet,
@@ -11,6 +14,31 @@ import {
 import PoemCard from '../components/PoemCard';
 
 const PoemsScreen = ({ navigation }) => {
+  const [poems, setPoems] = useState([]);
+
+  const getPoems = async () => {
+    const subscriber = firestore()
+      .collection('EnglishPoems')
+      .onSnapshot(querySnapshot => {
+        const poems = [];
+        console.log('querySnapshot' + querySnapshot);
+        querySnapshot.forEach(documentSnapshot => {
+          poems.push({
+            ...documentSnapshot.data(),
+            key: documentSnapshot.id,
+          });
+        });
+
+        setPoems(poems);
+      });
+
+    // Unsubscribe from events when no longer in use
+    return () => subscriber();
+  }
+
+  useEffect(() => {
+    getPoems()
+  }, []);
 
   return (
     <ImageBackground
@@ -22,10 +50,29 @@ const PoemsScreen = ({ navigation }) => {
       <ScrollView>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
+            <FlatList
+              data={poems}
+              renderItem={({ item }) => (
+                <ImageBackground
+                  source={
+                    {
+                      uri: 'https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                    }
+                  }
+                  imageStyle={{ borderRadius: 15, width: windowWidth - 30, height: 500 }}
+                  style={styles.card}>
+                  <Text style={styles.text1}>{item.topic}</Text>
+                  <View style={styles.card2}>
+                    <Text style={styles.text2}>{item.body}</Text>
+                  </View>
+                  <Text style={styles.text3}>{item.author}</Text>
+                </ImageBackground>
+              )}
+            />
             <PoemCard
               text1={'The Crocodile'}
               text2={
-                'How doth the little crocodile            Improve his shining tail,            And pour the waters of the Nile                       On every golden scale!              How cheerfully he seems to grin,            How neatly spreads his claws,            And welcomes little fishes in,            With gently smiling jaws!'
+                'How doth the little crocodile\nImprove his shining tail,\nAnd pour the waters of the Nile\nOn every golden scale!\nHow cheerfully he seems to grin,\nHow neatly spreads his claws,\nAnd welcomes little fishes in,\nWith gently smiling jaws!'
               }
               text3={'Lewis Carroll'}
             />
@@ -118,5 +165,48 @@ const styles = StyleSheet.create({
   btn_txt: {
     fontSize: 20,
     color: 'white'
+  },
+  text1: {
+    fontSize: 30,
+    marginTop: 70,
+    fontWeight: '500',
+  },
+  text2: {
+    fontSize: 26,
+    textAlign: 'left',
+    marginLeft: 15,
+    marginTop: 15,
+    fontWeight: '300',
+  },
+  text3: {
+    fontSize: 20,
+    textAlign: 'right',
+    textAlignVertical: 'bottom',
+    marginLeft: 150,
+    fontStyle: 'italic',
+    marginTop: 60,
+    color: 'white'
+  },
+  card: {
+    width: 375,
+    height: 500,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    margin: 25,
+    backgroundColor: '#dfedcb',
+    borderRadius: 15,
+    elevation: 10,
+  },
+  card2: {
+    width: 335,
+    height: 270,
+    backgroundColor: '#eecdf7',
+    borderRadius: 15,
+    marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 15,
   },
 });
