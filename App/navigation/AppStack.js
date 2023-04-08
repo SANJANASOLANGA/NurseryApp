@@ -165,7 +165,7 @@ const HomeScreenStack = ({ navigation }) => {
           ),
         })}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         name="SinhalaAlphabet"
         component={SinhalaAlphabet}
         options={() => ({
@@ -174,7 +174,7 @@ const HomeScreenStack = ({ navigation }) => {
             <NavigationDrawerStructure navigationProps={navigation} />
           ),
         })}
-      />
+      /> */}
       <Stack.Screen
         name="EnglishScreen"
         component={EnglishScreen}
@@ -720,7 +720,6 @@ function ActivityStack({ navigation }) {
 }
 
 const SinhalaAlphabetScreenStack = ({ navigation }) => {
-  // const {user, logout} = useContext(AuthContext);
   return (
     <Stack.Navigator
       initialRouteName="SinhalaAlphabet"
@@ -982,54 +981,11 @@ const App = () => {
           headerTransparent: true,
           headerShown: false,
           inactiveBackgroundColor: 'transparent',
-          // drawerActiveBackgroundColor: "transparent",
           drawerIcon: true,
           headerTransparent: true,
-          // drawerStyle: { backgroundColor: 'transparent'}
         }}
 
       >
-        
-        <Drawer.Screen
-          name="SinhalaAlphabetScreenStack"
-          component={SinhalaAlphabetScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaPharasesScreenStack"
-          component={SinhalaPharasesScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaNumbersScreenStack"
-          component={SinhalaNumbersScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaShapesScreenStack"
-          component={SinhalaShapesScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaColorsScreenStack"
-          component={SinhalaColorsScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaPoemsScreenStack"
-          component={SinhalaPoemsScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaFamilyScreenStack"
-          component={SinhalaFamilyScreenStack}
-        />
-        
-        <Drawer.Screen
-          name="SinhalaScoolScreenStack"
-          component={SinhalaScoolScreenStack}
-        />
-        
         <Drawer.Screen name="HomeScreenDrawer" component={HomeScreenStack} />
         <Drawer.Screen
           name="ProfileScreenDrawer"
@@ -1063,6 +1019,46 @@ const App = () => {
         />
         <Drawer.Screen name="ActivityScreenDrawer" component={ActivityStack} />
         <Drawer.Screen name="AboutScreen" component={AboutScreen} />
+
+        <Drawer.Screen
+          name="SinhalaAlphabetScreenStack"
+          component={SinhalaAlphabetScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaPharasesScreenStack"
+          component={SinhalaPharasesScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaNumbersScreenStack"
+          component={SinhalaNumbersScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaShapesScreenStack"
+          component={SinhalaShapesScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaColorsScreenStack"
+          component={SinhalaColorsScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaPoemsScreenStack"
+          component={SinhalaPoemsScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaFamilyScreenStack"
+          component={SinhalaFamilyScreenStack}
+        />
+
+        <Drawer.Screen
+          name="SinhalaScoolScreenStack"
+          component={SinhalaScoolScreenStack}
+        />
       </Drawer.Navigator>
     </PaperProvider>
   );
