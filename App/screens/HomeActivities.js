@@ -16,12 +16,12 @@ const HomeActivities = ({navigation}) => {
       <Text style={styles.heading}>Fun Activities</Text>
       <View style={styles.button_container}>
         <ActivityButton
-          buttonTitle="Alphabet"
-          onPress={() => navigation.navigate('AlphabetQuiz')}
+          buttonTitle="සිංහල"
+          onPress={() => navigation.navigate('SinhalaActivityDrawer')}
         />
         <ActivityButton
-          buttonTitle="Phrases"
-          onPress={() => navigation.navigate('PhrasesQuiz')}
+          buttonTitle="English"
+          onPress={() => navigation.navigate('ActivityScreenDrawer')}
         />
       </View>
     </ImageBackground>
