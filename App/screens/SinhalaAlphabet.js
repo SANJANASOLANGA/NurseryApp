@@ -44,8 +44,8 @@ const SinhalaAlphabet = ({ navigation }) => {
           />
           <SinhalaDescriptionCard
 
-            image={require('../assets/images/sinhala/duk.png')}
-            text1={'ඩ - ඩක්කුව'}
+            image={require('../assets/images/sinhala/dino.jpg')}
+            text1={'ඩ - ඩයිනෝසිරස්'}
           />
           <SinhalaDescriptionCard
 
