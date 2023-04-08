@@ -65,7 +65,7 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title="Learning Area" >
+          <Drawer.Section title={<Text style={styles.title}>Learning Area</Text>}>
             <Text style={styles.subTitle}>සිංහල</Text>
             <DrawerItem
               icon={({color, size}) => (
@@ -254,7 +254,7 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title="EduKids">
+          <Drawer.Section title={<Text style={styles.title}>EduKids</Text>}>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="account-check-outline" color={color} size={size} />
@@ -295,8 +295,10 @@ export function DrawerContent(props) {
 }
 
 const styles = StyleSheet.create({
-  label:{
-    color: 'red'
+  title:{
+    color: '#54225e', 
+    fontSize:17, 
+    fontWeight:'bold'
   },
   drawerContent: {
     flex: 1,
