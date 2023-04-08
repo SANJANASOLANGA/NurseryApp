@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   card_container: {
-    marginTop: 20,
+    marginBottom: '6%',
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: "5%",
     textAlign: 'center',
   },
   card_text: {

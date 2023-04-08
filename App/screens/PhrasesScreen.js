@@ -100,7 +100,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    flex: 0.8,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomLeftRadius: 100,
@@ -115,7 +114,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: "6%",
     textAlign: 'center',
   },
   buttonText: {

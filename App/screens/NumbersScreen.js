@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomLeftRadius: 100,
@@ -80,7 +79,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: "10%",
     textAlign: 'center',
     marginBottom: 20,
   },

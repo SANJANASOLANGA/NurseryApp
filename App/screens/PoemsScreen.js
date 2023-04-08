@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, {useContext, useState} from 'react';
 import {
   View,
@@ -8,11 +7,10 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-// import {AuthContext} from '../navigation/AuthProvider';
+
 import PoemCard from '../components/PoemCard';
 
 const PoemsScreen = ({navigation}) => {
-  // const {user, logout} = useContext(AuthContext);
 
   return (
     <ImageBackground
@@ -84,7 +82,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   header: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomLeftRadius: 100,
@@ -102,7 +99,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: '5%',
     textAlign: 'center',
     marginBottom: 20,
   },
