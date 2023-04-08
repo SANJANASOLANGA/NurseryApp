@@ -35,6 +35,11 @@ import AddMarkscreen from '../screens/AddMarksScreen';
 import SinhalaAlphabet from '../screens/SinhalaAlphabet';
 import SinhalaNumbersScreen from '../screens/sinhala/SinhalaNumbersScreen';
 import SinhalaColorsScreen from '../screens/sinhala/SinhalaColorsScreen';
+import SinhalaPhrasesScreen from '../screens/sinhala/SinhalaPhrasesScreen';
+import SinhalaShapesScreen from '../screens/sinhala/SinhalaShapesScreen';
+import SinhalaPoemsScreen from '../screens/sinhala/SinhalaPoemsScreen';
+import SinhalaMyFamScreen from '../screens/sinhala/SinhalaMyFamScreen';
+import SinhalaSchoolScreen from '../screens/sinhala/SinhalaSchoolScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -750,14 +755,14 @@ const SinhalaAlphabetScreenStack = ({ navigation }) => {
 const SinhalaPharasesScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaPhrasesScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaPhrasesScreen"
+        component={SinhalaPhrasesScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -813,14 +818,14 @@ const SinhalaNumbersScreenStack = ({ navigation }) => {
 const SinhalaShapesScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaShapesScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaShapesScreen"
+        component={SinhalaShapesScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -875,14 +880,14 @@ const SinhalaColorsScreenStack = ({ navigation }) => {
 const SinhalaPoemsScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaPoemsScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaPoemsScreen"
+        component={SinhalaPoemsScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -905,14 +910,14 @@ const SinhalaPoemsScreenStack = ({ navigation }) => {
 }; const SinhalaFamilyScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaMyFamScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaMyFamScreen"
+        component={SinhalaMyFamScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -936,14 +941,14 @@ const SinhalaPoemsScreenStack = ({ navigation }) => {
 const SinhalaScoolScreenStack = ({ navigation }) => {
   return (
     <Stack.Navigator
-      initialRouteName="SinhalaAlphabet"
+      initialRouteName="SinhalaSchoolScreen"
       screenOptions={{
         headerTransparent: true,
       }}
     >
       <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
+        name="SinhalaSchoolScreen"
+        component={SinhalaSchoolScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
