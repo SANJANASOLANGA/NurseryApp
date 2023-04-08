@@ -13,26 +13,26 @@ const SinhalaActivityScreen = ({navigation}) => {
     <ImageBackground
       source={require('../../assets/images/bg.jpg')}
       style={styles.safearea}>
-      <Text style={styles.heading}>Fun Activities</Text>
+      <Text style={styles.heading}>ක්‍රියාකාරකම්</Text>
       <View style={styles.button_container}>
         <ActivityButton
-          buttonTitle="Alphabet"
+          buttonTitle="සිංහල හෝඩිය"
           onPress={() => navigation.navigate('AlphabetQuiz')}
         />
         <ActivityButton
-          buttonTitle="Phrases"
+          buttonTitle="කෙටි දෙබස්"
           onPress={() => navigation.navigate('PhrasesQuiz')}
         />
         <ActivityButton
-          buttonTitle="Numbers"
+          buttonTitle="ඉලක්කම්"
           onPress={() => navigation.navigate('NumbersQuiz')}
         />
         <ActivityButton
-          buttonTitle="Shapes"
+          buttonTitle="හැඩ"
           onPress={() => navigation.navigate('ShapesQuiz')}
         />
         <ActivityButton
-          buttonTitle="Colors"
+          buttonTitle="පාට"
           onPress={() => navigation.navigate('ColorsQuiz')}
         />
       </View>
@@ -47,14 +47,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   heading: {
-    fontSize: 40,
-    marginTop: 25,
+    fontSize: 34,
+    marginTop: '10%',
     marginBottom: 20,
     textAlign: 'center',
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   button_container: {
-    flex: 3,
-    marginTop: 20,
+    marginTop: '5%',
     alignItems: 'center',
     justifyContent: 'center',
     borderTopLeftRadius: 200,
