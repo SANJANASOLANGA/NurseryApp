@@ -36,12 +36,12 @@ export default class SinhalaMyFamScreen extends Component {
             <View style={styles.card_container}>
               <FamilyCard
                 image={require('../../assets/images/mother.jpg')}
-                text1={'Mother,'}
+                text1={'අම්මා,'}
                 text2={'is an allegory about God and the Earth. ... '}
               />
               <FamilyCard
                 image={require('../../assets/images/father.jpg')}
-                text1={'Father,'}
+                text1={'තාත්තා,'}
                 text2={' makes all the difference in a childs life. ...'}
               />
               <FamilyCard
@@ -53,21 +53,21 @@ export default class SinhalaMyFamScreen extends Component {
               />
               <FamilyCard
                 image={require('../../assets/images/grandMother.jpg')}
-                text1={'Grand Mother,'}
+                text1={'ආච්චී,'}
                 text2={
                   'is someone who has always been there for you and always will be. ...'
                 }
               />
               <FamilyCard
                 image={require('../../assets/images/grandFather.jpg')}
-                text1={'Grand Father,'}
+                text1={'සීයා,'}
                 text2={
                   'is someone with silver in his hair and gold in his heart. ...'
                 }
               />
               <FamilyCard
                 image={require('../../assets/images/uncleAndAunty.jpg')}
-                text1={'Uncle & Aunty'}
+                text1={'මාමා & නැන්දා'}
                 text2={
                   'Only who can give me a hug like my parents and keep secrets like my siblings. ...'
                 }

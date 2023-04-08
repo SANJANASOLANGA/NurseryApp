@@ -28,10 +28,10 @@ export default class SinhalaShapesScreen extends Component {
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
-              <ShapesCard image={require('../../assets/images/square.jpg')}  text='Square'/>
-              <ShapesCard image={require('../../assets/images/triangle.jpg')} text='Triangle' />
-              <ShapesCard image={require('../../assets/images/rectangle.jpg')} text='Rectangle'/>
-              <ShapesCard image={require('../../assets/images/circle.jpg')} text='Circle'/>
+              <ShapesCard image={require('../../assets/images/square.jpg')}  text='සමචතුරස්‍රය'/>
+              <ShapesCard image={require('../../assets/images/triangle.jpg')} text='ත්‍රිකෝණය' />
+              <ShapesCard image={require('../../assets/images/rectangle.jpg')} text='සෘජුකෝණාස්‍රය'/>
+              <ShapesCard image={require('../../assets/images/circle.jpg')} text='වෘත්තය'/>
             </View>
           </ScrollView>
         </View>

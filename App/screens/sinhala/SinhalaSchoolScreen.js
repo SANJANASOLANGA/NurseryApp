@@ -34,15 +34,15 @@ export default class SinhalaSchoolScreen extends Component {
             <View style={styles.card_container}>
               <SchoolCard
                 image={require('../../assets/images/principal.jpg')}
-                text1={'Principal Sir'}
+                text1={'විදුහල්පතිතුමා'}
               />
               <SchoolCard
                 image={require('../../assets/images/madam.jpg')}
-                text1={'Madam / Teacher'}
+                text1={'ගුරුතුමිය'}
               />
               <SchoolCard
                 image={require('../../assets/images/sir.jpg')}
-                text1={'Sir / Teacher'}
+                text1={'ගුරුතුමා'}
               />
             </View>
           </ScrollView>
