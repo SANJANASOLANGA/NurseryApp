@@ -27,7 +27,7 @@ export default class SinhalaSchoolScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View style={styles.header}>
-          <Text style={styles.heading}>School Members</Text>
+          <Text style={styles.heading}>පාසල</Text>
         </View>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
