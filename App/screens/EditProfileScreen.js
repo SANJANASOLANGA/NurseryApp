@@ -475,53 +475,10 @@ const EditProfileScreen = ({navigation}) => {
             opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
           }}>
           <View style={{alignItems: 'center'}}>
-            <TouchableOpacity onPress={() => this.bs.current.snapTo(0)}>
-              <View
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 15,
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}>
-                <ImageBackground
-                  source={{
-                    uri: image
-                      ? image
-                      : userData
-                      ? userData.userImg ||
-                        'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg'
-                      : 'https://cdn2.vectorstock.com/i/thumb-large/04/71/person-icon-vector-2110471.jpg',
-                  }}
-                  style={{height: 100, width: 100}}
-                  imageStyle={{borderRadius: 100}}>
-                  <View
-                    style={{
-                      flex: 1,
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                    }}>
-                    <MaterialCommunityIcons
-                      name="camera"
-                      size={35}
-                      color="#333"
-                      style={{
-                        opacity: 0.7,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        borderWidth: 1,
-                        borderColor: '#333',
-                        borderRadius: 10,
-                      }}
-                    />
-                  </View>
-                </ImageBackground>
-              </View>
-            </TouchableOpacity>
             <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold'}}>
               {userData ? userData.fname : ''} {userData ? userData.lname : ''}
             </Text>
-            <Text style={{marginBottom: 28}}>{user.uid}</Text>
+            <Text style={{marginBottom: 28}}>{userData ? userData.city : ''}, {userData ? userData.country : ''}</Text>
           </View>
 
           <View style={styles.action}>
