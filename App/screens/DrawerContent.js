@@ -152,10 +152,10 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
-              label="Activities" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              label="ක්‍රියාකාරකම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               labelStyle= {{fontSize: 18}}
               onPress={() => {
-                props.navigation.navigate('ActivityScreenDrawer');
+                props.navigation.navigate('SinhalaActivityDrawer');
               }}
             />
             <Text />
