@@ -40,6 +40,7 @@ import SinhalaShapesScreen from '../screens/sinhala/SinhalaShapesScreen';
 import SinhalaPoemsScreen from '../screens/sinhala/SinhalaPoemsScreen';
 import SinhalaMyFamScreen from '../screens/sinhala/SinhalaMyFamScreen';
 import SinhalaSchoolScreen from '../screens/sinhala/SinhalaSchoolScreen';
+import SinhalaActivityScreen from '../screens/sinhala/SinhalaActivityScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -110,7 +111,7 @@ const TabStack = () => {
       />
       <Tab.Screen
         name="ActivityScreen"
-        component={ActivityScreen}
+        component={ActivityScreen} // methanata danna one sinhala english activity 2ma thiyana eka
         options={{
           tabBarLabel: 'Activity',
           tabBarIcon: ({ color, size }) => (
@@ -647,7 +648,6 @@ const ProfileScreenStack = ({ navigation }) => {
 };
 
 function ActivityStack({ navigation }) {
-  // const {user, logout} = useContext(AuthContext);
   return (
     <Stack.Navigator
       initialRouteName="ActivityScreen"
@@ -658,6 +658,78 @@ function ActivityStack({ navigation }) {
       <Stack.Screen
         name="ActivityScreen"
         component={ActivityScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="AlphabetQuiz"
+        component={AlphabetQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="PhrasesQuiz"
+        component={PhrasesQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="NumbersQuiz"
+        component={NumbersQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="ShapesQuiz"
+        component={ShapesQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="ColorsQuiz"
+        component={ColorsQuiz}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function SinhalaActivityStack({ navigation }) {
+  return (
+    <Stack.Navigator
+      initialRouteName="SinhalaActivityScreen"
+      screenOptions={{
+        headerTransparent: true,
+      }}
+    >
+      <Stack.Screen
+        name="SinhalaActivityScreen"
+        component={SinhalaActivityScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -1018,6 +1090,7 @@ const App = () => {
           component={SchoolScreenStack}
         />
         <Drawer.Screen name="ActivityScreenDrawer" component={ActivityStack} />
+        <Drawer.Screen name="SinhalaActivityDrawer" component={SinhalaActivityStack} />
         <Drawer.Screen name="AboutScreen" component={AboutScreen} />
 
         <Drawer.Screen
