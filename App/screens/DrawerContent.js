@@ -1,15 +1,10 @@
 import React, {useContext} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {
-  useTheme,
   Avatar,
   Title,
-  Caption,
-  Paragraph,
   Drawer,
   Text,
-  TouchableRipple,
-  Switch,
 } from 'react-native-paper';
 import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 
@@ -18,10 +13,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {AuthContext} from '../navigation/AuthProvider';
 
 export function DrawerContent(props) {
-  const paperTheme = useTheme();
   const {user, logout} = useContext(AuthContext);
-
-  const {signOut, toggleTheme} = React.useContext(AuthContext);
 
   return (
     <View style={{flex: 1}}>
@@ -86,7 +78,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="කෙටි වැකි"
+              label="කෙටි දෙබස්"
               onPress={() => {
                 props.navigation.navigate('SinhalaPharasesScreenStack');
               }}
@@ -244,8 +236,6 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
         </View>
-      </DrawerContentScrollView>
-      <Drawer.Section style={styles.bottomDrawerSection}>
         <DrawerItem
           icon={({color, size}) => (
             <Icon name="exit-to-app" color={color} size={size} />
@@ -255,7 +245,18 @@ export function DrawerContent(props) {
             logout();
           }}
         />
-      </Drawer.Section>
+      </DrawerContentScrollView>
+      {/* <Drawer.Section style={styles.bottomDrawerSection}>
+        <DrawerItem
+          icon={({color, size}) => (
+            <Icon name="exit-to-app" color={color} size={size} />
+          )}
+          label="Sign Out"
+          onPress={() => {
+            logout();
+          }}
+        />
+      </Drawer.Section> */}
     </View>
   );
 }
@@ -296,7 +297,8 @@ const styles = StyleSheet.create({
   bottomDrawerSection: {
     marginBottom: 15,
     borderTopColor: '#f4f4f4',
-    backgroundColor: '#eecdf7'
+    backgroundColor: '#eecdf7',
+    borderEndColor: '#eecdf7'
   },
   subTitle:{
     textAlign: 'center',
