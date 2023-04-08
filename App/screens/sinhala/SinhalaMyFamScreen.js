@@ -29,7 +29,7 @@ export default class SinhalaMyFamScreen extends Component {
       <ImageBackground
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
-        <Text style={styles.heading}>Family Members</Text>
+        <Text style={styles.heading}>පවුලේ සාමාජිකයන්</Text>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: '7%',
+    marginTop: '10%',
     textAlign: 'center',
   },
   card_text: {
