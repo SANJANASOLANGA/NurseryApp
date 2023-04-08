@@ -41,6 +41,7 @@ import SinhalaPoemsScreen from '../screens/sinhala/SinhalaPoemsScreen';
 import SinhalaMyFamScreen from '../screens/sinhala/SinhalaMyFamScreen';
 import SinhalaSchoolScreen from '../screens/sinhala/SinhalaSchoolScreen';
 import SinhalaActivityScreen from '../screens/sinhala/SinhalaActivityScreen';
+import HomeActivities from '../screens/HomeActivities';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -110,8 +111,8 @@ const TabStack = () => {
         }}
       />
       <Tab.Screen
-        name="ActivityScreen"
-        component={ActivityScreen} // methanata danna one sinhala english activity 2ma thiyana eka
+        name="HomeActivities"
+        component={HomeActivities} // methanata danna one sinhala english activity 2ma thiyana eka
         options={{
           tabBarLabel: 'Activity',
           tabBarIcon: ({ color, size }) => (
