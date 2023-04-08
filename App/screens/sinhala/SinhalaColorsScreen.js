@@ -43,7 +43,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}><Text style={{color: 'black'}}>Yellow</Text></Text>
+                <Text style={styles.card_text}><Text style={{color: 'black'}}>කහ</Text></Text>
               </View>
               <View
                 style={{
@@ -54,7 +54,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Green</Text>
+                <Text style={styles.card_text}>කොළ</Text>
               </View>
               <View
                 style={{
@@ -65,7 +65,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Blue</Text>
+                <Text style={styles.card_text}>නිල්</Text>
               </View>
               <View
                 style={{
@@ -76,7 +76,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Orange</Text>
+                <Text style={styles.card_text}>තැඹිලි</Text>
               </View>
               <View
                 style={{
@@ -87,7 +87,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Red</Text>
+                <Text style={styles.card_text}>රතු</Text>
               </View>
               <View
                 style={{
@@ -98,7 +98,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}><Text style={{color: 'black'}}>Pink</Text></Text>
+                <Text style={styles.card_text}><Text style={{color: 'black'}}>රෝස</Text></Text>
               </View>
               <View
                 style={{
@@ -109,7 +109,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Purple</Text>
+                <Text style={styles.card_text}>දම්</Text>
               </View>
               <View
                 style={{
@@ -120,7 +120,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Brown</Text>
+                <Text style={styles.card_text}>දුඹුරු</Text>
               </View>
               <View
                 style={{
@@ -131,18 +131,7 @@ export default class SinhalaColorsScreen extends Component {
                   marginTop: 35,
                   elevation: 10,
                 }}>
-                <Text style={styles.card_text}>Gray</Text>
-              </View>
-              <View
-                style={{
-                  backgroundColor: 'gold',
-                  width: 150,
-                  height: 100,
-                  borderRadius: 15,
-                  marginTop: 35,
-                  elevation: 10,
-                }}>
-                <Text style={styles.card_text}>Gold</Text>
+                <Text style={styles.card_text}>අළු</Text>
               </View>
               <View
                 style={{
@@ -154,7 +143,7 @@ export default class SinhalaColorsScreen extends Component {
                   elevation: 10,
                 }}>
                   <Text style={styles.card_text}>
-                <Text style={{color: 'black'}}>White</Text></Text>
+                <Text style={{color: 'black'}}>සුදු</Text></Text>
               </View>
               <View
                 style={{
@@ -166,7 +155,7 @@ export default class SinhalaColorsScreen extends Component {
                   elevation: 10,
                 }}>
                 <Text style={styles.card_text}>
-                  <Text style={{color: 'white'}}>Black</Text>
+                  <Text style={{color: 'white'}}>කළු</Text>
                 </Text>
               </View>
             </View>
