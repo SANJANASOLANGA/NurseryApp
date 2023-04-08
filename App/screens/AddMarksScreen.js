@@ -157,7 +157,7 @@ const AddMarkscreen = ({navigation}) => {
           </StatusWrapper>
         ) : (
           <TouchableOpacity style={styles.buttonContainer} onPress={submitPost}>
-            <Text style={styles.buttonText}>Feed</Text>
+            <Text style={styles.buttonText}>Add Your Post</Text>
           </TouchableOpacity>
         )}
         <TouchableOpacity
