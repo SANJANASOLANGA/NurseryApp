@@ -184,7 +184,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   header: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomLeftRadius: 100,
@@ -201,6 +200,7 @@ const styles = StyleSheet.create({
     fontSize: 33,
     marginTop: 10,
     textAlign: 'center',
+    marginTop: "7%",
   },
   buttonContainer: {
     width: '40%',
