@@ -17,7 +17,7 @@ const SinhalaPoemsScreen = ({ navigation }) => {
 
   const getPoems = async () => {
     const subscriber = firestore()
-      .collection('EnglishPoems')
+      .collection('SinhalaPoems')
       .onSnapshot(querySnapshot => {
         const poems = [];
         console.log('querySnapshot' + querySnapshot);
