@@ -72,7 +72,7 @@ const TabStack = () => {
       screenOptions={() => ({
         headerShown: false,
         tabBarActiveTintColor: '#c055e0',
-        tabBarInactiveTintColor: '#666565',
+        tabBarInactiveTintColor: '#54225e',
         tabBarLabelStyle: {
           fontSize: 15,
         },
