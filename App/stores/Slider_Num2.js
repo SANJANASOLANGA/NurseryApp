@@ -13,52 +13,52 @@ const ENTRIES1 = [
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670235.jpg',
-    subtitle: 'එක        I ',
+    subtitle: '         එක        1 ',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670248.jpg',
-    subtitle: 'දෙක        2',
+    subtitle: '         දෙක        2',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670259.jpg',
-    subtitle: 'තුන      3',
+    subtitle: '         තුන      3',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670268.jpg',
-    subtitle: 'හතර       4',
+    subtitle: '         හතර       4',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/vector-illustration-set-school-kids-colorful-number-five-shaped-back-to-117688066.jpg',
-    subtitle: 'පහ       5',
+    subtitle: '         පහ       5',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671597.jpg',
-    subtitle: 'හය      6',
+    subtitle: '         හය       6',
   },
   {
     illustration:
       'https://image.freepik.com/free-vector/flashcard-kindergarten-preschool-learning-counting-number-7-with-number-kids_283146-308.jpg',
-    subtitle: 'හත      7',
+    subtitle: '         හත      7',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671629.jpg',
-    subtitle: 'අට      8',
+    subtitle: '         අට      8',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671640.jpg',
-    subtitle: 'නවය       9',
+    subtitle: '         නවය       9',
   },
   {
     illustration:
       'https://previews.123rf.com/images/kankhem/kankhem2008/kankhem200800049/153296259-flashcard-for-kindergarten-and-preschool-learning-to-counting-number-10-with-a-number-of-kids-.jpg',
-    subtitle: 'නවය        10',
+    subtitle: '         දහය       10',
   },
 ];
 const {width: screenWidth} = Dimensions.get('window');

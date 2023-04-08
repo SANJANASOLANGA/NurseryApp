@@ -13,52 +13,52 @@ const ENTRIES1 = [
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670235.jpg',
-    subtitle: 'ONE        I ',
+    subtitle: '         ONE        1 ',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670248.jpg',
-    subtitle: 'TWO        2',
+    subtitle: '         TWO        2',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670259.jpg',
-    subtitle: 'THREE      3',
+    subtitle: '         THREE      3',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182670268.jpg',
-    subtitle: 'FOUR       4',
+    subtitle: '         FOUR       4',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/vector-illustration-set-school-kids-colorful-number-five-shaped-back-to-117688066.jpg',
-    subtitle: 'FIVE       5',
+    subtitle: '         FIVE       5',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671597.jpg',
-    subtitle: 'SIX        6',
+    subtitle: '         SIX        6',
   },
   {
     illustration:
       'https://image.freepik.com/free-vector/flashcard-kindergarten-preschool-learning-counting-number-7-with-number-kids_283146-308.jpg',
-    subtitle: 'SEVEN      7',
+    subtitle: '         SEVEN      7',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671629.jpg',
-    subtitle: 'EIGHT      8',
+    subtitle: '         EIGHT      8',
   },
   {
     illustration:
       'https://thumbs.dreamstime.com/z/flashcard-kindergarten-preschool-learning-to-counting-number-number-kids-flashcard-kindergarten-182671640.jpg',
-    subtitle: 'NINE       9',
+    subtitle: '         NINE       9',
   },
   {
     illustration:
       'https://previews.123rf.com/images/kankhem/kankhem2008/kankhem200800049/153296259-flashcard-for-kindergarten-and-preschool-learning-to-counting-number-10-with-a-number-of-kids-.jpg',
-    subtitle: 'TEN        10',
+    subtitle: '         TEN       10',
   },
 ];
 const {width: screenWidth} = Dimensions.get('window');
