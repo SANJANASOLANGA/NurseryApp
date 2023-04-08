@@ -6,7 +6,7 @@ import {
   TouchableHighlight,
   ImageBackground,
 } from 'react-native';
-
+import { windowHeight, windowWidth } from '../constants/Dimensions';
 export default function PoemCard({text1, text2, text3, name}) {
   return (
     <ImageBackground
@@ -15,7 +15,7 @@ export default function PoemCard({text1, text2, text3, name}) {
 }        // uri: 'https://www.pexels.com/photo/photo-of-purple-paint-3527786/',
         // require('../assets/images/poem2.jpeg')
       }
-      imageStyle={{borderRadius: 15, width: 375, height: 500}}
+      imageStyle={{borderRadius: 15, width: windowWidth - 30, height: 500}}
       style={styles.card}>
       <Text style={styles.text}>{text1}</Text>
       <View style={styles.card2}>
