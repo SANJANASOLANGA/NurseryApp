@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import firestore from '@react-native-firebase/firestore';
-import { windowHeight, windowWidth } from '../constants/Dimensions';
+
 import {
   FlatList,
   View,
@@ -11,7 +11,6 @@ import {
   ScrollView,
 } from 'react-native';
 
-import PoemCard from '../components/PoemCard';
 
 const PoemsScreen = ({ navigation }) => {
   const [poems, setPoems] = useState([]);
@@ -49,62 +48,23 @@ const PoemsScreen = ({ navigation }) => {
       </View>
       <ScrollView>
         <View style={styles.body}>
-          <ScrollView horizontal={true}>
-            <FlatList
-              data={poems}
-              renderItem={({ item }) => (
-                <ImageBackground
-                  source={
-                    {
-                      uri: 'https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-                    }
-                  }
-                  imageStyle={{ borderRadius: 15, width: windowWidth - 30, height: 500 }}
-                  style={styles.card}>
-                  <Text style={styles.text1}>{item.topic}</Text>
-                  <View style={styles.card2}>
-                    <Text style={styles.text2}>{item.body}</Text>
-                  </View>
-                  <Text style={styles.text3}>{item.author}</Text>
-                </ImageBackground>
-              )}
-            />
-            <PoemCard
-              text1={'The Crocodile'}
-              text2={
-                'How doth the little crocodile\nImprove his shining tail,\nAnd pour the waters of the Nile\nOn every golden scale!\nHow cheerfully he seems to grin,\nHow neatly spreads his claws,\nAnd welcomes little fishes in,\nWith gently smiling jaws!'
-              }
-              text3={'Lewis Carroll'}
-            />
-            <PoemCard
-              text1={'The Purple Cow'}
-              text2={
-                'I never saw a purple cow,               I never hope to see one,               But I can tell you, anyhow,            I’d rather see than be one!'
-              }
-              text3={'Gelett Burgess'}
-            />
-            <PoemCard
-              text1={'Hey Diddle Diddle'}
-              text2={
-                'Hey diddle diddle,                          The Cat and the fiddle,                 The Cow jumped over the moon,                                           The little Dog laughed to see such sport,                                    And the Dish ran away with the Spoon.'
-              }
-              text3={'Author Unknown'}
-            />
-            <PoemCard
-              text1={'Twinkle, Twinkle, Little Star'}
-              text2={
-                'Twinkle, twinkle, little star,            How I wonder what you are.                      Up above the world so high,            Like a diamond in the sky.            Twinkle, twinkle, little star,            How I wonder what you are!'
-              }
-              text3={'Jane Taylor'}
-            />
-            <PoemCard
-              text1={'Star Light, Star Bright'}
-              text2={
-                'Star light, start bright,                The first star I see tonight;             I wish I may, I wish I might,            Have the wish I wish tonight.'
-              }
-              text3={'Author Unknown'}
-            />
-          </ScrollView>
+          <FlatList
+            horizontal={true}
+            data={poems}
+            renderItem={({ item }) => (
+              <ImageBackground
+                source={require('../assets/images/poems.png')}
+                imageStyle={{ borderRadius: 15, width: 375, height: 500 }}
+                style={styles.card}
+              >
+                <Text style={styles.text1}>{item.topic}</Text>
+                <View style={styles.card2}>
+                  <Text style={styles.text2}>{item.body}</Text>
+                </View>
+                <Text style={styles.text3}>{item.author}</Text>
+              </ImageBackground>
+            )}
+          />
         </View>
         <View style={styles.bottom}>
           <TouchableOpacity
@@ -170,12 +130,14 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginTop: 70,
     fontWeight: '500',
+    color: '#54225e'
   },
   text2: {
     fontSize: 26,
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
+    fontStyle: 'italic',
     fontWeight: '300',
   },
   text3: {
@@ -185,7 +147,8 @@ const styles = StyleSheet.create({
     marginLeft: 150,
     fontStyle: 'italic',
     marginTop: 60,
-    color: 'white'
+    color: '#300240',
+    fontWeight: '500',
   },
   card: {
     width: 375,
@@ -195,7 +158,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     margin: 25,
-    backgroundColor: '#dfedcb',
+    backgroundColor: '#eecdf7',
     borderRadius: 15,
     elevation: 10,
   },
