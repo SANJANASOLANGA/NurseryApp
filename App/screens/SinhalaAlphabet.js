@@ -21,7 +21,7 @@ const SinhalaAlphabet = ({ navigation }) => {
         <View style={styles.header}>
           <Text style={styles.text}>සිංහල හෝඩිය ඉගෙන ගනිමු</Text>
         </View>
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} style={{marginBottom:5}}>
           <SinhalaDescriptionCard
 
             image={require('../assets/images/sinhala/tier.jpeg')}
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderBottomLeftRadius: 100,
     borderBottomRightRadius: 100,
-    marginTop: 20,
+    marginTop: '4%',
   },
   bottom: {
     flex: 1,
@@ -197,9 +197,10 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
   text: {
-    fontSize: 33,
-    marginTop: 10,
+    fontSize: 30,
     textAlign: 'center',
+    marginLeft:5,
+    marginRight:5,
     marginTop: "7%",
   },
   buttonContainer: {
