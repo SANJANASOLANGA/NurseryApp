@@ -14,7 +14,7 @@ import {AuthContext} from '../navigation/AuthProvider';
 
 export function DrawerContent(props) {
   const {user, logout} = useContext(AuthContext);
-
+  
   return (
     <View style={{flex: 1}}>
       <DrawerContentScrollView style={{backgroundColor: '#eecdf7'}} {...props}>
@@ -46,7 +46,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="home-outline" color={color} size={size} />
               )}
-              label="Home"
+              label="Home" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('HomeScreenDrawer');
               }}
@@ -55,7 +55,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="account-outline" color={color} size={size} />
               )}
-              label="Profile"
+              label="Profile" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('ProfileScreenDrawer');
               }}
@@ -63,13 +63,13 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title="Learning Area">
+          <Drawer.Section title="Learning Area" >
             <Text style={styles.subTitle}>සිංහල</Text>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="සිංහල හෝඩිය"
+              label="සිංහල හෝඩිය" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaAlphabetScreenStack');
               }}
@@ -78,7 +78,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="කෙටි දෙබස්"
+              label="කෙටි දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaPharasesScreenStack');
               }}
@@ -87,7 +87,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="ඉලක්කම්"
+              label="ඉලක්කම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaNumbersScreenStack');
               }}
@@ -96,7 +96,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="හැඩ"
+              label="හැඩ" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaShapesScreenStack');
               }}
@@ -105,7 +105,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="පාට"
+              label="පාට" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaColorsScreenStack');
               }}
@@ -114,7 +114,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="කවි"
+              label="කවි" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaPoemsScreenStack');
               }}
@@ -123,7 +123,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="පවුල"
+              label="පවුල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaFamilyScreenStack');
               }}
@@ -132,7 +132,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="පාසල"
+              label="පාසල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SinhalaScoolScreenStack');
               }}
@@ -142,7 +142,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Alphabet"
+              label="Alphabet" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('AlphabetScreenDrawer');
               }}
@@ -151,7 +151,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Phrases"
+              label="Phrases" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('PhrasesScreenDrawer');
               }}
@@ -160,7 +160,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Numbers"
+              label="Numbers" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('NumbersScreenDrawer');
               }}
@@ -169,7 +169,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Shapes"
+              label="Shapes" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('ShapesScreenDrawer');
               }}
@@ -178,7 +178,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Colors"
+              label="Colors" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('ColorsScreenDrawer');
               }}
@@ -187,7 +187,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Poems"
+              label="Poems" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('PoemsScreenDrawer');
               }}
@@ -196,7 +196,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="Family"
+              label="Family" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('MyFamScreenDrawer');
               }}
@@ -205,7 +205,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book" color={color} size={size} />
               )}
-              label="School"
+              label="School" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('SchoolScreenDrawer');
               }}
@@ -215,7 +215,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
-              label="Activities"
+              label="Activities" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('ActivityScreenDrawer');
               }}
@@ -228,7 +228,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="account-check-outline" color={color} size={size} />
               )}
-              label="About Us"
+              label="About Us" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               onPress={() => {
                 props.navigation.navigate('AboutScreen');
               }}
@@ -238,9 +238,9 @@ export function DrawerContent(props) {
         </View>
         <DrawerItem
           icon={({color, size}) => (
-            <Icon name="exit-to-app" color={color} size={size} />
+            <Icon name="exit-to-app" color={'#54225e'} size={size} />
           )}
-          label="Sign Out"
+          label="Sign Out" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
           onPress={() => {
             logout();
           }}
@@ -262,6 +262,9 @@ export function DrawerContent(props) {
 }
 
 const styles = StyleSheet.create({
+  label:{
+    color: 'red'
+  },
   drawerContent: {
     flex: 1,
   },
@@ -272,6 +275,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 3,
     fontWeight: 'bold',
+    color: '#54225e'
   },
   caption: {
     fontSize: 14,
@@ -298,7 +302,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderTopColor: '#f4f4f4',
     backgroundColor: '#eecdf7',
-    borderEndColor: '#eecdf7'
+    borderEndColor: '#eecdf7',
   },
   subTitle:{
     textAlign: 'center',
