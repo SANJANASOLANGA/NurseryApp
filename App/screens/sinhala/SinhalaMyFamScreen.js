@@ -1,5 +1,4 @@
-/* eslint-disable react-native/no-inline-styles */
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
@@ -9,7 +8,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import FamilyCard from '../../components/Family';
+import SinhalaFamilyCard from '../../components/SinhalaFamily';
 export default class SinhalaMyFamScreen extends Component {
   constructor() {
     super();
@@ -30,47 +29,44 @@ export default class SinhalaMyFamScreen extends Component {
       <ImageBackground
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
-          <Text style={styles.heading}>Family Members</Text>
+        <Text style={styles.heading}>Family Members</Text>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
-              <FamilyCard
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/mother.jpg')}
-                text1={'අම්මා,'}
-                text2={'is an allegory about God and the Earth. ... '}
+                text1={'අම්මා'}
               />
-              <FamilyCard
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/father.jpg')}
-                text1={'තාත්තා,'}
-                text2={' makes all the difference in a childs life. ...'}
+                text1={'තාත්තා'}
               />
-              <FamilyCard
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/brotherAndSister.jpg')}
-                text1={'Brother & Sister'}
-                text2={
-                  'Childhood becomes special when you share it with your sibling. ...'
-                }
+                text1={'අක්කා සහ අයියා'}
               />
-              <FamilyCard
+              <SinhalaFamilyCard
+
+                image={require('../../assets/images/brotherAndSister.jpg')}
+                text1={'නංගී සහ මල්ලී'}
+              />
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/grandMother.jpg')}
-                text1={'ආච්චී,'}
-                text2={
-                  'is someone who has always been there for you and always will be. ...'
-                }
+                text1={'ආච්චී'}
               />
-              <FamilyCard
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/grandFather.jpg')}
-                text1={'සීයා,'}
-                text2={
-                  'is someone with silver in his hair and gold in his heart. ...'
-                }
+                text1={'සීයා'}
               />
-              <FamilyCard
+              <SinhalaFamilyCard
+
                 image={require('../../assets/images/uncleAndAunty.jpg')}
-                text1={'මාමා & නැන්දා'}
-                text2={
-                  'Only who can give me a hug like my parents and keep secrets like my siblings. ...'
-                }
+                text1={'මාමා සහ නැන්දා'}
               />
             </View>
           </ScrollView>
@@ -108,13 +104,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   footer: {
-    flex: 0.8,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'flex-end',
     justifyContent: 'space-around',
     alignSelf: 'flex-end',
-    marginBottom: '3%',
+    marginBottom: '8%',
+    marginRight:'4%'
   },
   images: {
     width: 60,
@@ -124,9 +120,8 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: '7%',
     textAlign: 'center',
-    marginBottom: 20,
   },
   card_text: {
     fontSize: 25,
