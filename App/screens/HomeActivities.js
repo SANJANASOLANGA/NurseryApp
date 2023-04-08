@@ -19,6 +19,7 @@ const HomeActivities = ({ navigation }) => {
         <ImageBackground
           style={styles.card}
           source={require('../assets/images/sinhalaActivity.jpg')}
+          imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius:30}}
         >
           <View>
             <TouchableHighlight
@@ -32,6 +33,7 @@ const HomeActivities = ({ navigation }) => {
         <ImageBackground
           style={styles.card}
           source={require('../assets/images/english.jpg')}
+          imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius:30}}
         >
           <View>
             <TouchableHighlight
@@ -76,14 +78,10 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   card: {
-    width: 400,
-    height: 350,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
     marginBottom: 125,
-    marginLeft: 12,
-    elevation: 10,
     width: 350,
     height: 320,
     borderRadius: 50,
