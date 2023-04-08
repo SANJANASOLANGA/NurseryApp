@@ -21,7 +21,7 @@ const HomeScreen = ({navigation}) => {
         style={styles.logo}
         source={require('../assets/images/logo.png')}
       /> */}
-      <Text style={styles.text}>Hello !</Text>
+      <Text style={styles.text}>Welcome</Text>
       <Text style={styles.heading}>Let's Start Your</Text>
       <Text style={styles.heading}>Learning Journey !</Text>
       <Text />
@@ -78,11 +78,13 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     marginRight: 28,
     marginBottom: 30,
-    fontWeight: '300',
+    fontWeight: '500',
+    color: '#54225e',
   },
   heading: {
     fontSize: 36,
     textAlign: 'center',
-    fontWeight: '300',
+    color: '#54225e',
+    fontWeight: 'bold',
   },
 });
