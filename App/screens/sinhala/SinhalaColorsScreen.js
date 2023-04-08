@@ -190,7 +190,6 @@ const styles = StyleSheet.create({
     flex: 7.2,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
   },
   card_container: {
     marginTop: 20,
@@ -222,12 +221,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 20,
     marginTop: "7%",
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   card_text: {
     fontSize: 25,
     textAlign: 'center',
     marginTop: 30,
-    color: 'white'
+    color: 'white',
+    fontWeight: 'bold'
   },
   button: {
     width: 120,

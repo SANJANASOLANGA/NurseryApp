@@ -180,7 +180,6 @@ const styles = StyleSheet.create({
     flex: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 10,
     marginLeft: 10,
   },
   header: {
@@ -202,6 +201,8 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     marginRight: 5,
     marginTop: "7%",
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   buttonContainer: {
     width: '40%',

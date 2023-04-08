@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
     flex: 8,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 50,
   },
   card_container: {
     marginTop: 20,
@@ -79,8 +78,10 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: 10,
+    marginTop: '10%',
     textAlign: 'center',
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   card_text: {
     fontSize: 33,

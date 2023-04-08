@@ -1,5 +1,5 @@
-import React, {useRef, useState, useEffect} from 'react';
-import Carousel, {ParallaxImage} from 'react-native-snap-carousel';
+import React, { useRef, useState, useEffect } from 'react';
+import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
 import {
   View,
   Text,
@@ -61,7 +61,7 @@ const ENTRIES1 = [
     subtitle: '         TEN       10',
   },
 ];
-const {width: screenWidth} = Dimensions.get('window');
+const { width: screenWidth } = Dimensions.get('window');
 
 const Slider_Num = props => {
   const [entries, setEntries] = useState([]);
@@ -78,12 +78,12 @@ const Slider_Num = props => {
     setEntries(ENTRIES1);
   }, []);
 
-  const renderItem = ({item, index}, parallaxProps) => {
+  const renderItem = ({ item, index }, parallaxProps) => {
     return (
       <View>
         <View style={styles.item}>
           <ParallaxImage
-            source={{uri: item.illustration}}
+            source={{ uri: item.illustration }}
             containerStyle={styles.imageContainer}
             style={styles.image}
             parallaxFactor={0.19}
@@ -94,7 +94,8 @@ const Slider_Num = props => {
           style={{
             fontSize: 35,
             marginTop: 30,
-            fontWeight: '400',
+            color: '#54225e',
+            fontWeight: 'bold',
           }}>
           {item.subtitle}
         </Text>

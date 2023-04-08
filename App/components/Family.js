@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 
 export default function FamilyCard({text1, text2, image}) {
   return (
@@ -28,6 +27,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
+    color: '#54225e',
     fontWeight: 'bold',
   },
   text2: {
@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
+    color: '#54225e',
+    fontWeight: 500
   },
   text3: {
     fontSize: 25,

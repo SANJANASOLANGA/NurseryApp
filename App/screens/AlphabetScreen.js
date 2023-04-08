@@ -150,7 +150,6 @@ const styles = StyleSheet.create({
     flex: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 10,
     marginLeft: 10,
   },
   header: {
@@ -170,6 +169,8 @@ const styles = StyleSheet.create({
     fontSize: 33,
     marginTop: "7%",
     textAlign: 'center',
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   buttonContainer: {
     width: '40%',

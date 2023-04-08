@@ -88,7 +88,6 @@ const styles = StyleSheet.create({
     flex: 7,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
   },
   header: {
     alignItems: 'center',
@@ -108,9 +107,11 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 33,
-    marginTop: '5%',
+    marginTop: '10%',
     textAlign: 'center',
     marginBottom: 20,
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   button: {
     width: 120,
@@ -121,6 +122,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     margin: 10,
     elevation: 10,
+    marginRight:'20%'
   },
   btn_txt: {
     fontSize: 20,
@@ -148,7 +150,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     marginTop: 60,
     color: '#300240',
-    fontWeight: '500',
+    fontWeight: 'bold',
   },
   card: {
     width: 375,

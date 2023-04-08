@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: 'left',
     fontWeight: 'bold',
+    color: '#54225e',
   },
   text3: {
     fontSize: 25,

@@ -104,6 +104,8 @@ const styles = StyleSheet.create({
     marginTop: '7%',
     textAlign: 'center',
     marginBottom: 20,
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   card_text: {
     fontSize: 25,

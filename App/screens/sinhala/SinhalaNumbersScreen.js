@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
     flex: 8,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 50,
   },
   container1: {
     justifyContent: 'center',
@@ -79,6 +78,8 @@ const styles = StyleSheet.create({
     marginTop: "10%",
     textAlign: 'center',
     marginBottom: 20,
+    color: '#54225e',
+    fontWeight: 'bold',
   },
   button: {
     width: 120,

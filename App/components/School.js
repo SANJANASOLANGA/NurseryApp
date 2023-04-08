@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   text2: {
     fontSize: 30,
     textAlign: 'left',
+    color: '#54225e',
     fontWeight: 'bold',
   },
   text3: {
