@@ -415,7 +415,7 @@ const SinhalaNumbersQuiz = ({ navigation }) => {
       </View>
       <View style={styles.footer}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('NumbersScreen')}
+          onPress={() => navigation.navigate('SinhalaNumbersScreen')}
           style={styles.button}>
           <Text style={styles.btn_txt}>Lesson</Text>
         </TouchableOpacity>

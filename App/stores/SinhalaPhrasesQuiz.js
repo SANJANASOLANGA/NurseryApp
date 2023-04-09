@@ -415,7 +415,7 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
       </View>
       <View style={styles.footer}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('PhrasesScreen')}
+          onPress={() => navigation.navigate('SinhalaPhrasesScreen')}
           style={styles.button}>
           <Text style={styles.btn_txt}>Lesson</Text>
         </TouchableOpacity>
