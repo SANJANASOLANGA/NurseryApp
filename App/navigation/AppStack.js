@@ -137,7 +137,7 @@ const HomeScreenStack = ({ navigation }) => {
   // const {user, logout} = useContext(AuthContext);
   return (
     <Stack.Navigator
-      initialRouteName="HomeScreen"
+      initialRouteName="TabStack"
       screenOptions={{
         headerTransparent: true,
       }}
