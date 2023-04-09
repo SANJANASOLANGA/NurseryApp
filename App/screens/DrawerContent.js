@@ -153,7 +153,7 @@ export function DrawerContent(props) {
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
               label="ක්‍රියාකාරකම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 18}}
+              labelStyle= {{fontSize: 15}}
               onPress={() => {
                 props.navigation.navigate('SinhalaActivityDrawer');
               }}
@@ -246,7 +246,7 @@ export function DrawerContent(props) {
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
               label="Activities" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 18}}
+              labelStyle= {{fontSize: 16}}
               onPress={() => {
                 props.navigation.navigate('ActivityScreenDrawer');
               }}
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
   subTitle:{
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 16,
     color:'#54225e'
   }
 });
