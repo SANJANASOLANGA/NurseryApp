@@ -1,28 +1,28 @@
 export default colorsData = [
     {
-      question: 'What’s the Color of Sky?',
-      options: ['Blue', 'White', 'Yellow', 'Pink'],
-      correct_option: 'Blue',
+      question: 'අපේ දත් මොනපාටද?',
+      options: ['කහ පාටයි', 'සුදු පාටයි', 'රතු පාටයි', 'කළු පාටයි'],
+      correct_option: 'සුදු පාටයි',
     },
     {
-      question: 'What’s the Color of Leaves?',
-      options: ['Blue', 'White', 'Green', 'Yellow'],
-      correct_option: 'Green',
+      question: 'ගස්වල තිබෙන කොළ මොන පාටද?',
+      options: ['නිල් පාටයි', 'කහ පාටයි', 'රතු පාටයි', 'කොළ පාටයි'],
+      correct_option: 'කොළ පාටයි',
     },
     {
-      question: 'What’s the Color of Apples?',
-      options: ['Red', 'Orange', 'Purple', 'Black'],
-      correct_option: 'Red',
+      question: 'අලියා මොන පාටද?',
+      options: ['නිල් පාටයි', 'කළු පාටයි', 'කහ පාටයි', 'රතු පාටයි'],
+      correct_option: 'කළු පාටයි',
     },
     {
-      question: 'What’s the Color of Blackboard?',
-      options: ['White', 'Orange', 'Green', 'Black'],
-      correct_option: 'Black',
+      question: 'අහස මොන පාටද? ',
+      options: ['නිල් පාටයි', 'කහ පාටයි', 'රතු පාටයි', 'කොළ පාටයි'],
+      correct_option: ' පාටයි',
     },
     {
-      question: 'What’s the Color of Grapes?',
-      options: ['Red', 'Orange', 'Purple', 'Black'],
-      correct_option: 'Purple',
+      question: 'ඇපල් ගෙඩිය මොන පාටද?',
+      options: ['කහ පාටයි', 'රතු පාටයි', 'නිල් පාටයි', 'කොළ පාටයි'],
+      correct_option: 'රතු පාටයි',
     },
   ];
   

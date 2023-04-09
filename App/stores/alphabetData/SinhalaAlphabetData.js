@@ -1,34 +1,33 @@
-/* eslint-disable no-undef */
 export default alphabetData = [
     {
-      question: 'ssssssssssss',
-      options: ['T', 'A', 'C', 'E'],
-      correct_option: 'T',
+      question: '"අම්මා" යන්නේ මුළ අකුර සොයන්න.',
+      options: ['ස', 'හ', 'අ', 'ට'],
+      correct_option: 'අ',
     },
     {
-      question: 'What’s the word which is not begin with letter "A" ?',
-      options: ['Apple', 'Mango', 'Ant', 'Axe'],
-      correct_option: 'Mango',
+      question: '"ට"යෙදෙන වචනය සොයන්න.',
+      options: ['බල්ලා', 'ගස', 'මල', 'ටයරය'],
+      correct_option: 'ටයරය',
     },
     {
-      question: 'What’s the letter which is not in the word "MOTHER" ?',
-      options: ['E', 'O', 'M', 'W'],
-      correct_option: 'W',
+      question: '"බසය"යන්නෙහි නොමැති අකුර සොයන්න.',
+      options: ['ල', 'බ', 'ය', 'ස'],
+      correct_option: 'ල',
     },
     {
-      question: 'Select the suitable letter collection match with the givin word. "BUTTERFLY" ',
+      question: '"මල" යන්න හා සමාන අකුරු සහිත වචනය සොයන්න',
       options: [
-        'B T U T R E F L Y',
-        'Y L F R E T T U B',
-        'B U T T E R F L Y',
-        'L F Y B U T T E R',
+        'ඉ ර',
+        'ග ස',
+        'පො ත',
+        'ම ල',
       ],
-      correct_option: 'B U T T E R F L Y',
+      correct_option: 'ම ල',
     },
     {
-      question: 'Select the un-suitable letter collection match with the givin word. "RAT',
-      options: ['MAT', 'RAT', 'ART', 'TAR'],
-      correct_option: 'MAT',
+      question: '"ර" සහිත වචනය සොයන්න.',
+      options: ['ගස', 'මල', 'යතුර', 'පහන'],
+      correct_option: 'යතුර',
     },
   ];
   
