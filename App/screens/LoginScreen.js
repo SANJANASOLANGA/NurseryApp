@@ -79,13 +79,13 @@ const LoginScreen = ({navigation}) => {
             onPress={() => fbLogin()}
           /> */}
 
-          <SocialButton
+          {/* <SocialButton
             buttonTitle="Sign In with Google"
             btnType="google"
             color="#de4d41"
             backgroundColor="#bfd4e7"
             onPress={() => googleLogin()}
-          />
+          /> */}
         </View>
       ) : null}
 
@@ -121,17 +121,20 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 28,
     marginTop: 10,
-    // color: "#8a36d1"
+    color: "#54225e",
+    fontWeight: 'bold'
   },
   navButton: {
     marginTop: 15,
   },
   forgotButton: {
     marginVertical: 35,
+    color: "#54225e",
   },
   navButtonText: {
     fontSize: 18,
     fontWeight: '500',
     marginBottom: 15,
+    color: "#54225e",
   },
 });

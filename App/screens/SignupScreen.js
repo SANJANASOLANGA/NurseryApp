@@ -345,6 +345,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 28,
     marginBottom: 40,
+    color: "#54225e",
   },
   navButton: {
     marginTop: 35,
@@ -352,6 +353,7 @@ const styles = StyleSheet.create({
   navButtonText: {
     fontSize: 18,
     fontWeight: '500',
+    color: "#54225e",
   },
   textPrivate: {
     flexDirection: 'row',
@@ -363,6 +365,7 @@ const styles = StyleSheet.create({
   color_textPrivate: {
     fontSize: 13,
     fontWeight: '400',
+    color: "#54225e",
   },
   modal_view: {
     flex: 1,
