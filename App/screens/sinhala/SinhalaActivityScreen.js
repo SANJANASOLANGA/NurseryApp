@@ -17,23 +17,23 @@ const SinhalaActivityScreen = ({navigation}) => {
       <View style={styles.button_container}>
         <ActivityButton
           buttonTitle="සිංහල හෝඩිය"
-          onPress={() => navigation.navigate('AlphabetQuiz')}
+          onPress={() => navigation.navigate('SinhalaAlphabetQuiz')}
         />
         <ActivityButton
           buttonTitle="කෙටි දෙබස්"
-          onPress={() => navigation.navigate('PhrasesQuiz')}
+          onPress={() => navigation.navigate('SinhalaPhrasesQuiz')}
         />
         <ActivityButton
           buttonTitle="ඉලක්කම්"
-          onPress={() => navigation.navigate('NumbersQuiz')}
+          onPress={() => navigation.navigate('SinhalaNumbersQuiz')}
         />
         <ActivityButton
           buttonTitle="හැඩ"
-          onPress={() => navigation.navigate('ShapesQuiz')}
+          onPress={() => navigation.navigate('SinhalaShapesQuiz')}
         />
         <ActivityButton
           buttonTitle="පාට"
-          onPress={() => navigation.navigate('ColorsQuiz')}
+          onPress={() => navigation.navigate('SinhalaColorsQuiz')}
         />
       </View>
     </ImageBackground>
