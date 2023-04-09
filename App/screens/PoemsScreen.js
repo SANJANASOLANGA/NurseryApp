@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     textAlign: 'left',
     marginLeft: 15,
-    marginTop: 15,
+    marginRight: 15,
     fontStyle: 'italic',
     fontWeight: '300',
   },
