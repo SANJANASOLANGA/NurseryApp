@@ -42,6 +42,11 @@ import SinhalaMyFamScreen from '../screens/sinhala/SinhalaMyFamScreen';
 import SinhalaSchoolScreen from '../screens/sinhala/SinhalaSchoolScreen';
 import SinhalaActivityScreen from '../screens/sinhala/SinhalaActivityScreen';
 import HomeActivities from '../screens/HomeActivities';
+import SinhalaAlphabetQuiz from '../stores/SinhalaAlphabetQuiz';
+import SinhalaPhrasesQuiz from '../stores/SinhalaPhrasesQuiz';
+import SinhalaNumbersQuiz from '../stores/SinhalaNumbersQuiz';
+import SinhalaShapesQuiz from '../stores/SinhalaShapesQuiz';
+import SinhalaColorsQuiz from '../stores/SinhalaColorsQuiz';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -739,8 +744,8 @@ function SinhalaActivityStack({ navigation }) {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaAlphabetQuiz"
+        component={SinhalaAlphabetQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -749,8 +754,8 @@ function SinhalaActivityStack({ navigation }) {
         })}
       />
       <Stack.Screen
-        name="PhrasesQuiz"
-        component={PhrasesQuiz}
+        name="SinhalaPhrasesQuiz"
+        component={SinhalaPhrasesQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -759,8 +764,8 @@ function SinhalaActivityStack({ navigation }) {
         })}
       />
       <Stack.Screen
-        name="NumbersQuiz"
-        component={NumbersQuiz}
+        name="SinhalaNumbersQuiz"
+        component={SinhalaNumbersQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -769,8 +774,8 @@ function SinhalaActivityStack({ navigation }) {
         })}
       />
       <Stack.Screen
-        name="ShapesQuiz"
-        component={ShapesQuiz}
+        name="SinhalaShapesQuiz"
+        component={SinhalaShapesQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -779,8 +784,8 @@ function SinhalaActivityStack({ navigation }) {
         })}
       />
       <Stack.Screen
-        name="ColorsQuiz"
-        component={ColorsQuiz}
+        name="SinhalaColorsQuiz"
+        component={SinhalaColorsQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -811,8 +816,8 @@ const SinhalaAlphabetScreenStack = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaAlphabetQuiz"
+        component={SinhalaAlphabetQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -843,8 +848,8 @@ const SinhalaPharasesScreenStack = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaPhrasesQuiz"
+        component={SinhalaPhrasesQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -875,8 +880,8 @@ const SinhalaNumbersScreenStack = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaNumbersQuiz"
+        component={SinhalaNumbersQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -906,8 +911,8 @@ const SinhalaShapesScreenStack = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaShapesQuiz"
+        component={SinhalaShapesQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
@@ -937,8 +942,8 @@ const SinhalaColorsScreenStack = ({ navigation }) => {
         })}
       />
       <Stack.Screen
-        name="AlphabetQuiz"
-        component={AlphabetQuiz}
+        name="SinhalaColorsQuiz"
+        component={SinhalaColorsQuiz}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
