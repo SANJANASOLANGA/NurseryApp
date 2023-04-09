@@ -20,7 +20,7 @@ export default class SinhalaNumbersScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNumQuiz = () => {
-    this.props.navigation.navigate('NumbersQuiz');
+    this.props.navigation.navigate('SinhalaNumbersQuiz');
   };
 
   render() {

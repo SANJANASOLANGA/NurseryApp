@@ -20,7 +20,7 @@ export default class SinhalaColorsScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToQuiz = () => {
-    this.props.navigation.navigate('ColorsQuiz');
+    this.props.navigation.navigate('SinhalaColorsQuiz');
   };
 
   render() {

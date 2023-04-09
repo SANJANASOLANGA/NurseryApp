@@ -160,7 +160,7 @@ const SinhalaAlphabet = ({ navigation }) => {
             <Text style={styles.btn_txt}>Menu</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate('AlphabetQuiz')}
+            onPress={() => navigation.navigate('SinhalaAlphabetQuiz')}
             style={styles.button}>
             <Text style={styles.btn_txt}>Activity</Text>
           </TouchableOpacity>

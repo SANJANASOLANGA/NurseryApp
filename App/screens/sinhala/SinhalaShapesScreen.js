@@ -17,14 +17,14 @@ export default class SinhalaShapesScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToShapesQuiz = () => {
-    this.props.navigation.navigate('ShapesQuiz');
+    this.props.navigation.navigate('SinhalaShapesQuiz');
   };
   render() {
     return (
       <ImageBackground
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
-        <Text style={styles.heading}>SHAPES</Text>
+        <Text style={styles.heading}>හැඩ</Text>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
