@@ -475,14 +475,14 @@ const EditProfileScreen = ({navigation}) => {
             opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
           }}>
           <View style={{alignItems: 'center'}}>
-            <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold'}}>
+            <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold', color: '#54225e'}}>
               {userData ? userData.fname : ''} {userData ? userData.lname : ''}
             </Text>
-            <Text style={{marginBottom: 28}}>{userData ? userData.city : ''}, {userData ? userData.country : ''}</Text>
+            <Text style={{marginBottom: 28, color: '#54225e'}}>{userData ? userData.city : ''}, {userData ? userData.country : ''}</Text>
           </View>
 
           <View style={styles.action}>
-            <FontAwesome name="user-o" size={20} />
+            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               placeholder="First Name"
               autoCorrect={false}
@@ -492,7 +492,7 @@ const EditProfileScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.action}>
-            <FontAwesome name="user-o" size={20} />
+            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               placeholder="Last Name"
               value={userData ? userData.lname : ''}
@@ -502,7 +502,7 @@ const EditProfileScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.action}>
-            <Ionicons name="ios-clipboard-outline" size={20} />
+            <Ionicons name="ios-clipboard-outline" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               multiline
               numberOfLines={3}
@@ -514,7 +514,7 @@ const EditProfileScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.action}>
-            <Feather name="phone" size={20} />
+            <Feather name="phone" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               placeholder="Phone"
               keyboardType="number-pad"
@@ -526,7 +526,7 @@ const EditProfileScreen = ({navigation}) => {
           </View>
 
           <View style={styles.action}>
-            <FontAwesome name="globe" size={20} />
+            <FontAwesome name="globe" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               placeholder="Country"
               autoCorrect={false}
@@ -536,7 +536,7 @@ const EditProfileScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.action}>
-            <MaterialCommunityIcons name="map-marker-outline" size={20} />
+            <MaterialCommunityIcons name="map-marker-outline" size={20} style={{ color: '#54225e' }}/>
             <TextInput
               placeholder="City"
               autoCorrect={false}
@@ -646,6 +646,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: Platform.OS === 'ios' ? 0 : -12,
     paddingLeft: 10,
+    color: '#54225e',
+    borderColor: '#54225e'
   },
   buttonContainer: {
     margin: 20,

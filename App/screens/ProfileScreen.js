@@ -109,9 +109,9 @@ const ProfileScreen = ({ navigation, route }) => {
           <MaterialCommunityIcons
             name="logout-variant"
             size={30}
-            style={{ margin: 5 }}
+            style={{ margin: 5, color: '#54225e' }}
           />
-          <Text>Log Out</Text>
+          <Text style={{color: '#54225e', fontWeight: 'bold'}}>Log Out</Text>
         </TouchableOpacity>
         <Modal transparent={true} visible={show1}>
           <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
@@ -133,7 +133,7 @@ const ProfileScreen = ({ navigation, route }) => {
         </Modal>
         <View
           style={{
-            borderTopColor: 'black',
+            borderTopColor: '#54225e',
             borderTopWidth: 1,
             width: '80%',
             alignItems: 'center',
@@ -147,6 +147,7 @@ const ProfileScreen = ({ navigation, route }) => {
               fontWeight: '400',
               textAlign: 'center',
               marginTop: 30,
+              color: '#54225e'
             }}>
             Dashboard
           </Text>
@@ -199,11 +200,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 30,
     marginBottom: 10,
+    color: '#54225e',
   },
   aboutUser: {
     fontSize: 25,
     fontWeight: '600',
     textAlign: 'center',
+    color: '#54225e'
   },
   userBtnWrapper: {
     alignItems: 'center',
