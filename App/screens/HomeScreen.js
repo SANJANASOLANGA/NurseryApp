@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import {
   ImageBackground,
   Text,
@@ -8,11 +8,11 @@ import {
   ScrollView,
   View,
 } from 'react-native';
-import {AuthContext} from '../navigation/AuthProvider';
+import { AuthContext } from '../navigation/AuthProvider';
 import NavigationCard from '../components/NavigationCard';
 
-const HomeScreen = ({navigation}) => {
-  const {user, logout} = useContext(AuthContext);
+const HomeScreen = ({ navigation }) => {
+  const { user, logout } = useContext(AuthContext);
   return (
     <ImageBackground
       source={require('../assets/images/bg.jpg')}
@@ -30,6 +30,26 @@ const HomeScreen = ({navigation}) => {
         <NavigationCard
           text={"Let's Go !"}
           image={require('../assets/images/english.jpg')}
+          onPress={() => navigation.navigate('EnglishScreen')}
+        />
+        <NavigationCard
+          text={"Let's Go !"}
+          image={require('../assets/images/maths.jpg')}
+          onPress={() => navigation.navigate('MathsScreen')}
+        />
+        <NavigationCard
+          text={"Let's Go !"}
+          image={require('../assets/images/crafts.jpg')}
+          onPress={() => navigation.navigate('CreativeScreen')}
+        />
+        <NavigationCard
+          text={"Let's Go !"}
+          image={require('../assets/images/social.jpg')}
+          onPress={() => navigation.navigate('CommunityScreen')}
+        />
+        <NavigationCard
+          text={"Let's Go !"}
+          image={require('../assets/images/sinhalaActivity.jpg')}
           onPress={() => navigation.navigate('EnglishScreen')}
         />
         <NavigationCard
