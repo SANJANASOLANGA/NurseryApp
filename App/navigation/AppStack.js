@@ -172,16 +172,6 @@ const HomeScreenStack = ({ navigation }) => {
           ),
         })}
       />
-      {/* <Stack.Screen
-        name="SinhalaAlphabet"
-        component={SinhalaAlphabet}
-        options={() => ({
-          headerTitle: '',
-          headerLeft: () => (
-            <NavigationDrawerStructure navigationProps={navigation} />
-          ),
-        })}
-      /> */}
       <Stack.Screen
         name="EnglishScreen"
         component={EnglishScreen}
@@ -365,6 +355,56 @@ const HomeScreenStack = ({ navigation }) => {
       <Stack.Screen
         name="ActivityScreenStack"
         component={ActivityStack}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaAlphabet"
+        component={SinhalaAlphabet}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaPhrasesScreen"
+        component={SinhalaPhrasesScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaNumbersScreen"
+        component={SinhalaNumbersScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaShapesScreen"
+        component={SinhalaShapesScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaColorsScreen"
+        component={SinhalaColorsScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
