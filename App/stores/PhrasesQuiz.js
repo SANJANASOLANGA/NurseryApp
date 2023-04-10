@@ -459,7 +459,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginHorizontal: 10,
-    marginTop: 60,
+    marginTop: '40%',
     backgroundColor: '#8a36d1',
     borderRadius: 15,
     elevation: 5,
