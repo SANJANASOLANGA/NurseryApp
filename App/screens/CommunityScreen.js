@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
@@ -39,65 +39,48 @@ export default class CommunityScreen extends Component {
           <Text style={styles.heading}>Community</Text>
         </View>
         <ScrollView>
-        <View style={styles.body}>
-          <View style={styles.card_container}>
-            <Card
-              text={'Do you want to know Alphabet? Come try it !'}
-              main={'FAMILY'}
-              onPress={this.NavigateToMyFam}
-              name={'book'}
-            />
-            <Card
-              text={'Do you want to know Phrases? Come try it !'}
-              main={'SCHOOL'}
-              onPress={this.NavigateToSchool}
-              name={'book'}
-            />
-            <View style={{elevation: 10}}>
-              <Image
-                source={{
-                  uri: 'https://media.istockphoto.com/vectors/young-teacher-with-joyful-kids-vector-id1251666012?k=20&m=1251666012&s=612x612&w=0&h=B3qK4v77dodW1bdh6dRksJ5bBSxn1Pu4TXMTQLvA-LI=',
-                }}
-                style={{
-                  width: 375,
-                  height: 260,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  alignSelf: 'center',
-                  margin: 10,
-                  backgroundColor: '#e6f1f2',
-                  borderRadius: 15,
-                }}
+          <View style={styles.body}>
+            <View style={styles.card_container}>
+              <Card
+                text={'Do you want to know Alphabet? Come try it !'}
+                main={'FAMILY'}
+                onPress={this.NavigateToMyFam}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                text={'Do you want to know Phrases? Come try it !'}
+                main={'SCHOOL'}
+                onPress={this.NavigateToSchool}
+                image={require('../assets/images/english.jpg')}
               />
             </View>
           </View>
-        </View>
-        <View style={styles.footer}>
-        <FontAwesome.Button
-            name="chevron-left"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            onPress={this.NavigateToBack}
-            borderRadius={10}
-          />
-          <MaterialCommunityIcons.Button
-            onPress={this.NavigateToHome}
-            name="home"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            style={{marginLeft: 5}}
-          />
-          <FontAwesome.Button
-            name="chevron-right"
-            size={25}
-            color="white"
-            backgroundColor="#8a36d1"
-            borderRadius={10}
-            onPress={this.NavigateToNext}
-          />
-        </View>
+          <View style={styles.footer}>
+            <FontAwesome.Button
+              name="chevron-left"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              onPress={this.NavigateToBack}
+              borderRadius={10}
+            />
+            <MaterialCommunityIcons.Button
+              onPress={this.NavigateToHome}
+              name="home"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              style={{ marginLeft: 5 }}
+            />
+            <FontAwesome.Button
+              name="chevron-right"
+              size={25}
+              color="white"
+              backgroundColor="#8a36d1"
+              borderRadius={10}
+              onPress={this.NavigateToNext}
+            />
+          </View>
         </ScrollView>
       </ImageBackground>
     );

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
@@ -40,61 +40,62 @@ export default class MathsScreen extends Component {
       <ImageBackground
         source={require('../assets/images/bg.jpg')}
         style={styles.screen}>
-          <ScrollView>
+
         <View>
           <Text style={styles.heading}>Fun of Maths</Text>
         </View>
-        <View style={styles.body}>
-          <View style={styles.card_container}>
-            <Card
-              main={'NUMBERS'}
-              onPress={this.NavigateToAlphabet}
-              name={'book'}
+        <ScrollView>
+          <View style={styles.body}>
+            <View style={styles.card_container}>
+              <Card
+                main={'NUMBERS'}
+                onPress={this.NavigateToAlphabet}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                text={'Do you want to know Phrases? Come try it !'}
+                main={'SHAPES'}
+                onPress={this.NavigateToShapes}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                main={'Quiz of Numbers'}
+                onPress={this.NavigateToNumbersQuiz}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                main={'Quiz of Shapes'}
+                onPress={this.NavigateToShapesQuiz}
+                image={require('../assets/images/english.jpg')}
+              />
+            </View>
+          </View>
+          <View style={styles.footer}>
+            <FontAwesome.Button
+              name="chevron-left"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              onPress={this.NavigateToBack}
+              borderRadius={10}
             />
-            <Card
-              text={'Do you want to know Phrases? Come try it !'}
-              main={'SHAPES'}
-              onPress={this.NavigateToShapes}
-              name={'book'}
+            <MaterialCommunityIcons.Button
+              onPress={this.NavigateToHome}
+              name="home"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              style={{ marginLeft: 5 }}
             />
-            <Card
-              main={'Quiz of Numbers'}
-              onPress={this.NavigateToNumbersQuiz}
-              name={'edit'}
-            />
-            <Card
-              main={'Quiz of Shapes'}
-              onPress={this.NavigateToShapesQuiz}
-              name={'edit'}
+            <FontAwesome.Button
+              name="chevron-right"
+              size={25}
+              color="white"
+              backgroundColor="#8a36d1"
+              borderRadius={10}
+              onPress={this.NavigateToNext}
             />
           </View>
-        </View>
-        <View style={styles.footer}>
-        <FontAwesome.Button
-            name="chevron-left"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            onPress={this.NavigateToBack}
-            borderRadius={10}
-          />
-          <MaterialCommunityIcons.Button
-            onPress={this.NavigateToHome}
-            name="home"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            style={{marginLeft: 5}}
-          />
-          <FontAwesome.Button
-            name="chevron-right"
-            size={25}
-            color="white"
-            backgroundColor="#8a36d1"
-            borderRadius={10}
-            onPress={this.NavigateToNext}
-          />
-        </View>
         </ScrollView>
       </ImageBackground>
     );

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
@@ -44,59 +44,62 @@ export default class MathsScreen extends Component {
           <Text style={styles.heading}>Happy English</Text>
         </View>
         <ScrollView>
-        <View style={styles.body}>
-          <View style={styles.card_container}>
-            <Card
-              text={'Do you want to know Alphabet? Come try it !'}
-              main={'ALPHABET'}
-              onPress={this.NavigateToAlphabet}
-              name={'book'}
+          <View style={styles.body}>
+            <View style={styles.card_container}>
+              <Card
+                // text={'Do you want to know Alphabet? Come try it !'}
+                main={'ALPHABET'}
+                onPress={this.NavigateToAlphabet}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                // text={'Do you want to know Phrases? Come try it !'}
+                main={'PHRASES'}
+                onPress={this.NavigateToPhrases}
+                image={require('../assets/images/english.jpg')}
+              // name={'book'}
+              />
+              <Card
+                main={'Quiz of Alphabet'}
+                onPress={this.NavigateToAlphabetQuiz}
+                image={require('../assets/images/english.jpg')}
+              // name={'edit'}
+              />
+              <Card
+                main={'Quiz of Phrases'}
+                onPress={this.NavigateToPhrasesQuiz}
+                image={require('../assets/images/english.jpg')}
+              // name={'edit'}
+              />
+            </View>
+          </View>
+
+          <View style={styles.footer}>
+            <FontAwesome.Button
+              name="chevron-left"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              onPress={this.NavigateToBack}
+              borderRadius={10}
             />
-            <Card
-              text={'Do you want to know Phrases? Come try it !'}
-              main={'PHRASES'}
-              onPress={this.NavigateToPhrases}
-              name={'book'}
+            <MaterialCommunityIcons.Button
+              onPress={this.NavigateToHome}
+              name="home"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              style={{ marginLeft: 5 }}
             />
-            <Card
-              main={'Quiz of Alphabet'}
-              onPress={this.NavigateToAlphabetQuiz}
-              name={'edit'}
-            />
-            <Card
-              main={'Quiz of Phrases'}
-              onPress={this.NavigateToPhrasesQuiz}
-              name={'edit'}
+            <FontAwesome.Button
+              name="chevron-right"
+              size={25}
+              color="white"
+              backgroundColor="#8a36d1"
+              borderRadius={10}
+              onPress={this.NavigateToNext}
             />
           </View>
-        </View>
-        
-        <View style={styles.footer}>
-        <FontAwesome.Button
-            name="chevron-left"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            onPress={this.NavigateToBack}
-            borderRadius={10}
-          />
-          <MaterialCommunityIcons.Button
-            onPress={this.NavigateToHome}
-            name="home"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            style={{marginLeft: 5}}
-          />
-          <FontAwesome.Button
-            name="chevron-right"
-            size={25}
-            color="white"
-            backgroundColor="#8a36d1"
-            borderRadius={10}
-            onPress={this.NavigateToNext}
-          />
-        </View>
         </ScrollView>
       </ImageBackground>
     );

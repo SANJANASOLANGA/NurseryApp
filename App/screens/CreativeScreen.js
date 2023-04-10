@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
@@ -41,71 +41,53 @@ export default class CreativeScreen extends Component {
           <Text style={styles.heading}>Creative Kids</Text>
         </View>
         <ScrollView>
-        <View style={styles.body}>
-          <View style={styles.card_container}>
-            <Card
-              text={'Do you want to know Alphabet? Come try it !'}
-              main={'COLORS'}
-              onPress={this.NavigateToColors}
-              name={'book'}
-            />
-            <Card
-              text={'Do you want to know Phrases? Come try it !'}
-              main={'POEMS'}
-              onPress={this.NavigateToPoems}
-              name={'book'}
-            />
-
-            <View>
-              <Image
-                source={{
-                  uri: 'https://thumbs.dreamstime.com/z/cute-little-girl-show-close-mouth-finger-pose-227545171.jpg',
-                }}
-                style={{
-                  width: 180,
-                  height: 260,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  alignSelf: 'center',
-                  margin: 10,
-                  backgroundColor: '#e6f1f2',
-                  borderRadius: 15,
-                }}
+          <View style={styles.body}>
+            <View style={styles.card_container}>
+              <Card
+                text={'Do you want to know Alphabet? Come try it !'}
+                main={'COLORS'}
+                onPress={this.NavigateToColors}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                text={'Do you want to know Phrases? Come try it !'}
+                main={'POEMS'}
+                onPress={this.NavigateToPoems}
+                image={require('../assets/images/english.jpg')}
+              />
+              <Card
+                main={'Quiz of Colors'}
+                onPress={this.NavigateToColorsQuiz}
+                image={require('../assets/images/english.jpg')}
               />
             </View>
-            <Card
-              main={'Quiz of Colors'}
-              onPress={this.NavigateToColorsQuiz}
-              name={'edit'}
+          </View>
+          <View style={styles.footer}>
+            <FontAwesome.Button
+              name="chevron-left"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              onPress={this.NavigateToBack}
+              borderRadius={10}
+            />
+            <MaterialCommunityIcons.Button
+              onPress={this.NavigateToHome}
+              name="home"
+              size={25}
+              backgroundColor="#8a36d1"
+              color="white"
+              style={{ marginLeft: 5 }}
+            />
+            <FontAwesome.Button
+              name="chevron-right"
+              size={25}
+              color="white"
+              backgroundColor="#8a36d1"
+              borderRadius={10}
+              onPress={this.NavigateToNext}
             />
           </View>
-        </View>
-        <View style={styles.footer}>
-        <FontAwesome.Button
-            name="chevron-left"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            onPress={this.NavigateToBack}
-            borderRadius={10}
-          />
-          <MaterialCommunityIcons.Button
-            onPress={this.NavigateToHome}
-            name="home"
-            size={25}
-            backgroundColor="#8a36d1"
-            color="white"
-            style={{marginLeft: 5}}
-          />
-          <FontAwesome.Button
-            name="chevron-right"
-            size={25}
-            color="white"
-            backgroundColor="#8a36d1"
-            borderRadius={10}
-            onPress={this.NavigateToNext}
-          />
-        </View>
         </ScrollView>
       </ImageBackground>
     );
