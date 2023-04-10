@@ -143,12 +143,13 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 40,
+    fontSize: 33,
     fontWeight: 'bold',
     textAlign: 'center',
     textAlignVertical: 'center',
-    padding: 10,
-    marginBottom: 40,
+    marginTop: '8%',
+    color: '#54225e',
+    marginBottom: '5%'
   },
   card_text: {
     fontSize: 25,
