@@ -12,7 +12,7 @@ import {
 import { AuthContext } from '../navigation/AuthProvider';
 import { windowHeight, windowWidth } from '../constants/Dimensions';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import PostCard from '../components/PostCard';
 
@@ -94,11 +94,12 @@ const ProfileScreen = ({ navigation, route }) => {
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
 
           <Text style={styles.userName}>
-            {userData ? userData.fname || 'New' : 'New'}{' '}
-            {userData ? userData.lname || 'User' : 'User'}
+            {/* {userData ? userData.fname || 'New' : 'New'}{' '}
+            {userData ? userData.lname || 'User' : 'User'} */}
+            {auth().currentUser.email}
           </Text>
           <Text style={styles.aboutUser}>
-            {userData ? userData.about || 'No about added.' : ''}
+            {userData ? userData.about || 'Please update your profile !' : ''}
           </Text>
         </View>
         <TouchableOpacity
@@ -203,7 +204,7 @@ const styles = StyleSheet.create({
     color: '#54225e',
   },
   aboutUser: {
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: '600',
     textAlign: 'center',
     color: '#54225e'
