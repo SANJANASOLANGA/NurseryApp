@@ -47,6 +47,10 @@ import SinhalaPhrasesQuiz from '../stores/SinhalaPhrasesQuiz';
 import SinhalaNumbersQuiz from '../stores/SinhalaNumbersQuiz';
 import SinhalaShapesQuiz from '../stores/SinhalaShapesQuiz';
 import SinhalaColorsQuiz from '../stores/SinhalaColorsQuiz';
+import SinhalaScreen from '../screens/sinhala/SinhalaScreen';
+import SinhalaMathsScreen from '../screens/sinhala/SinhalaMathsScreen';
+import SinhalaCommunityScreen from '../screens/sinhala/SinhalaCommunityScreen';
+import SinhalaCreativeScreen from '../screens/sinhala/SinhalaCreativeScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -405,6 +409,46 @@ const HomeScreenStack = ({ navigation }) => {
       <Stack.Screen
         name="SinhalaColorsScreen"
         component={SinhalaColorsScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaScreen"
+        component={SinhalaScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaMathsScreen"
+        component={SinhalaMathsScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaCommunityScreen"
+        component={SinhalaCommunityScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
+      <Stack.Screen
+        name="SinhalaCreativeScreen"
+        component={SinhalaCreativeScreen}
         options={() => ({
           headerTitle: '',
           headerLeft: () => (
