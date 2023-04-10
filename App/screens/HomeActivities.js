@@ -16,34 +16,34 @@ const HomeActivities = ({ navigation }) => {
       <Text style={styles.heading}>Fun Activities</Text>
       <View style={styles.button_container}>
         <ScrollView horizontal={true}>
-        <ImageBackground
-          style={styles.card}
-          source={require('../assets/images/sinhalaActivity.jpg')}
-          imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius:30}}
-        >
-          <View>
-            <TouchableHighlight
-              underlayColor={'white'}
-              style={styles.button}
-              onPress={() => navigation.navigate('SinhalaActivityDrawer')}>
-              <Text style={styles.textArea_text}>සිංහල</Text>
-            </TouchableHighlight>
-          </View>
-        </ImageBackground>
-        <ImageBackground
-          style={styles.card}
-          source={require('../assets/images/english.jpg')}
-          imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius:30}}
-        >
-          <View>
-            <TouchableHighlight
-              underlayColor={'white'}
-              style={styles.button}
-              onPress={() => navigation.navigate('ActivityScreenDrawer')}>
-              <Text style={styles.textArea_text}>English</Text>
-            </TouchableHighlight>
-          </View>
-        </ImageBackground>
+          <ImageBackground
+            style={styles.card}
+            source={require('../assets/images/english.jpg')}
+            imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
+          >
+            <View>
+              <TouchableHighlight
+                underlayColor={'white'}
+                style={styles.button}
+                onPress={() => navigation.navigate('ActivityScreenDrawer')}>
+                <Text style={styles.textArea_text}>English</Text>
+              </TouchableHighlight>
+            </View>
+          </ImageBackground>
+          <ImageBackground
+            style={styles.card}
+            source={require('../assets/images/sinhalaActivity.jpg')}
+            imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
+          >
+            <View>
+              <TouchableHighlight
+                underlayColor={'white'}
+                style={styles.button}
+                onPress={() => navigation.navigate('SinhalaActivityDrawer')}>
+                <Text style={styles.textArea_text}>සිංහල</Text>
+              </TouchableHighlight>
+            </View>
+          </ImageBackground>
         </ScrollView>
       </View>
     </ImageBackground>
