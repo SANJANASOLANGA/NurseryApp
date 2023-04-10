@@ -1,48 +1,54 @@
 import React from 'react';
-import {View, StyleSheet, Text, TouchableHighlight} from 'react-native';
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import {ImageBackground, View, StyleSheet, Text, TouchableHighlight} from 'react-native';
 
-export default function Card({text, main, onPress, name}) {
+export default function Card({main, image, onPress}) {
   return (
-    <TouchableHighlight onPress={onPress} underlayColor={'none'}>
-      <View style={styles.card}>
-      <Text style={styles.text2}>{text}</Text>
-        <View style={styles.vector}>
-          <AntDesign name={name} size={45} />
-        </View>
-        <Text style={styles.text}>{main}</Text>
+    <ImageBackground
+      style={styles.card}
+      source={image}
+      imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
+    >
+      <View>
+        <TouchableHighlight
+          underlayColor={'white'}
+          style={styles.button}
+          onPress={onPress}>
+          <Text style={styles.textArea_text}>{main}</Text>
+        </TouchableHighlight>
       </View>
-    </TouchableHighlight>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  vector: {
-    flexDirection: 'row',
-    padding: 20,
-    marginBottom: 5,
-  },
-  text: {
-    fontSize: 30,
+  textArea_text: {
+    fontSize: 28,
     fontWeight: 'bold',
     textAlign: 'center',
-    padding: 6,
-  },
-  text2: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    padding: 6,
+    color: 'white',
   },
   card: {
-    width: 180,
-    height: 260,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    margin: 10,
-    backgroundColor: '#fff',
-    borderRadius: 15,
+    marginBottom: '12%',
+    elevation: 10,
+    width: 350,
+    height: 320,
+    borderRadius: 50,
+    marginTop: '10%',
+    elevation: 10,
+  },
+  button: {
+    width: 350,
+    height: 65,
+    backgroundColor: '#c055e0',
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    borderBottomRightRadius: 30,
+    borderBottomLeftRadius: 30,
+    marginTop: 350,
     elevation: 10,
   },
 });
