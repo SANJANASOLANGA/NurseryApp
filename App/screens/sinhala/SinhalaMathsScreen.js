@@ -27,13 +27,13 @@ export default class SinhalaMathsScreen extends Component {
     this.props.navigation.navigate('ShapesQuiz');
   };
   NavigateToBack = () => {
-    this.props.navigation.navigate('EnglishScreen');
+    this.props.navigation.navigate('SinhalaScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('CreativeScreen');
+    this.props.navigation.navigate('SinhalaCreativeScreen');
   };
   render() {
     return (
@@ -42,7 +42,7 @@ export default class SinhalaMathsScreen extends Component {
         style={styles.screen}>
 
         <View>
-          <Text style={styles.heading}>Fun of Maths</Text>
+          <Text style={styles.heading}>Fun of Mathsss</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

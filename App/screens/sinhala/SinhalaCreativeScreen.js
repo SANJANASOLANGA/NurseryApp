@@ -24,13 +24,13 @@ export default class SinhalaCreativeScreen extends Component {
     this.props.navigation.navigate('ColorsQuiz');
   };
   NavigateToBack = () => {
-    this.props.navigation.navigate('MathsScreen');
+    this.props.navigation.navigate('SinhalaMathsScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('CommunityScreen');
+    this.props.navigation.navigate('SinhalaCommunityScreen');
   };
   render() {
     return (
@@ -38,7 +38,7 @@ export default class SinhalaCreativeScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Creative Kids</Text>
+          <Text style={styles.heading}>Creative Kidss</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

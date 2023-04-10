@@ -27,7 +27,7 @@ export default class CommunityScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('EnglishScreen');
+    this.props.navigation.navigate('SinhalaScreen');
   };
 
   render() {

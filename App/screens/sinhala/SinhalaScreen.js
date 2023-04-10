@@ -33,7 +33,7 @@ export default class SinhalaScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('MathsScreen');
+    this.props.navigation.navigate('SinhalaMathsScreen');
   };
   render() {
     return (
@@ -41,7 +41,7 @@ export default class SinhalaScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Happy English</Text>
+          <Text style={styles.heading}>Happy Englishss</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

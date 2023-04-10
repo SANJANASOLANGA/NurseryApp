@@ -21,13 +21,13 @@ export default class SinhalaCommunityScreen extends Component {
     this.props.navigation.navigate('SchoolScreen');
   };
   NavigateToBack = () => {
-    this.props.navigation.navigate('CreativeScreen');
+    this.props.navigation.navigate('SinhalaCreativeScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('EnglishScreen');
+    this.props.navigation.navigate('SinhalaScreen');
   };
 
   render() {
@@ -36,7 +36,7 @@ export default class SinhalaCommunityScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Community</Text>
+          <Text style={styles.heading}>Communityyyy</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>
