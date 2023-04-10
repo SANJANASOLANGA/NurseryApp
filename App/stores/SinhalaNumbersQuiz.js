@@ -362,7 +362,7 @@ const SinhalaNumbersQuiz = ({ navigation }) => {
                       <View style={styles.modal_btnWrap}>
                         <Text />
                         <TouchableOpacity
-                          onPress={() => navigation.navigate('ActivityScreen')}>
+                          onPress={() => navigation.navigate('SinhalaActivityScreen')}>
                           <Text style={styles.modal_btn}> Yes</Text>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => setShow1(false)}>
