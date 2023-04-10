@@ -74,8 +74,10 @@ const OnboardingScreen = ({navigation}) => {
               source={require('../assets/images/onboarding3.png')}
             />
           ),
-          title: 'Build',
+          title: 'Build' ,
           subtitle: 'Your Knowledge',
+          titleStyles: {color: '#54225e', },
+          subTitleStyles: {color: '#54225e'}
         },
       ]}
     />
