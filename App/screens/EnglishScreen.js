@@ -131,6 +131,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     marginTop: '10%',
+    marginVertical: '2%'
   },
   images: {
     width: 60,
