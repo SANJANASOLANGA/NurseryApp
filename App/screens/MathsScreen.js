@@ -42,7 +42,7 @@ export default class MathsScreen extends Component {
         style={styles.screen}>
           <ScrollView>
         <View>
-          <Text style={styles.heading}>Fun of Math</Text>
+          <Text style={styles.heading}>Fun of Maths</Text>
         </View>
         <View style={styles.body}>
           <View style={styles.card_container}>
