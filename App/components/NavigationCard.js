@@ -12,6 +12,7 @@ export default function NavigationCard({ text, image, onPress }) {
     <ImageBackground
       style={styles.card}
       source={image}
+      imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
     >
       <View>
         <TouchableHighlight
