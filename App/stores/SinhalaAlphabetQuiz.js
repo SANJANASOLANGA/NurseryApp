@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  View,
+  View, ScrollView,
   Text,
   StatusBar,
   TouchableOpacity,
@@ -241,108 +241,165 @@ const SinhalaAlphabetQuiz = ({ navigation }) => {
         flex: 1,
       }}>
       <StatusBar barStyle="light-content" />
-      <View
-        style={{
-          flex: 1,
-          paddingVertical: 40,
-          paddingHorizontal: 16,
-          position: 'relative',
-        }}>
-        {/* ProgressBar */}
-        {renderProgressBar()}
+      <ScrollView>
+        <View
+          style={{
+            flex: 1,
+            paddingVertical: 40,
+            paddingHorizontal: 16,
+            position: 'relative',
+          }}>
+          {/* ProgressBar */}
+          {renderProgressBar()}
 
-        {/* Question */}
-        {renderQuestion()}
+          {/* Question */}
+          {renderQuestion()}
 
-        {/* Options */}
-        {renderOptions()}
+          {/* Options */}
+          {renderOptions()}
 
-        {/* Next Button */}
-        {renderNextButton()}
+          {/* Next Button */}
+          {renderNextButton()}
 
-        {/* Score Modal */}
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={showScoreModal}>
-          <ImageBackground
-            source={require('../assets/images/bg.jpg')}
-            style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-            <View
+          {/* Score Modal */}
+          <Modal
+            animationType="slide"
+            transparent={true}
+            visible={showScoreModal}>
+            <ImageBackground
+              source={require('../assets/images/bg.jpg')}
               style={{
-                backgroundColor: '#eed9fa',
-                width: '75%',
-                borderRadius: 50,
-                padding: 25,
+                flex: 1,
                 alignItems: 'center',
-                elevation: 25
+                justifyContent: 'center',
               }}>
-              <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
-                {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
-              </Text>
+              <View
+                style={{
+                  backgroundColor: '#eed9fa',
+                  width: '75%',
+                  borderRadius: 50,
+                  padding: 25,
+                  alignItems: 'center',
+                  elevation: 25
+                }}>
+                <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
+                  {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
+                </Text>
 
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                  marginVertical: 20,
-                }}>
-                <Text
+                <View
                   style={{
-                    fontSize: 30,
-                    color:
-                      score > allQuestions.length / 2
-                        ? COLORS.success
-                        : COLORS.error,
-                  }}>
-                  {score}
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 20,
-                  }}>
-                  / {allQuestions.length}
-                </Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-evenly',
-                  alignItems: 'center',
-                }}>
-                <TouchableOpacity
-                  onPress={restartQuiz}
-                  style={{
-                    backgroundColor: '#00C851',
-                    padding: 20,
-                    width: '40%',
-                    borderRadius: 20,
-                    margin: 15,
-                    elevation: 5,
+                    flexDirection: 'row',
+                    justifyContent: 'flex-start',
+                    alignItems: 'center',
+                    marginVertical: 20,
                   }}>
                   <Text
                     style={{
-                      textAlign: 'center',
-                      fontSize: 20,
-                      color:'white'
+                      fontSize: 30,
+                      color:
+                        score > allQuestions.length / 2
+                          ? COLORS.success
+                          : COLORS.error,
                     }}>
-                    Retry
+                    {score}
                   </Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  onPress={() => setShow1(true)}
+                  <Text
+                    style={{
+                      fontSize: 20,
+                    }}>
+                    / {allQuestions.length}
+                  </Text>
+                </View>
+                <View
                   style={{
-                    backgroundColor: '#ff4444',
+                    flexDirection: 'row',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'center',
+                  }}>
+                  <TouchableOpacity
+                    onPress={restartQuiz}
+                    style={{
+                      backgroundColor: '#00C851',
+                      padding: 20,
+                      width: '40%',
+                      borderRadius: 20,
+                      margin: 15,
+                      elevation: 5,
+                    }}>
+                    <Text
+                      style={{
+                        textAlign: 'center',
+                        fontSize: 20,
+                        color: 'white'
+                      }}>
+                      Retry
+                    </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() => setShow1(true)}
+                    style={{
+                      backgroundColor: '#ff4444',
+                      padding: 20,
+                      width: '40%',
+                      borderRadius: 20,
+                      margin: 15,
+                      elevation: 5,
+                    }}>
+                    <Text
+                      style={{
+                        textAlign: 'center',
+                        fontSize: 20,
+                        color: 'white'
+                      }}>
+                      Exit
+                    </Text>
+                  </TouchableOpacity>
+                  <Modal transparent={true} visible={show1}>
+                    <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
+                      <View style={styles.modal_view}>
+                        <Text style={styles.modal_Text}>
+                          Are you sure, you want to exit from quiz ?
+                        </Text>
+                        <View style={styles.modal_btnWrap}>
+                          <Text />
+                          <TouchableOpacity
+                            onPress={() => navigation.navigate('SinhalaActivityScreen')}>
+                            <Text style={styles.modal_btn}> Yes</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity onPress={() => setShow1(false)}>
+                            <Text style={styles.modal_btn}>No</Text>
+                          </TouchableOpacity>
+                        </View>
+                      </View>
+                    </View>
+                  </Modal>
+                </View>
+                <Text />
+                <Text />
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 20,
+                  }}>
+                  Get a Screenshot of Your Result
+                </Text>
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 20,
+                    marginBottom: 30,
+                  }}>
+                  Add to Your Profile and Grow up Profile
+                </Text>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('ProfileScreen')}
+                  style={{
+                    backgroundColor: '#8a36d1',
                     padding: 20,
-                    width: '40%',
+                    width: '90%',
                     borderRadius: 20,
-                    margin: 15,
-                    elevation: 5,
+                    marginBottom: 20,
+                    elevation: 10,
                   }}>
                   <Text
                     style={{
@@ -350,69 +407,14 @@ const SinhalaAlphabetQuiz = ({ navigation }) => {
                       fontSize: 20,
                       color: 'white'
                     }}>
-                    Exit
+                    Feed Profile
                   </Text>
                 </TouchableOpacity>
-                <Modal transparent={true} visible={show1}>
-                  <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
-                    <View style={styles.modal_view}>
-                      <Text style={styles.modal_Text}>
-                        Are you sure, you want to exit from quiz ?
-                      </Text>
-                      <View style={styles.modal_btnWrap}>
-                        <Text />
-                        <TouchableOpacity
-                          onPress={() => navigation.navigate('SinhalaActivityScreen')}>
-                          <Text style={styles.modal_btn}> Yes</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={() => setShow1(false)}>
-                          <Text style={styles.modal_btn}>No</Text>
-                        </TouchableOpacity>
-                      </View>
-                    </View>
-                  </View>
-                </Modal>
               </View>
-              <Text />
-              <Text />
-              <Text
-                style={{
-                  textAlign: 'center',
-                  fontSize: 20,
-                }}>
-                Get a Screenshot of Your Result
-              </Text>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  fontSize: 20,
-                  marginBottom: 30,
-                }}>
-                Add to Your Profile and Grow up Profile
-              </Text>
-              <TouchableOpacity
-                onPress={() => navigation.navigate('ProfileScreen')}
-                style={{
-                  backgroundColor: '#8a36d1',
-                  padding: 20,
-                  width: '90%',
-                  borderRadius: 20,
-                  marginBottom: 20,
-                  elevation: 10,
-                }}>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    fontSize: 20,
-                    color: 'white'
-                  }}>
-                  Feed Profile
-                </Text>
-              </TouchableOpacity>
-            </View>
-          </ImageBackground>
-        </Modal>
-      </View>
+            </ImageBackground>
+          </Modal>
+        </View>
+      </ScrollView>
       <View style={styles.footer}>
         <TouchableOpacity
           onPress={() => navigation.navigate('SinhalaAlphabet')}
