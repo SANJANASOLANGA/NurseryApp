@@ -17,7 +17,7 @@ export default colorsData = [
     {
       question: 'අහස මොන පාටද? ',
       options: ['නිල් පාටයි', 'කහ පාටයි', 'රතු පාටයි', 'කොළ පාටයි'],
-      correct_option: ' පාටයි',
+      correct_option: 'නිල් පාටයි',
     },
     {
       question: 'ඇපල් ගෙඩිය මොන පාටද?',
