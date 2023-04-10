@@ -66,98 +66,7 @@ export function DrawerContent(props) {
           </Drawer.Section>
           <Text />
           <Drawer.Section title={<Text style={styles.title}>Learning Area</Text>}>
-            <Text style={styles.subTitle}>සිංහල</Text>
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="සිංහල හෝඩිය" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaAlphabetScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="කෙටි දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaPharasesScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="ඉලක්කම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaNumbersScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="හැඩ" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaShapesScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="පාට" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaColorsScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="කවි" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaPoemsScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="පවුල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaFamilyScreenStack');
-              }}
-            />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="book-open" color={color} size={size} />
-              )}
-              label="පාසල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaScoolScreenStack');
-              }}
-            />
-            <Text />
-            <DrawerItem
-              icon={({color, size}) => (
-                <Icon name="bookmark-outline" color={color} size={size} />
-              )}
-              label="ක්‍රියාකාරකම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
-              onPress={() => {
-                props.navigation.navigate('SinhalaActivityDrawer');
-              }}
-            />
+            
             <Text />
             <Text style={styles.subTitle}>English</Text>
             <DrawerItem
@@ -252,6 +161,98 @@ export function DrawerContent(props) {
               }}
             />
             <Text />
+            <Text style={styles.subTitle}>සිංහල</Text>
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="සිංහල හෝඩිය" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaAlphabetScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="කෙටි දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaPharasesScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="ඉලක්කම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaNumbersScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="හැඩ" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaShapesScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="පාට" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaColorsScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="කවි" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaPoemsScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="පවුල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaFamilyScreenStack');
+              }}
+            />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="book-open" color={color} size={size} />
+              )}
+              label="පාසල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaScoolScreenStack');
+              }}
+            />
+            <Text />
+            <DrawerItem
+              icon={({color, size}) => (
+                <Icon name="bookmark-outline" color={color} size={size} />
+              )}
+              label="ක්‍රියාකාරකම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              labelStyle= {{fontSize: 15}}
+              onPress={() => {
+                props.navigation.navigate('SinhalaActivityDrawer');
+              }}
+            />
           </Drawer.Section>
           <Text />
           <Drawer.Section title={<Text style={styles.title}>EduKids</Text>}>
