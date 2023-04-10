@@ -86,6 +86,7 @@ export default class MathsScreen extends Component {
             size={25}
             backgroundColor="#8a36d1"
             color="white"
+            style={{marginLeft: 5}}
           />
           <FontAwesome.Button
             name="chevron-right"
@@ -129,7 +130,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'space-around',
-    marginTop: 400,
+    marginTop: '10%',
   },
   images: {
     width: 60,
