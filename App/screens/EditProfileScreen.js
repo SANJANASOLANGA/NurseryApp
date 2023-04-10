@@ -478,7 +478,7 @@ const EditProfileScreen = ({navigation}) => {
             <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold', color: '#54225e'}}>
               {userData ? userData.fname : ''} {userData ? userData.lname : ''}
             </Text>
-            <Text style={{marginBottom: 28, color: '#54225e'}}>{userData ? userData.city : ''}, {userData ? userData.country : ''}</Text>
+            <Text style={{marginBottom: 28, color: '#54225e'}}>{userData ? userData.city : ''} {userData ? userData.country : ''}</Text>
           </View>
 
           <View style={styles.action}>
