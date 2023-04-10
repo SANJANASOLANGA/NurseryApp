@@ -50,22 +50,22 @@ const HomeScreen = ({ navigation }) => {
         <NavigationCard
           text={"Let's Go !"}
           image={require('../assets/images/sinhalaActivity.jpg')}
-          onPress={() => navigation.navigate('EnglishScreen')}
+          onPress={() => navigation.navigate('SinhalaScreen')}
         />
         <NavigationCard
           text={"Let's Go !"}
           image={require('../assets/images/maths.jpg')}
-          onPress={() => navigation.navigate('MathsScreen')}
+          onPress={() => navigation.navigate('SinhalaMathsScreen')}
         />
         <NavigationCard
           text={"Let's Go !"}
           image={require('../assets/images/crafts.jpg')}
-          onPress={() => navigation.navigate('CreativeScreen')}
+          onPress={() => navigation.navigate('SinhalaCreativeScreen')}
         />
         <NavigationCard
           text={"Let's Go !"}
           image={require('../assets/images/social.jpg')}
-          onPress={() => navigation.navigate('CommunityScreen')}
+          onPress={() => navigation.navigate('SinhalaCommunityScreen')}
         />
       </ScrollView>
     </ImageBackground>
