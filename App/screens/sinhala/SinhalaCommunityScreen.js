@@ -27,7 +27,7 @@ export default class SinhalaCommunityScreen extends Component {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('SinhalaScreen');
+    this.props.navigation.navigate('EnglishScreen');
   };
 
   render() {
