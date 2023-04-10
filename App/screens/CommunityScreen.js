@@ -42,16 +42,16 @@ export default class CommunityScreen extends Component {
           <View style={styles.body}>
             <View style={styles.card_container}>
               <Card
-                text={'Do you want to know Alphabet? Come try it !'}
+                // text={'Do you want to know Alphabet? Come try it !'}
                 main={'FAMILY'}
                 onPress={this.NavigateToMyFam}
-                image={require('../assets/images/english.jpg')}
+                image={require('../assets/images/familyE.jpg')}
               />
               <Card
-                text={'Do you want to know Phrases? Come try it !'}
+                // text={'Do you want to know Phrases? Come try it !'}
                 main={'SCHOOL'}
                 onPress={this.NavigateToSchool}
-                image={require('../assets/images/english.jpg')}
+                image={require('../assets/images/communityE.png')}
               />
             </View>
           </View>

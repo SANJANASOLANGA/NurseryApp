@@ -50,25 +50,25 @@ export default class SinhalaScreen extends Component {
                 // text={'Do you want to know Alphabet? Come try it !'}
                 main={'ALPHABET'}
                 onPress={this.NavigateToAlphabet}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/sinhalaActivity.jpg')}
               />
               <Card
                 // text={'Do you want to know Phrases? Come try it !'}
                 main={'PHRASES'}
                 onPress={this.NavigateToPhrases}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/PhrasesE.png')}
               // name={'book'}
               />
               <Card
                 main={'Quiz of Alphabet'}
                 onPress={this.NavigateToAlphabetQuiz}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/sinhalaActivity.jpg')}
               // name={'edit'}
               />
               <Card
                 main={'Quiz of Phrases'}
                 onPress={this.NavigateToPhrasesQuiz}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/PhrasesQ.png')}
               // name={'edit'}
               />
             </View>

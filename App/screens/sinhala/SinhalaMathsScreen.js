@@ -50,23 +50,23 @@ export default class SinhalaMathsScreen extends Component {
               <Card
                 main={'NUMBERS'}
                 onPress={this.NavigateToAlphabet}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/mathsS.png')}
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
                 main={'SHAPES'}
                 onPress={this.NavigateToShapes}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/shapesS.jpg')}
               />
               <Card
                 main={'Quiz of Numbers'}
                 onPress={this.NavigateToNumbersQuiz}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/mathsQSinhala.png')}
               />
               <Card
                 main={'Quiz of Shapes'}
                 onPress={this.NavigateToShapesQuiz}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/shapesQSinhala.png')}
               />
             </View>
           </View>

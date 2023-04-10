@@ -47,18 +47,18 @@ export default class CreativeScreen extends Component {
                 text={'Do you want to know Alphabet? Come try it !'}
                 main={'COLORS'}
                 onPress={this.NavigateToColors}
-                image={require('../assets/images/english.jpg')}
+                image={require('../assets/images/colorsE.png')}
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
                 main={'POEMS'}
                 onPress={this.NavigateToPoems}
-                image={require('../assets/images/english.jpg')}
+                image={require('../assets/images/poemE.jpg')}
               />
               <Card
                 main={'Quiz of Colors'}
                 onPress={this.NavigateToColorsQuiz}
-                image={require('../assets/images/english.jpg')}
+                image={require('../assets/images/colorsQEnglish.png')}
               />
             </View>
           </View>

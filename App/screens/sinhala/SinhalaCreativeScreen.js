@@ -47,18 +47,18 @@ export default class SinhalaCreativeScreen extends Component {
                 text={'Do you want to know Alphabet? Come try it !'}
                 main={'COLORS'}
                 onPress={this.NavigateToColors}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/colorsS.png')}
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
                 main={'POEMS'}
                 onPress={this.NavigateToPoems}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/poemsS.jpg')}
               />
               <Card
                 main={'Quiz of Colors'}
                 onPress={this.NavigateToColorsQuiz}
-                image={require('../../assets/images/english.jpg')}
+                image={require('../../assets/images/colorsQSinhala.png')}
               />
             </View>
           </View>
