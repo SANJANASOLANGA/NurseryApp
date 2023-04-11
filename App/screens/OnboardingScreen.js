@@ -54,8 +54,8 @@ const OnboardingScreen = ({navigation}) => {
           ),
           title: 'Learn',
           subtitle: 'By using our mini lessons',
-          titleStyles: {color: '#54225e', },
-          subTitleStyles: {color: '#54225e'}
+          titleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 40 },
+          subTitleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 26}
         },
         {
           backgroundColor: '#e8cefe',
@@ -67,6 +67,8 @@ const OnboardingScreen = ({navigation}) => {
           ),
           title: 'Practice',
           subtitle: 'With our cute quizzes',
+          titleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 40 },
+          subTitleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 26}
         },
         {
           backgroundColor: '#e8cefe',
@@ -78,8 +80,8 @@ const OnboardingScreen = ({navigation}) => {
           ),
           title: 'Build' ,
           subtitle: 'Your Knowledge',
-          titleStyles: {color: '#54225e', },
-          subTitleStyles: {color: '#54225e'}
+          titleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 40 },
+          subTitleStyles: {color: '#54225e', fontFamily:'KGPrimaryPenmanship2', fontSize: 26}
         },
       ]}
     />
