@@ -258,15 +258,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
-    marginLeft: '7%',
-    marginRight: '7%',
+    marginLeft: '2%',
     marginTop: '75%',
     alignItems: 'center',
     elevation: 5,
   },
   modal_Text: {
-    fontSize: 23,
-    color: '#54225e'
+    fontSize: 30,
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship'
   },
   modal_btnWrap: {
     flex: 1,
@@ -277,7 +277,7 @@ const styles = StyleSheet.create({
     height: 30,
     textAlign: 'center',
     textAlignVertical: 'center',
-    fontSize: 20,
+    fontSize: 23,
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginHorizontal: 10,
@@ -286,5 +286,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     color: 'white',
     elevation: 5,
+    fontFamily:'KGPrimaryPenmanship2'
   },
 });

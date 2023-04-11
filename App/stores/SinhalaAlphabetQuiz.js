@@ -440,32 +440,35 @@ const styles = StyleSheet.create({
     backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
-    marginTop: 300,
-    marginLeft: 35,
+    marginLeft: '2%',
+    marginTop: '75%',
+    alignItems: 'center',
     elevation: 5,
   },
   modal_Text: {
-    fontSize: 23,
+    fontSize: 30,
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship'
   },
   modal_btnWrap: {
     flex: 1,
     flexDirection: 'row',
-    marginLeft: 100,
   },
   modal_btn: {
     width: 80,
     height: 30,
     textAlign: 'center',
     textAlignVertical: 'center',
-    fontSize: 20,
+    fontSize: 23,
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginHorizontal: 10,
     marginTop: '40%',
     backgroundColor: '#8a36d1',
     borderRadius: 15,
+    color: 'white',
     elevation: 5,
-    color: 'white'
+    fontFamily:'KGPrimaryPenmanship2'
   },
   button: {
     width: 120,
