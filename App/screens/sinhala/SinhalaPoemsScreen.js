@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
     marginRight: 15,
     fontStyle: 'italic',
     fontWeight: '300',
+    color: 'purple'
   },
   text3: {
     fontSize: 20,
