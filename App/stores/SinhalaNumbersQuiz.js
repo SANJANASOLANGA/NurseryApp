@@ -195,7 +195,7 @@ const SinhalaNumbersQuiz = ({ navigation }) => {
             alignSelf: 'center',
             elevation: 10,
           }}>
-          <Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>Next</Text>
+          <Text style={{ fontSize: 26, textAlign: 'center', color: 'white', fontFamily:'KGPrimaryPenmanship' }}>Next</Text>
         </TouchableOpacity>
       );
     } else {
