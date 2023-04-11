@@ -282,8 +282,8 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                   alignItems: 'center',
                   elevation: 25
                 }}>
-                <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
-                  {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
+                <Text style={{ fontSize: 37, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
+                  {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops !'}
                 </Text>
 
                 <View
@@ -305,7 +305,7 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                   </Text>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: 20, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                     }}>
                     / {allQuestions.length}
                   </Text>
@@ -329,8 +329,8 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                     <Text
                       style={{
                         textAlign: 'center',
-                        fontSize: 20,
-                        color: 'white'
+                        fontSize: 26,
+                        color: 'white', fontFamily:'KGPrimaryPenmanship'
                       }}>
                       Retry
                     </Text>
@@ -348,8 +348,8 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                     <Text
                       style={{
                         textAlign: 'center',
-                        fontSize: 20,
-                        color: 'white'
+                        fontSize: 26,
+                        color: 'white', fontFamily:'KGPrimaryPenmanship'
                       }}>
                       Exit
                     </Text>
@@ -379,18 +379,10 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                 <Text
                   style={{
                     textAlign: 'center',
-                    fontSize: 20,
+                    fontSize: 26, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                   }}>
-                  Get a Screenshot of Your Result
-                </Text>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    fontSize: 20,
-                    marginBottom: 30,
-                  }}>
-                  Add to Your Profile and Grow up Profile
-                </Text>
+                  Get a screenshot of your result and add it to your profile and grow up profile
+                </Text><Text></Text>
                 <TouchableOpacity
                   onPress={() => navigation.navigate('ProfileScreen')}
                   style={{
@@ -404,8 +396,8 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
                   <Text
                     style={{
                       textAlign: 'center',
-                      fontSize: 20,
-                      color: 'white'
+                      fontSize: 26,
+                      color: 'white', fontFamily:'KGPrimaryPenmanship'
                     }}>
                     Feed Profile
                   </Text>
@@ -481,8 +473,10 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 25,
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship',
+    color: 'white',
   },
   footer: {
     flexDirection: 'row',
