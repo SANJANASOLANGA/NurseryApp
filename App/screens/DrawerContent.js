@@ -273,7 +273,7 @@ export function DrawerContent(props) {
           icon={({color, size}) => (
             <Icon name="exit-to-app" color={'#54225e'} size={size} />
           )}
-          label="Sign Out" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+          label="Log Out" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
           labelStyle= {{fontSize: 16}}
           onPress={() => {
             logout();
