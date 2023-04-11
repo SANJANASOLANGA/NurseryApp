@@ -8,7 +8,7 @@ export default function FamilyCard({text1, text2, image}) {
         source={image}
         style={{
           width: 300,
-          height: 290,
+          height: 280,
           marginTop: 50,
           borderRadius: 15,
         }}
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   text2: {
-    fontSize: 25,
+    fontSize: 19,
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 360,
-    height: 520,
+    height: 510,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
