@@ -35,7 +35,7 @@ const LoginScreen = ({navigation}) => {
         style={styles.logo}
         source={require('../assets/images/logo-no-background.png')}
       />
-      <Text style={styles.text}>EduKids</Text>
+      <Text style={styles.text}> </Text>
       <Text />
       <Text />
 
@@ -113,10 +113,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
   },
   logo: {
-    height: 100,
-    width: 100,
-    resizeMode: 'cover',
-    borderRadius: 100,
+    width: 85,
+    height: 65,
+    marginTop: '10%'
   },
   text: {
     fontSize: 28,

@@ -336,11 +336,10 @@ const styles = StyleSheet.create({
     paddingBottom: 50,
   },
   logo: {
-    height: 85,
     width: 85,
-    resizeMode: 'cover',
-    borderRadius: 85,
-    marginBottom: 50,
+    height: 65,
+    marginBottom: '10%',
+    marginTop: '10%'
   },
   text: {
     fontSize: 28,
