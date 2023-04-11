@@ -29,7 +29,7 @@ export default class SinhalaNumbersScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View style={styles.header}>
-          <Text style={styles.heading}>ඉලක්කම් ඉගෙන ගනිමු</Text>
+          <Text style={styles.heading}>ඉලක්කම් හුරුව</Text>
         </View>
         <View style={styles.body}>
           <Slider_Num />

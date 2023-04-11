@@ -6,32 +6,32 @@ import {
   SafeAreaView,
   ImageBackground,
 } from 'react-native';
-import ActivityButton from '../../components/ActivityButton';
+import SinhalaActivityButton from '../../components/SinhalaActivityButton';
 
 const SinhalaActivityScreen = ({navigation}) => {
   return (
     <ImageBackground
       source={require('../../assets/images/bg.jpg')}
       style={styles.safearea}>
-      <Text style={styles.heading}>ක්‍රියාකාරකම්</Text>
+      <Text style={styles.heading}>පාඩම් හුරුව</Text>
       <View style={styles.button_container}>
-        <ActivityButton
+        <SinhalaActivityButton
           buttonTitle="සිංහල හෝඩිය"
           onPress={() => navigation.navigate('SinhalaAlphabetQuiz')}
         />
-        <ActivityButton
+        <SinhalaActivityButton
           buttonTitle="කෙටි දෙබස්"
           onPress={() => navigation.navigate('SinhalaPhrasesQuiz')}
         />
-        <ActivityButton
+        <SinhalaActivityButton
           buttonTitle="ඉලක්කම්"
           onPress={() => navigation.navigate('SinhalaNumbersQuiz')}
         />
-        <ActivityButton
+        {/* <SinhalaActivityButton
           buttonTitle="හැඩ"
           onPress={() => navigation.navigate('SinhalaShapesQuiz')}
-        />
-        <ActivityButton
+        /> */}
+        <SinhalaActivityButton
           buttonTitle="පාට"
           onPress={() => navigation.navigate('SinhalaColorsQuiz')}
         />

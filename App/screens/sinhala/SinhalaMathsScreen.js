@@ -42,7 +42,7 @@ export default class SinhalaMathsScreen extends Component {
         style={styles.screen}>
 
         <View>
-          <Text style={styles.heading}>Fun of Mathsss</Text>
+          <Text style={styles.heading}>පුංචි අපේ ගණිතය</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

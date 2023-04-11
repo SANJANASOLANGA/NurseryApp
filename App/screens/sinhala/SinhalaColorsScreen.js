@@ -29,7 +29,7 @@ export default class SinhalaColorsScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View style={styles.header}>
-          <Text style={styles.heading}>පාට ඉගෙන ගනිමු</Text>
+          <Text style={styles.heading}>පාට හුරුව</Text>
         </View>
         <View style={styles.body}>
           <ScrollView>

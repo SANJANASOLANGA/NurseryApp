@@ -36,7 +36,7 @@ export default class SinhalaCommunityScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Communityyyy</Text>
+          <Text style={styles.heading}>පුංචි අපේ සුමිතුරෝ</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

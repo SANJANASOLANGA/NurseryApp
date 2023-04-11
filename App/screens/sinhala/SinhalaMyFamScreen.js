@@ -29,7 +29,7 @@ export default class SinhalaMyFamScreen extends Component {
       <ImageBackground
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
-        <Text style={styles.heading}>පවුලේ සාමාජිකයන්</Text>
+        <Text style={styles.heading}>පුංචි අපේ පවුල</Text>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>

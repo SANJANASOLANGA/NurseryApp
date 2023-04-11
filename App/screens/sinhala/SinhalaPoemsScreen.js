@@ -44,7 +44,7 @@ const SinhalaPoemsScreen = ({ navigation }) => {
       source={require('../../assets/images/bg.jpg')}
       style={styles.main}>
       <View style={styles.header}>
-        <Text style={styles.text}>කවි ඉගෙන ගනිමු</Text>
+        <Text style={styles.text}>කවි කියමු</Text>
       </View>
       <ScrollView>
         <View style={styles.body}>

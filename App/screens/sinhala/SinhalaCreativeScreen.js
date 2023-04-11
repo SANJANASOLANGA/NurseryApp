@@ -38,7 +38,7 @@ export default class SinhalaCreativeScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Creative Kidss</Text>
+          <Text style={styles.heading}>පුංචි අපේ හැඩ වැඩ</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>

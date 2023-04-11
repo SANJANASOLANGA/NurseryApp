@@ -24,7 +24,7 @@ export default class SinhalaShapesScreen extends Component {
       <ImageBackground
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
-        <Text style={styles.heading}>හැඩ</Text>
+        <Text style={styles.heading}>හැඩ තල හුරුව</Text>
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>

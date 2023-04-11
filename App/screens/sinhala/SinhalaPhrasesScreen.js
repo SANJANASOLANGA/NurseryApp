@@ -76,7 +76,7 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
         <TouchableOpacity
           onPress={() => navigation.navigate('SinhalaScreen')}
           style={styles.button}>
-          <Text style={styles.btn_txt}>Menu</Text>
+          <Text style={styles.btn_txt}>දෙබස් හුරුව</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('SinhalaPhrasesQuiz')}

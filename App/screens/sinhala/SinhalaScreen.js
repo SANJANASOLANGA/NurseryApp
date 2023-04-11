@@ -41,7 +41,7 @@ export default class SinhalaScreen extends Component {
         source={require('../../assets/images/bg.jpg')}
         style={styles.screen}>
         <View>
-          <Text style={styles.heading}>Happy Englishss</Text>
+          <Text style={styles.heading}>පුංචි අපේ මව්බස</Text>
         </View>
         <ScrollView>
           <View style={styles.body}>
