@@ -13,12 +13,12 @@ const HomeActivities = ({ navigation }) => {
     <ImageBackground
       source={require('../assets/images/bg.jpg')}
       style={styles.safearea}>
-      <Text style={styles.heading}>Fun Activities</Text>
+      <Text style={styles.heading}>Learning can be fun !</Text>
       <View style={styles.button_container}>
         <ScrollView horizontal={true}>
           <ImageBackground
             style={styles.card}
-            source={require('../assets/images/english.jpg')}
+            source={require('../assets/images/EnglishActivity.png')}
             imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
           >
             <View>
@@ -26,7 +26,7 @@ const HomeActivities = ({ navigation }) => {
                 underlayColor={'white'}
                 style={styles.button}
                 onPress={() => navigation.navigate('ActivityScreenDrawer')}>
-                <Text style={styles.textArea_text}>English</Text>
+                <Text style={styles.textArea_text}>English Activities</Text>
               </TouchableHighlight>
             </View>
           </ImageBackground>
@@ -40,7 +40,7 @@ const HomeActivities = ({ navigation }) => {
                 underlayColor={'white'}
                 style={styles.button}
                 onPress={() => navigation.navigate('SinhalaActivityDrawer')}>
-                <Text style={styles.textArea_text}>සිංහල</Text>
+                <Text style={styles.textArea_text2}>පාඩම් හුරුව</Text>
               </TouchableHighlight>
             </View>
           </ImageBackground>
@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   heading: {
-    fontSize: 35,
+    fontSize: 42,
     marginTop: '10%',
     marginBottom: 20,
     textAlign: 'center',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   button_container: {
     marginTop: '5%',
@@ -72,10 +72,16 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 200,
   },
   textArea_text: {
-    fontSize: 28,
-    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'KGPrimaryPenmanship2',
     textAlign: 'center',
     color: 'white',
+  }, 
+  textArea_text2: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: 'bold'
   },
   card: {
     alignItems: 'center',
@@ -91,7 +97,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: 350,
-    height: 65,
+    height: 75,
     backgroundColor: '#c055e0',
     alignItems: 'center',
     justifyContent: 'center',

@@ -202,6 +202,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginBottom: 10,
     color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship2'
   },
   aboutUser: {
     fontSize: 20,

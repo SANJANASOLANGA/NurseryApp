@@ -35,7 +35,7 @@ const LoginScreen = ({navigation}) => {
         style={styles.logo}
         source={require('../assets/images/logo-no-background.png')}
       />
-      <Text style={styles.text}> </Text>
+      <Text style={styles.text}>Sign In</Text>
       <Text />
       <Text />
 
@@ -118,10 +118,10 @@ const styles = StyleSheet.create({
     marginTop: '10%'
   },
   text: {
-    fontSize: 28,
-    marginTop: 10,
+    fontSize: 35,
+    marginTop: '10%',
     color: "#54225e",
-    fontWeight: 'bold'
+    fontFamily:'KGPrimaryPenmanship2',
   },
   navButton: {
     marginTop: 15,
@@ -131,9 +131,10 @@ const styles = StyleSheet.create({
     color: "#54225e",
   },
   navButtonText: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: '500',
     marginBottom: 15,
     color: "#54225e",
+    fontFamily:'KGPrimaryPenmanship2'
   },
 });

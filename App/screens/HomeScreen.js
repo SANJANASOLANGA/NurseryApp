@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { AuthContext } from '../navigation/AuthProvider';
 import NavigationCard from '../components/NavigationCard';
+import SinhalaNavigationCard from '../components/SinhalaNavigationCard';
 
 const HomeScreen = ({ navigation }) => {
   const { user, logout } = useContext(AuthContext);
@@ -28,42 +29,42 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView>
       <ScrollView horizontal={true}>
         <NavigationCard
-          text={"Let's Go !"}
+          text={"Are you ready to learn English? Let's Go !"}
           image={require('../assets/images/english.jpg')}
           onPress={() => navigation.navigate('EnglishScreen')}
         />
         <NavigationCard
-          text={"Let's Go !"}
+          text={"Are you ready to learn maths? Let's Go !"}
           image={require('../assets/images/maths.jpg')}
           onPress={() => navigation.navigate('MathsScreen')}
         />
         <NavigationCard
-          text={"Let's Go !"}
+          text={"Are you ready to learn creativities? Let's Go !"}
           image={require('../assets/images/crafts.jpg')}
           onPress={() => navigation.navigate('CreativeScreen')}
         />
         <NavigationCard
-          text={"Let's Go !"}
+          text={"Are you ready to learn about community? Let's Go !"}
           image={require('../assets/images/communityMain.png')}
           onPress={() => navigation.navigate('CommunityScreen')}
         />
-        <NavigationCard
-          text={"Let's Go !"}
+        <SinhalaNavigationCard
+          text={"පුංචි අපේ මව්බස"}
           image={require('../assets/images/sinhalaActivity.jpg')}
           onPress={() => navigation.navigate('SinhalaScreen')}
         />
-        <NavigationCard
-          text={"Let's Go !"}
+        <SinhalaNavigationCard
+          text={"පුංචි අපේ ගණිතය"}
           image={require('../assets/images/mathsMain.png')}
           onPress={() => navigation.navigate('SinhalaMathsScreen')}
         />
-        <NavigationCard
-          text={"Let's Go !"}
+        <SinhalaNavigationCard
+          text={"පුංචි අපේ හැඩ වැඩ"}
           image={require('../assets/images/creativeMain.png')}
           onPress={() => navigation.navigate('SinhalaCreativeScreen')}
         />
-        <NavigationCard
-          text={"Let's Go !"}
+        <SinhalaNavigationCard
+          text={"පුංචි අපේ පාඩම්"}
           image={require('../assets/images/comMain.png')}
           onPress={() => navigation.navigate('SinhalaCommunityScreen')}
         />

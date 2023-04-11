@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 26,
+    fontFamily:'KGPrimaryPenmanship2',
     color: 'white'
   },
 });

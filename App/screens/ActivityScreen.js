@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   heading: {
-    fontSize: 35,
+    fontSize: 42,
     marginTop: '10%',
     marginBottom: 20,
     textAlign: 'center',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily:'KGPrimaryPenmanship2',
   },
   button_container: {
     marginTop: '5%',
