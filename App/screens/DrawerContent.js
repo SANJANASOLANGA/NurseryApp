@@ -176,7 +176,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book-open" color={color} size={size} />
               )}
-              label="කෙටි දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              label="දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaPharasesScreenStack');
@@ -196,7 +196,7 @@ export function DrawerContent(props) {
               icon={({color, size}) => (
                 <Icon name="book-open" color={color} size={size} />
               )}
-              label="හැඩ" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
+              label="හැඩ තල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaShapesScreenStack');
