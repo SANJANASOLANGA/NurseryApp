@@ -285,7 +285,7 @@ const ShapesQuiz = ({ navigation }) => {
                   elevation: 25
                 }}>
                 <Text style={{ fontSize: 37, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
-                  {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
+                  {score > allQuestions.length / 2 ? 'Congratulations !' : 'Oops !'}
                 </Text>
 
                 <View
