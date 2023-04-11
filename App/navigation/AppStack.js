@@ -536,6 +536,16 @@ const HomeScreenStack = ({ navigation }) => {
           ),
         })}
       />
+      <Stack.Screen
+        name="SinhalaActivityScreen"
+        component={SinhalaActivityScreen}
+        options={() => ({
+          headerTitle: '',
+          headerLeft: () => (
+            <NavigationDrawerStructure navigationProps={navigation} />
+          ),
+        })}
+      />
     </Stack.Navigator>
   );
 };
