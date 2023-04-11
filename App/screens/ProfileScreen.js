@@ -263,6 +263,7 @@ const styles = StyleSheet.create({
   },
   modal_Text: {
     fontSize: 23,
+    color: '#54225e'
   },
   modal_btnWrap: {
     flex: 1,
