@@ -27,7 +27,7 @@ export default class MathsScreen extends Component {
     this.props.navigation.navigate('PhrasesQuiz');
   };
   NavigateToBack = () => {
-    this.props.navigation.navigate('CommunityScreen');
+    this.props.navigation.navigate('SinhalaCommunityScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');
