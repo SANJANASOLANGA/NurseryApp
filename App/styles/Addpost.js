@@ -6,15 +6,17 @@ export const InputWrapper = styled.View`
   align-items: center;
   width: 100%;
   background-color: #2e64e515;
+  margin-top: 10%
 `;
 
 export const InputField = styled.TextInput`
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 19px;
   text-align: center;
   width: 90%;
   margin-bottom: 15px;
+  color: #54225e
 `;
 
 export const AddImage = styled.Image`
