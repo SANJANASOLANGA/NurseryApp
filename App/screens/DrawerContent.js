@@ -49,7 +49,7 @@ export function DrawerContent(props) {
               label="Home" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0' 
               labelStyle= {{fontSize: 16}}
               onPress={() => {
-                props.navigation.navigate('HomeScreenDrawer');
+                props.navigation.navigate('HomeScreen');
               }}
             />
             <DrawerItem
@@ -59,7 +59,7 @@ export function DrawerContent(props) {
               label="Profile" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
               labelStyle= {{fontSize: 16}}
               onPress={() => {
-                props.navigation.navigate('ProfileScreenDrawer');
+                props.navigation.navigate('ProfileScreen');
               }}
             />
             <Text />
