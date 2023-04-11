@@ -14,7 +14,7 @@ export default class SinhalaColorsScreen extends Component {
   }
 
   NavigateToCreative = () => {
-    this.props.navigation.navigate('CreativeScreen');
+    this.props.navigation.navigate('SinhalaCreativeScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');

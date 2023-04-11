@@ -11,7 +11,7 @@ import ShapesCard from '../../components/shapesCard';
 
 export default class SinhalaShapesScreen extends Component {
   NavigateToMath = () => {
-    this.props.navigation.navigate('MathsScreen');
+    this.props.navigation.navigate('SinhalaMathsScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');

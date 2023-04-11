@@ -155,7 +155,7 @@ const SinhalaAlphabet = ({ navigation }) => {
         </ScrollView>
         <View style={styles.bottom}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('EnglishScreen')}
+            onPress={() => navigation.navigate('SinhalaScreen')}
             style={styles.button}>
             <Text style={styles.btn_txt}>Menu</Text>
           </TouchableOpacity>

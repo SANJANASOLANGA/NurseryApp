@@ -14,7 +14,7 @@ export default class SinhalaNumbersScreen extends Component {
   }
 
   NavigateToMath = () => {
-    this.props.navigation.navigate('MathsScreen');
+    this.props.navigation.navigate('SinhalaMathsScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');

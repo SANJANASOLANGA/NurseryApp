@@ -15,16 +15,16 @@ export default class SinhalaMathsScreen extends Component {
     super();
   }
   NavigateToAlphabet = () => {
-    this.props.navigation.navigate('NumbersScreen');
+    this.props.navigation.navigate('SinhalaNumbersScreen');
   };
   NavigateToShapes = () => {
-    this.props.navigation.navigate('ShapesScreen');
+    this.props.navigation.navigate('SinhalaShapesScreen');
   };
   NavigateToNumbersQuiz = () => {
-    this.props.navigation.navigate('NumbersQuiz');
+    this.props.navigation.navigate('SinhalaNumbersQuiz');
   };
   NavigateToShapesQuiz = () => {
-    this.props.navigation.navigate('ShapesQuiz');
+    this.props.navigation.navigate('SinhalaShapesQuiz');
   };
   NavigateToBack = () => {
     this.props.navigation.navigate('SinhalaScreen');

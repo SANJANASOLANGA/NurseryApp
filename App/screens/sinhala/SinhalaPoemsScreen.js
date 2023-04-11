@@ -68,7 +68,7 @@ const SinhalaPoemsScreen = ({ navigation }) => {
         </View>
         <View style={styles.bottom}>
           <TouchableOpacity
-            onPress={() => navigation.navigate('CreativeScreen')}
+            onPress={() => navigation.navigate('SinhalaCreativeScreen')}
             style={styles.button}>
             <Text style={styles.btn_txt}> Menu</Text>
           </TouchableOpacity>

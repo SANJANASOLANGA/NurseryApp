@@ -15,16 +15,16 @@ export default class SinhalaScreen extends Component {
     super();
   }
   NavigateToAlphabet = () => {
-    this.props.navigation.navigate('AlphabetScreen');
+    this.props.navigation.navigate('SinhalaAlphabet');
   };
   NavigateToPhrases = () => {
-    this.props.navigation.navigate('PhrasesScreen');
+    this.props.navigation.navigate('SinhalaPhrasesScreen');
   };
   NavigateToAlphabetQuiz = () => {
-    this.props.navigation.navigate('AlphabetQuiz');
+    this.props.navigation.navigate('SinhalaAlphabetQuiz');
   };
   NavigateToPhrasesQuiz = () => {
-    this.props.navigation.navigate('PhrasesQuiz');
+    this.props.navigation.navigate('SinhalaPhrasesQuiz');
   };
   NavigateToBack = () => {
     this.props.navigation.navigate('CommunityScreen');

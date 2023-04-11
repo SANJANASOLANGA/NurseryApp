@@ -15,13 +15,13 @@ export default class SinhalaMyFamScreen extends Component {
   }
 
   NavigateToCreative = () => {
-    this.props.navigation.navigate('CommunityScreen');
+    this.props.navigation.navigate('SinhalaCommunityScreen');
   };
   NavigateToHome = () => {
     this.props.navigation.navigate('HomeScreen');
   };
   NavigateToNext = () => {
-    this.props.navigation.navigate('SchoolScreen');
+    this.props.navigation.navigate('SinhalaSchoolScreen');
   };
 
   render() {

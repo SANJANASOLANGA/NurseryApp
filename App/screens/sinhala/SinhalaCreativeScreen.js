@@ -15,13 +15,13 @@ export default class SinhalaCreativeScreen extends Component {
     super();
   }
   NavigateToColors = () => {
-    this.props.navigation.navigate('ColorsScreen');
+    this.props.navigation.navigate('SinhalaColorsScreen');
   };
   NavigateToPoems = () => {
-    this.props.navigation.navigate('PoemsScreen');
+    this.props.navigation.navigate('SinhalaPoemsScreen');
   };
   NavigateToColorsQuiz = () => {
-    this.props.navigation.navigate('ColorsQuiz');
+    this.props.navigation.navigate('SinhalaColorsQuiz');
   };
   NavigateToBack = () => {
     this.props.navigation.navigate('SinhalaMathsScreen');
