@@ -124,9 +124,8 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 33,
-    marginTop: '5%',
+    marginTop: '7%',
     textAlign: 'center',
-    marginBottom: 20,
     color: '#54225e',
     fontWeight: 'bold',
   },
