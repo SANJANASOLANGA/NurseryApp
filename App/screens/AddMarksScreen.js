@@ -74,13 +74,14 @@ const AddMarkscreen = ({navigation}) => {
         console.log('Feed Added!');
         Alert.alert(
           'Feed Added!',
-          'Your feed has been published Successfully now in your profile!',
+          'Your feed has been published successfully now in your profile!',
         );
         setPost(null);
+        navigation.navigate('ProfileScreen')
       })
       .catch(error => {
         console.log(
-          'Something went wrong with added post to firestore.',
+          'Something went wrong with added post to database. Try again !',
           error,
         );
       });
@@ -144,11 +145,12 @@ const AddMarkscreen = ({navigation}) => {
         {image != null ? <AddImage source={{uri: image}} /> : null}
 
         <InputField
-          placeholder="Add your Marks"
+          placeholder="Add your marks here"
           multiline
           numberOfLines={4}
           value={post}
           onChangeText={content => setPost(content)}
+          placeholderTextColor="#54225e"
         />
         {uploading ? (
           <StatusWrapper>
