@@ -28,7 +28,7 @@ export default phrasesData = [
       'Have a Good Day !',
       'Nice to meet You !',
     ],
-    correct_option: 'Hippo',
+    correct_option: 'Nice to meet You !',
   },
   {
     question: 'How can we say sorry?',
@@ -38,7 +38,7 @@ export default phrasesData = [
       'Thank You !',
       'Have a Great one !',
     ],
-    correct_option: 'The blue whale',
+    correct_option: 'I am very sorry.',
   },
   {
     question: 'What is the phrase we can use to thanking?',
@@ -48,6 +48,6 @@ export default phrasesData = [
       'Thank You !',
       'Have a Great one !',
     ],
-    correct_option: 'The bat',
+    correct_option: 'Thank You !',
   },
 ];
