@@ -99,5 +99,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     marginStart: 25,
     marginEnd: 25,
+    fontFamily:'KGPrimaryPenmanship2',
+    color: '#54225e'
   },
 });
