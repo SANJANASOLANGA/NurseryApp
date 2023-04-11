@@ -50,7 +50,7 @@ export default class MathsScreen extends Component {
               <Card
                 main={'NUMBERS'}
                 onPress={this.NavigateToAlphabet}
-                image={require('../assets/images/mathsE.jpg')}
+                image={require('../assets/images/mathsS.png')}
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
@@ -61,7 +61,7 @@ export default class MathsScreen extends Component {
               <Card
                 main={'Quiz of Numbers'}
                 onPress={this.NavigateToNumbersQuiz}
-                image={require('../assets/images/mathsE.png')}
+                image={require('../assets/images/mathsQSinhala.png')}
               />
               <Card
                 main={'Quiz of Shapes'}
