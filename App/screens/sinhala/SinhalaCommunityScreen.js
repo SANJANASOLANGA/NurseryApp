@@ -44,12 +44,12 @@ export default class SinhalaCommunityScreen extends Component {
               <Card
                 main={'FAMILY'}
                 onPress={this.NavigateToMyFam}
-                image={require('../../assets/images/familyS.jpg')}
+                image={require('../../assets/images/family1.png')}
               />
               <Card
                 main={'SCHOOL'}
                 onPress={this.NavigateToSchool}
-                image={require('../../assets/images/sclS.png')}
+                image={require('../../assets/images/school.png')}
               />
             </View>
           </View>

@@ -64,7 +64,7 @@ const HomeScreen = ({ navigation }) => {
         />
         <NavigationCard
           text={"Let's Go !"}
-          image={require('../assets/images/communityMain2.png')}
+          image={require('../assets/images/comMain.png')}
           onPress={() => navigation.navigate('SinhalaCommunityScreen')}
         />
       </ScrollView>

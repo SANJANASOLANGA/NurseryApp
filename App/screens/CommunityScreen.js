@@ -51,7 +51,7 @@ export default class CommunityScreen extends Component {
                 // text={'Do you want to know Phrases? Come try it !'}
                 main={'SCHOOL'}
                 onPress={this.NavigateToSchool}
-                image={require('../assets/images/communityE.png')}
+                image={require('../assets/images/school.png')}
               />
             </View>
           </View>
