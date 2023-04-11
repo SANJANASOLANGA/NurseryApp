@@ -22,10 +22,10 @@ const HomeScreen = ({ navigation }) => {
         source={require('../assets/images/logo.png')}
       /> */}
       <Text style={styles.text}>Welcome</Text>
-      <Text style={styles.heading}>Let's Start Your</Text>
-      <Text style={styles.heading}>Learning Journey !</Text>
+      <Text style={styles.heading}>Let's Start Your Learning Journey !</Text>
       <Text />
       <Text />
+      <ScrollView>
       <ScrollView horizontal={true}>
         <NavigationCard
           text={"Let's Go !"}
@@ -67,7 +67,7 @@ const HomeScreen = ({ navigation }) => {
           image={require('../assets/images/comMain.png')}
           onPress={() => navigation.navigate('SinhalaCommunityScreen')}
         />
-      </ScrollView>
+      </ScrollView></ScrollView>
     </ImageBackground>
   );
 };
@@ -94,17 +94,21 @@ const styles = StyleSheet.create({
     marginLeft: 320,
   },
   text: {
-    fontSize: 28,
+    fontSize: 34,
     textAlign: 'right',
     marginRight: 28,
     marginBottom: 30,
     fontWeight: '500',
     color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship2',
+    marginTop: "3%"
   },
   heading: {
-    fontSize: 36,
+    fontSize: 44,
     textAlign: 'center',
-    color: '#54225e',
-    fontWeight: 'bold',
+    color: '#54225e',    
+    fontFamily:'KGPrimaryPenmanship2',
+    marginLeft: '3%',
+    marginRight: '3%'
   },
 });
