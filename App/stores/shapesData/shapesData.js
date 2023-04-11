@@ -23,6 +23,6 @@ export default shapesData = [
   {
     question: 'What is the shape of a thread?',
     options: ['Circle', 'Line', 'Triangle', 'Rectangle'],
-    correct_option: 'The bat',
+    correct_option: 'Circle',
   },
 ];
