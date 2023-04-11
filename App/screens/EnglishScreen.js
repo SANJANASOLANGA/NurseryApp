@@ -53,17 +53,17 @@ export default class MathsScreen extends Component {
                 image={require('../assets/images/EnglishE.png')}
               />
               <Card
+                main={'Quiz of Alphabet'}
+                onPress={this.NavigateToAlphabetQuiz}
+                image={require('../assets/images/EnglishQ.jpg')}
+              // name={'edit'}
+              />
+              <Card
                 // text={'Do you want to know Phrases? Come try it !'}
                 main={'PHRASES'}
                 onPress={this.NavigateToPhrases}
                 image={require('../assets/images/PhrasesE.png')}
               // name={'book'}
-              />
-              <Card
-                main={'Quiz of Alphabet'}
-                onPress={this.NavigateToAlphabetQuiz}
-                image={require('../assets/images/EnglishQ.jpg')}
-              // name={'edit'}
               />
               <Card
                 main={'Quiz of Phrases'}
