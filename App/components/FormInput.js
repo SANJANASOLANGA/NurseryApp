@@ -15,7 +15,7 @@ const FormInput = ({labelValue, placeholderText, iconType, ...rest}) => {
         style={styles.input}
         numberOfLines={1}
         placeholder={placeholderText}
-        placeholderTextColor="#666"
+        placeholderTextColor="#b58ebd"
         {...rest}
       />
     </View>
