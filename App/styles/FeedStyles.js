@@ -36,12 +36,13 @@ export const UserName = styled.Text`
   font-size: 14px;
   font-weight: bold;
   font-family: 'Lato-Regular';
+  color: #54225e
 `;
 
 export const PostTime = styled.Text`
   font-size: 12px;
   font-family: 'Lato-Regular';
-  color: #666;
+  color: #54225e;
 `;
 
 export const PostText = styled.Text`
@@ -50,6 +51,7 @@ export const PostText = styled.Text`
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
+  color: #54225e
 `;
 
 export const PostImg = styled.Image`
