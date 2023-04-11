@@ -489,6 +489,7 @@ const EditProfileScreen = ({navigation}) => {
               value={userData ? userData.fname : ''}
               onChangeText={txt => setUserData({...userData, fname: txt})}
               style={styles.textInput}
+              placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
@@ -499,6 +500,7 @@ const EditProfileScreen = ({navigation}) => {
               onChangeText={txt => setUserData({...userData, lname: txt})}
               autoCorrect={false}
               style={styles.textInput}
+              placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
@@ -511,6 +513,7 @@ const EditProfileScreen = ({navigation}) => {
               onChangeText={txt => setUserData({...userData, about: txt})}
               autoCorrect={true}
               style={[styles.textInput, {height: 40}]}
+              placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
@@ -522,6 +525,7 @@ const EditProfileScreen = ({navigation}) => {
               value={userData ? userData.phone : ''}
               onChangeText={txt => setUserData({...userData, phone: txt})}
               style={styles.textInput}
+              placeholderTextColor="#85568f"
             />
           </View>
 
@@ -533,6 +537,7 @@ const EditProfileScreen = ({navigation}) => {
               value={userData ? userData.country : ''}
               onChangeText={txt => setUserData({...userData, country: txt})}
               style={styles.textInput}
+              placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
@@ -543,6 +548,7 @@ const EditProfileScreen = ({navigation}) => {
               value={userData ? userData.city : ''}
               onChangeText={txt => setUserData({...userData, city: txt})}
               style={styles.textInput}
+              placeholderTextColor="#85568f"
             />
           </View>
           <View
@@ -630,7 +636,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#bfafc7',
+    borderBottomColor: '#b98fc2',
     paddingBottom: 5,
     marginLeft: 28,
     marginRight: 28,
@@ -647,7 +653,6 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'ios' ? 0 : -12,
     paddingLeft: 10,
     color: '#54225e',
-    borderColor: '#54225e'
   },
   buttonContainer: {
     margin: 20,
