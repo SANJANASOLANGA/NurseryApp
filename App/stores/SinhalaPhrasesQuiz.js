@@ -87,11 +87,11 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
             style={{
               fontSize: 20,
               opacity: 0.6,
-              marginRight: 2,
+              marginRight: 2, color: '#54225e'
             }}>
             {currentQuestionIndex + 1}
           </Text>
-          <Text style={{ fontSize: 18, opacity: 0.6 }}>
+          <Text style={{ fontSize: 18, opacity: 0.6, color: '#54225e' }}>
             / {allQuestions.length}
           </Text>
         </View>
@@ -99,7 +99,7 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
         {/* Question */}
         <Text
           style={{
-            fontSize: 30,
+            fontSize: 20, color: '#54225e'
           }}>
           {allQuestions[currentQuestionIndex]?.question}
         </Text>
@@ -136,7 +136,7 @@ const SinhalaPhrasesQuiz = ({ navigation }) => {
               paddingHorizontal: 20,
               marginVertical: 10,
             }}>
-            <Text style={{ fontSize: 25 }}>{option}</Text>
+            <Text style={{ fontSize: 20, color: '#54225e' }}>{option}</Text>
 
             {/* Show Check Or Cross Icon based on correct answer*/}
             {option === correctOption ? (
