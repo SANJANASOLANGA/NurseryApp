@@ -258,8 +258,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#eecdf7',
     padding: 35,
     borderRadius: 25,
-    marginTop: 300,
-    marginLeft: 35,
+    marginLeft: '7%',
+    marginRight: '7%',
+    marginTop: '75%',
+    alignItems: 'center',
+    elevation: 5,
   },
   modal_Text: {
     fontSize: 23,
@@ -268,7 +271,6 @@ const styles = StyleSheet.create({
   modal_btnWrap: {
     flex: 1,
     flexDirection: 'row',
-    marginLeft: 100,
   },
   modal_btn: {
     width: 80,
@@ -282,6 +284,7 @@ const styles = StyleSheet.create({
     marginTop: '40%',
     backgroundColor: '#8a36d1',
     borderRadius: 15,
-    color: 'white'
+    color: 'white',
+    elevation: 5,
   },
 });
