@@ -51,18 +51,19 @@ const PostCard = ({item, onDelete, onPress}) => {
       key={item.id}>
       <UserInfo>
         <UserImg
-          source={{
-            uri: userData
-              ? userData.userImg ||
-              // '../assets/images/logo-no-background.png': '../assets/images/logo-no-background.png'
-                'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'
-              : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg',
-          }}
+          // source={{
+          //   uri: userData
+          //     ? userData.userImg ||
+          //     // '../assets/images/logo-no-background.png': '../assets/images/logo-no-background.png'
+          //       'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'
+          //     : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg',
+          // }}
+          source={require('../assets/images/logo-no-background.png')}
         />
         <UserInfoText>
           <TouchableOpacity onPress={onPress}>
             <UserName>
-              {userData ? userData.fname || 'Test' : 'Test'}{' '}
+              {userData ? userData.fname || 'New' : 'New'}{' '}
               {userData ? userData.lname || 'User' : 'User'}
             </UserName>
           </TouchableOpacity>
