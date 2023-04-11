@@ -18,7 +18,7 @@ export default numbersData = [
   {
     question: 'How many days have for a week?',
     options: ['10', '7', '5', '12'],
-    correct_option: 'The blue whale',
+    correct_option: '7',
   },
   {
     question: 'How many Suns in our world?',
