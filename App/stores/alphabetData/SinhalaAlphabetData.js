@@ -5,12 +5,12 @@ export default alphabetData = [
       correct_option: 'අ',
     },
     {
-      question: '"ට"යෙදෙන වචනය සොයන්න.',
+      question: '"ට" යෙදෙන වචනය සොයන්න.',
       options: ['බල්ලා', 'ගස', 'මල', 'ටයරය'],
       correct_option: 'ටයරය',
     },
     {
-      question: '"බසය"යන්නෙහි නොමැති අකුර සොයන්න.',
+      question: '"බසය" යන්නෙහි නොමැති අකුර සොයන්න.',
       options: ['ල', 'බ', 'ය', 'ස'],
       correct_option: 'ල',
     },
