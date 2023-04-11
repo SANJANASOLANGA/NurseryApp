@@ -45,33 +45,35 @@ const OnboardingScreen = ({navigation}) => {
       onDone={() => navigation.navigate('Login')}
       pages={[
         {
-          backgroundColor: '#bee6e1',
+          backgroundColor: '#e8cefe',
           image: (
             <Image
               style={styles.image}
-              source={require('../assets/images/onboarding1.png')}
+              source={require('../assets/images/onBoard1.png')}
             />
           ),
           title: 'Learn',
           subtitle: 'By using our mini lessons',
+          titleStyles: {color: '#54225e', },
+          subTitleStyles: {color: '#54225e'}
         },
         {
-          backgroundColor: '#f5e5ab',
+          backgroundColor: '#e8cefe',
           image: (
             <Image
               style={styles.image}
-              source={require('../assets/images/onboarding2.png')}
+              source={require('../assets/images/onBoard2.png')}
             />
           ),
           title: 'Practice',
           subtitle: 'With our cute quizzes',
         },
         {
-          backgroundColor: '#f7dae6',
+          backgroundColor: '#e8cefe',
           image: (
             <Image
               style={styles.image}
-              source={require('../assets/images/onboarding3.png')}
+              source={require('../assets/images/onBoard3.png')}
             />
           ),
           title: 'Build' ,
@@ -88,8 +90,8 @@ export default OnboardingScreen;
 
 const styles = StyleSheet.create({
   image: {
-    width: 350,
-    height: 350,
+    width: 360,
+    height: 450,
   },
   buttons: {
     fontSize: 22,
