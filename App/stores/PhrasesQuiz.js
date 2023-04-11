@@ -85,13 +85,13 @@ const PhrasesQuiz = ({ navigation }) => {
           }}>
           <Text
             style={{
-              fontSize: 20,
+              fontSize: 26,
               opacity: 0.6,
-              marginRight: 2,
+              marginRight: 2, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
             }}>
             {currentQuestionIndex + 1}
           </Text>
-          <Text style={{ fontSize: 18, opacity: 0.6 }}>
+          <Text style={{ fontSize: 26, opacity: 0.6, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
             / {allQuestions.length}
           </Text>
         </View>
@@ -99,7 +99,7 @@ const PhrasesQuiz = ({ navigation }) => {
         {/* Question */}
         <Text
           style={{
-            fontSize: 30,
+            fontSize: 30, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
           }}>
           {allQuestions[currentQuestionIndex]?.question}
         </Text>
@@ -134,9 +134,9 @@ const PhrasesQuiz = ({ navigation }) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingHorizontal: 20,
-              marginVertical: 10,
+              marginVertical: 10, 
             }}>
-            <Text style={{ fontSize: 25 }}>{option}</Text>
+            <Text style={{ fontSize: 25, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>{option}</Text>
 
             {/* Show Check Or Cross Icon based on correct answer*/}
             {option === correctOption ? (
@@ -193,9 +193,9 @@ const PhrasesQuiz = ({ navigation }) => {
             padding: 10,
             borderRadius: 25,
             alignSelf: 'center',
-            elevation: 10,
+            elevation: 10, 
           }}>
-          <Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>Next</Text>
+          <Text style={{ fontSize: 26, textAlign: 'center', color: 'white' , fontFamily:'KGPrimaryPenmanship'}}>Next</Text>
         </TouchableOpacity>
       );
     } else {
@@ -282,7 +282,7 @@ const PhrasesQuiz = ({ navigation }) => {
                   alignItems: 'center',
                   elevation: 25
                 }}>
-                <Text style={{ fontSize: 30, fontWeight: 'bold' }}>
+                <Text style={{ fontSize: 37, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
                   {score > allQuestions.length / 2 ? 'Congratulations!' : 'Oops!'}
                 </Text>
 
@@ -295,7 +295,7 @@ const PhrasesQuiz = ({ navigation }) => {
                   }}>
                   <Text
                     style={{
-                      fontSize: 30,
+                      fontSize: 30, fontFamily:'KGPrimaryPenmanship', color: '#54225e',
                       color:
                         score > allQuestions.length / 2
                           ? COLORS.success
@@ -305,7 +305,7 @@ const PhrasesQuiz = ({ navigation }) => {
                   </Text>
                   <Text
                     style={{
-                      fontSize: 20,
+                      fontSize: 20, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                     }}>
                     / {allQuestions.length}
                   </Text>
@@ -329,8 +329,8 @@ const PhrasesQuiz = ({ navigation }) => {
                     <Text
                       style={{
                         textAlign: 'center',
-                        fontSize: 20,
-                        color: 'white'
+                        fontSize: 26,
+                        color: 'white', fontFamily:'KGPrimaryPenmanship'
                       }}>
                       Retry
                     </Text>
@@ -349,7 +349,7 @@ const PhrasesQuiz = ({ navigation }) => {
                       style={{
                         textAlign: 'center',
                         fontSize: 20,
-                        color: 'white'
+                        color: 'white', fontFamily:'KGPrimaryPenmanship'
                       }}>
                       Exit
                     </Text>
@@ -379,18 +379,10 @@ const PhrasesQuiz = ({ navigation }) => {
                 <Text
                   style={{
                     textAlign: 'center',
-                    fontSize: 20,
+                    fontSize: 26, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                   }}>
-                  Get a Screenshot of Your Result
-                </Text>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    fontSize: 20,
-                    marginBottom: 30,
-                  }}>
-                  Add to Your Profile and Grow up Profile
-                </Text>
+                  Get a screenshot of your result and add it to your profile and grow up profile
+                </Text><Text></Text>
                 <TouchableOpacity
                   onPress={() => navigation.navigate('ProfileScreen')}
                   style={{
@@ -404,8 +396,8 @@ const PhrasesQuiz = ({ navigation }) => {
                   <Text
                     style={{
                       textAlign: 'center',
-                      fontSize: 20,
-                      color: 'white'
+                      fontSize: 26,
+                      color: 'white', fontFamily:'KGPrimaryPenmanship'
                     }}>
                     Feed Profile
                   </Text>
@@ -481,8 +473,10 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 25,
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship',
+    color: 'white',
   },
   footer: {
     flexDirection: 'row',
