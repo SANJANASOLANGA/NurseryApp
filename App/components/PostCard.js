@@ -47,7 +47,7 @@ const PostCard = ({item, onDelete, onPress}) => {
 
   return (
     <Card
-      style={{width: 385, height: 425, borderRadius: 25, margin: 20}}
+      style={{width: 385, height: 425, borderRadius: 0, margin: 20}}
       key={item.id}>
       <UserInfo>
         <UserImg
