@@ -60,6 +60,7 @@ const AuthStack = () => {
         component={SignupScreen}
         options={({navigation}) => ({
           title: 'Sign Up',
+          headerTintColor: '#54225e',
           headerStyle: {
             backgroundColor: 'transparent',
             shadowColor: 'transparent',
@@ -71,7 +72,7 @@ const AuthStack = () => {
                 name="chevron-left"
                 size={23}
                 backgroundColor="transparent"
-                color="#333"
+                color="#54225e"
                 marginLeft={5}
                 onPress={() => navigation.navigate('Login')}
               />
