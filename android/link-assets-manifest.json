@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "App/assets/fonts/KGPrimaryLinedNOSPACE.ttf",
+      "sha1": "d8f0e5945b44517aba39dfcfffd679c973708aa7"
+    },
+    {
+      "path": "App/assets/fonts/KGPrimaryPenmanship.ttf",
+      "sha1": "d7f7be932e728ecc92ab79246350681ccc88d969"
+    },
+    {
+      "path": "App/assets/fonts/KGPrimaryPenmanship2.ttf",
+      "sha1": "922c9a1552f7f8bc1b1399e4a870675a93854e27"
+    },
+    {
+      "path": "App/assets/fonts/KGPrimaryPenmanshipAlt.ttf",
+      "sha1": "19573119f1bcd67636d4f7b65d987f10ba7f9095"
+    },
+    {
+      "path": "App/assets/fonts/KGPrimaryPenmanshipLined.ttf",
+      "sha1": "bf9b4763de621a93f47cc6c49c143aebf09aec91"
+    }
+  ]
+}
