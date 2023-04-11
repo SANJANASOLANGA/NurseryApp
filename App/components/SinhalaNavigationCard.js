@@ -28,10 +28,10 @@ export default function SinhalaNavigationCard({ text, image, onPress }) {
 
 const styles = StyleSheet.create({
   textArea_text: {
-    fontSize: 30,
+    fontSize: 25,
     textAlign: 'center',
     color: 'white',
-    fontFamily:'KGPrimaryPenmanship',
+    fontWeight: 500,
     margin: '1%'
   },
   card: {
