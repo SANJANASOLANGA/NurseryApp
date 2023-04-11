@@ -85,11 +85,13 @@ const TabStack = () => {
         tabBarActiveTintColor: '#c055e0',
         tabBarInactiveTintColor: '#54225e',
         tabBarLabelStyle: {
-          fontSize: 15,
+          fontSize: 20,
+          fontFamily:'KGPrimaryPenmanship',
         },
         tabBarStyle: [
           {
-            backgroundColor: '#faedfc'
+            backgroundColor: '#faedfc',
+            height: '7%'
           },
           null
         ],

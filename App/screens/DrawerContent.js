@@ -17,7 +17,7 @@ export function DrawerContent(props) {
   
   return (
     <View style={{flex: 1}}>
-      <DrawerContentScrollView style={{backgroundColor: '#eecdf7'}} {...props}>
+      <DrawerContentScrollView style={{backgroundColor: '#faedfc'}} {...props}>
         <View style={styles.drawerContent}>
           <View style={styles.userInfoSection}>
             <View
@@ -27,12 +27,12 @@ export function DrawerContent(props) {
                 justifyContent: 'center',
                 marginRight: 15,
               }}>
-              <Avatar.Image
+              {/* <Avatar.Image
                 source={{
                   uri: 'https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                 }}
                 size={50}
-              />
+              /> */}
               <View style={{marginLeft: 15, alignItems: 'center', alignContent: 'center'}}>
                 <Title style={styles.title}>{user.email}</Title>
                 {/* <Caption style={styles.caption}>@{user.uid}</Caption> */}
@@ -167,7 +167,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="සිංහල හෝඩිය" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaAlphabetScreenStack');
               }}
@@ -177,7 +177,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="කෙටි දෙබස්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaPharasesScreenStack');
               }}
@@ -187,7 +187,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="ඉලක්කම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaNumbersScreenStack');
               }}
@@ -197,7 +197,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="හැඩ" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaShapesScreenStack');
               }}
@@ -207,7 +207,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="පාට" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaColorsScreenStack');
               }}
@@ -217,7 +217,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="කවි" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaPoemsScreenStack');
               }}
@@ -227,7 +227,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="පවුල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaFamilyScreenStack');
               }}
@@ -237,7 +237,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="පාසල" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaScoolScreenStack');
               }}
@@ -248,7 +248,7 @@ export function DrawerContent(props) {
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
               label="ක්‍රියාකාරකම්" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 15}}
+              labelStyle= {{fontSize: 14}}
               onPress={() => {
                 props.navigation.navigate('SinhalaActivityDrawer');
               }}
@@ -311,7 +311,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 3,
     fontWeight: 'bold',
-    color: '#54225e'
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship'
   },
   caption: {
     fontSize: 14,
@@ -344,6 +345,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 16,
-    color:'#54225e'
+    color:'#54225e',
+    fontFamily:'KGPrimaryPenmanship'
   }
 });
