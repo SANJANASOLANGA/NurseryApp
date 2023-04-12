@@ -24,28 +24,30 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
           <ScrollView>
             <Card2
               name={'message1'}
-              text1={'Good Morning !            '}
-              text2={'Good Morning !'}
-              text3={'Have a Good Day !'}
+              text1={'සුබ  උදෑසනක් වේවා !            '}
+              text2={'සුබ  උදෑසනක් වේවා !'}
+              text3={'සුබ දවසක් වේවා !'}
             />
             <Card2
               name={'message1'}
-              text1={'Good Afternoon !          '}
-              text2={'  Good Afternoon !'}
-              text3={'It is a Great Day !'}
-            /></ScrollView><ScrollView>
+              text1={'සුබ සන්ධ්‍යාවක් වේවා !          '}
+              text2={'  සුබ සන්ධ්‍යාවක් වේවා !'}
+              text3={'අද හොඳ දවසක් !'}
+            /></ScrollView>
+          <ScrollView>
             <Card2
               name={'message1'}
-              text1={'Good Evening !           '}
-              text2={'Good Evening !'}
-              text3={'How is the Day !'}
+              text1={'ආයුබෝවන් !                   '}
+              text2={'ආයුබෝවන් !'}
+              text3={'හමුවීම සතුටක් !'}
             />
             <Card2
               name={'message1'}
-              text1={'Good Night !               '}
-              text2={'Good Night !'}
-              text3={'  Sweet Dreams !'}
-            /></ScrollView><ScrollView>
+              text1={'හමුවීම සතුටක්                  '}
+              text2={'නැවත හමුවෙමු !'}
+              text3={'  පරිස්සමින් ඉන්න !'}
+            /></ScrollView>
+          {/* <ScrollView>
             <Card2
               name={'message1'}
               text1={'Thank You !                  '}
@@ -57,7 +59,8 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
               text1={'Get Well Soon !             '}
               text2={'    Thank you for '}
               text3={'your wish !'}
-            /></ScrollView><ScrollView>
+            /></ScrollView>
+          <ScrollView>
             <Card2
               name={'message1'}
               text1={'Hello, Nice to meet you !'}
@@ -69,7 +72,8 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
               text1={'I am Sorry !                '}
               text2={'            It is Ok !'}
               text3={'         No Harm.'}
-            /></ScrollView>
+            />
+          </ScrollView> */}
         </ScrollView>
       </View>
       <View style={styles.bottom}>
