@@ -40,7 +40,7 @@ const HomeActivities = ({ navigation }) => {
                 underlayColor={'white'}
                 style={styles.button}
                 onPress={() => navigation.navigate('SinhalaActivityDrawer')}>
-                <Text style={styles.textArea_text2}>පාඩම් හුරුව</Text>
+                <Text style={styles.textArea_text2}>සිංහල පාඩම් හුරුව</Text>
               </TouchableHighlight>
             </View>
           </ImageBackground>
