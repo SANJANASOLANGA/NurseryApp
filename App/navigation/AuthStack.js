@@ -71,7 +71,7 @@ const AuthStack = () => {
             fontSize: 24
           },
           headerLeft: () => (
-            <View style={{marginLeft: 10}}>
+            <View style={{marginLeft: '1%'}}>
               <FontAwesome.Button
                 name="chevron-left"
                 size={23}
