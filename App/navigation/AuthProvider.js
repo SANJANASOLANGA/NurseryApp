@@ -25,7 +25,18 @@ export const AuthProvider = ({children}) => {
             await auth().signInWithEmailAndPassword(email, password);
             Alert.alert("Logged Successfully !")
           } catch (e) {
-            Alert.alert(e);
+            // Alert.alert(e);
+            if (e.code === 'auth/network-request-failed') {
+              Alert.alert('Try again !','Please check your internet connection')
+            }else if (e.code === 'auth/wrong-password'){
+              Alert.alert('Invalid password !','Enter your password correctly')
+            }else if (e.code === 'auth/unknown') {
+              Alert.alert('Try again !','Something went wrong')
+            }else{
+              Alert.alert('Try again !', 'Something went wrong')
+              console.log('error 1 ',e)
+            }
+            console.log(e)
           }
         },
         googleLogin: async () => {
@@ -116,6 +127,8 @@ export const AuthProvider = ({children}) => {
                   Alert.alert('Try again !','The email you entered already exists')
                 }else if (e.code === 'auth/weak-password'){
                   Alert.alert('Weak password !','Password should be at least 6 characters')
+                }else if (e.code === 'auth/network-request-failed') {
+                  Alert.alert('Try again !','Please check your internet connection')
                 }else{
                   Alert.alert('Try again !', 'Something went wrong')
                   console.log('error 1 ',e)
