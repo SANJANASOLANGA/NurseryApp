@@ -28,7 +28,7 @@ export default function SinhalaNavigationCard({ text, image, onPress }) {
 
 const styles = StyleSheet.create({
   textArea_text: {
-    fontSize: 25,
+    fontSize: 22,
     textAlign: 'center',
     color: 'white',
     fontWeight: 500,
