@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
 import {
   Avatar,
   Title,
@@ -11,6 +11,7 @@ import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {AuthContext} from '../navigation/AuthProvider';
+// import { Image } from 'react-native-svg';
 
 export function DrawerContent(props) {
   const {user, logout} = useContext(AuthContext);
@@ -34,7 +35,11 @@ export function DrawerContent(props) {
                 size={50}
               /> */}
               <View style={{marginLeft: 15, alignItems: 'center', alignContent: 'center'}}>
-                <Title style={styles.title}>{user.email}</Title>
+                <Image
+            style={styles.logo}
+            source={require('../assets/images/logo-no-background.png')}
+          />
+                <Title style={{fontFamily:'KGPrimaryPenmanship2', fontSize: 24, color: '#54225e'}}>{user.email}</Title>
                 {/* <Caption style={styles.caption}>@{user.uid}</Caption> */}
               </View>
             </View>
@@ -47,7 +52,7 @@ export function DrawerContent(props) {
                 <Icon name="home-outline" color={color} size={size} />
               )}
               label="Home" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0' 
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship2'}}
               onPress={() => {
                 props.navigation.navigate('HomeScreen');
               }}
@@ -347,5 +352,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color:'#54225e',
     fontFamily:'KGPrimaryPenmanship'
-  }
+  },
+  logo: {
+    width: 60,
+    height: 40,
+    margin: 20,
+  },
 });
