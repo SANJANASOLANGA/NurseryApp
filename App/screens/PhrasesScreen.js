@@ -113,11 +113,11 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
   text: {
-    fontSize: 33,
+    fontSize: 40,
     marginTop: "6%",
     textAlign: 'center',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   buttonText: {
     fontSize: 18,
