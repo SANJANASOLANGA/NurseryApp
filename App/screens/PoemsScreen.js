@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     margin: 10,
     elevation: 10,
-    marginRight:'20%'
+    marginRight:'30%'
   },
   btn_txt: {
     fontSize: 26,
