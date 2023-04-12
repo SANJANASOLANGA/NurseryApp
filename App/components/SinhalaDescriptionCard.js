@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 360,
-    height: 450,
+    height: 430,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   card2: {
     width: 300,
-    height: 100,
+    height: 90,
     backgroundColor: '#f8dcfc',
     borderRadius: 15,
     alignItems: 'center',
