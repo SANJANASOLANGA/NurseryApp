@@ -8,7 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import Card2 from '../components/card2';
+import EnglishPhrases from '../components/EnglishPhrases';
 
 const PhrasesScreen = ({ navigation }) => {
 
@@ -22,49 +22,49 @@ const PhrasesScreen = ({ navigation }) => {
       <View style={styles.body}>
         <ScrollView horizontal={true}>
           <ScrollView>
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Good Morning !            '}
               text2={'Good Morning !'}
               text3={'Have a Good Day !'}
             />
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Good Afternoon !          '}
               text2={'  Good Afternoon !'}
               text3={'It is a Great Day !'}
             /></ScrollView><ScrollView>
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Good Evening !           '}
               text2={'Good Evening !'}
               text3={'How is the Day !'}
             />
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Good Night !               '}
               text2={'Good Night !'}
               text3={'  Sweet Dreams !'}
             /></ScrollView><ScrollView>
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Thank You !                  '}
               text2={'          It is my Pleasure !'}
               text3={'Welcome !'}
             />
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Get Well Soon !             '}
               text2={'    Thank you for '}
               text3={'your wish !'}
             /></ScrollView><ScrollView>
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'Hello, Nice to meet you !'}
               text2={'Nice to meet you too !'}
               text3={'How are you ?'}
             />
-            <Card2
+            <EnglishPhrases
               name={'message1'}
               text1={'I am Sorry !                '}
               text2={'            It is Ok !'}
