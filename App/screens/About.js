@@ -22,7 +22,7 @@ export default class AboutScreen extends Component {
         source={require('../assets/images/bg.jpg')}
         style={styles.screen}>
         <ScrollView>
-          <Text style={styles.main}>EduKids Nursery</Text>
+          <Text style={styles.main}>EduKids</Text>
           <Text style={styles.sub}>About Us</Text>
           <Text style={styles.sub}>Privacy Policies</Text>
           <Text />
