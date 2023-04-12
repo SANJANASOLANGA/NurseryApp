@@ -19,7 +19,7 @@ export const AuthProvider = ({children}) => {
         login: async (email, password) => {
           try {
             if (!email || !password) {
-              Alert.alert('Please fill Details');
+              Alert.alert('Please fill Details !');
               return;
             }
             await auth().signInWithEmailAndPassword(email, password);
@@ -87,11 +87,7 @@ export const AuthProvider = ({children}) => {
             if (!email || !password || !confirmPassword) {
               Alert.alert('Please fill Details !');
               return;
-            }
-            if (password.length == 6){
-              console.log('equal')
-            }
-            if (password !== confirmPassword) {
+            }if (password !== confirmPassword) {
               Alert.alert("Password didn't match");
               return;
             }
