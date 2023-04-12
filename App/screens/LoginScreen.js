@@ -1,4 +1,6 @@
 import React, {useContext, useState} from 'react';
+import {firebase} from '@react-native-firebase/auth';
+
 import {
   Alert,
   View,
@@ -24,6 +26,22 @@ const LoginScreen = ({navigation}) => {
 
   const checkLogin = () =>{
     login(email, password)
+  }
+
+  const resetPassword = () =>{
+    if (email!=null){
+      console.log('email is ',email)
+      firebase.auth().sendPasswordResetEmail(email)
+      .then(() => {
+        Alert.alert('Password reset link have send to the your email !')
+      }).catch((error) => {
+        Alert.alert('Errorrrr')
+        console.log(error)
+      })
+      
+    }else{
+      Alert.alert('Please enter a valid password !')
+    }
   }
 
   return (
@@ -65,7 +83,7 @@ const LoginScreen = ({navigation}) => {
 
       <TouchableOpacity
         style={styles.forgotButton}
-        onPress={() => navigation.navigate('Signup')}>
+        onPress={() => resetPassword()}>
         <Text style={styles.navButtonText}>Forgot Password?</Text>
       </TouchableOpacity>
 
