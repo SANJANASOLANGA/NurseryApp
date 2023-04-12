@@ -68,16 +68,16 @@ const AuthStack = () => {
           },
           headerTitleStyle: {
             fontFamily:'KGPrimaryPenmanship2',
-            fontSize: 24
+            fontSize: 24,
           },
           headerLeft: () => (
-            <View style={{marginLeft: '1%'}}>
+            <View>
               <FontAwesome.Button
                 name="chevron-left"
                 size={23}
                 backgroundColor="transparent"
                 color="#54225e"
-                marginLeft={5}
+                // marginLeft={5}
                 onPress={() => navigation.navigate('Login')}
               />
             </View>
