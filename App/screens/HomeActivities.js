@@ -46,8 +46,8 @@ const HomeActivities = ({ navigation }) => {
             </View>
           </ImageBackground>
         </ScrollView>
-        <Text style={styles.quote}>“Teaching is not about answering questions but about raising questions – opening doors for them in places that they could not imagine.” </Text>
-        <Text style={styles.quote}>-Yawar Baig</Text>
+        {/* <Text style={styles.quote}>“Teaching is not about answering questions but about raising questions – opening doors for them in places that they could not imagine.” </Text>
+        <Text style={styles.quote}>-Yawar Baig</Text> */}
       </View>
       </ScrollView>
     </ImageBackground>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 42,
-    marginTop: '10%',
+    marginTop: '12%',
     marginBottom: 20,
     textAlign: 'center',
     color: '#54225e',
