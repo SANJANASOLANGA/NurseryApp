@@ -89,7 +89,7 @@ export const AuthProvider = ({children}) => {
               return;
             }
             if (password !== confirmPassword) {
-              Alert.alert('Password not matched with the confirm password.');
+              Alert.alert("Password didn't match");
               return;
             }
             await auth()
@@ -111,14 +111,17 @@ export const AuthProvider = ({children}) => {
                       'Something went wrong with added user to firestore:\n\n' +
                         error,
                     );
+                    console.log(e)
                   });
               })
               //we need to catch the whole sign up process if it fails too.
               .catch(error => {
                 Alert.alert('Something went wrong with sign up:\n\n' + error);
+                console.log('error 1 ',error)
               });
           } catch (e) {
             Alert.alert(e);
+            console.log('error 2 ',e)
           }
         },
         logout: async () => {
