@@ -165,7 +165,7 @@ export function DrawerContent(props) {
               }}
             />
             <Text />
-            <Text style={{textAlign: 'center', fontSize: 17, color:'#54225e',}}>සිංහල</Text>
+            <Text style={{textAlign: 'center', fontSize: 15, color:'#54225e',}}>සිංහල</Text>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="book-open" color={color} size={size} />
