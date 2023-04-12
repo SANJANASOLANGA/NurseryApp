@@ -24,19 +24,20 @@ export default function Card2({text1, text2, text3, name}) {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 26,
+    fontSize: 15,
     padding: 10,
     fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   text2: {
-    fontSize: 26,
+    fontSize: 15,
     marginTop: 15,
     fontFamily: 'KGPrimaryPenmanship2',
-    color: '#54225e'
+    color: '#54225e',
+    padding: 10,
   },
   text3: {
-    fontSize: 26,
+    fontSize: 15,
     padding: 10,
     marginLeft: 60,
     fontFamily: 'KGPrimaryPenmanship2',
