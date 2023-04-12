@@ -125,8 +125,9 @@ const styles = StyleSheet.create({
     marginRight:'20%'
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 26,
+    color: 'white',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   text1: {
     fontSize: 30,

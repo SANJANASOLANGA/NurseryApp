@@ -18,7 +18,7 @@ const SinhalaAlphabet = ({ navigation }) => {
       source={require('../assets/images/bg.jpg')}
       style={styles.main}>
       <View style={styles.header}>
-        <Text style={styles.text}>සිංහල හෝඩිය ඉගෙන ගනිමු</Text>
+        <Text style={styles.text}>සිංහල අකුරු හුරුව</Text>
       </View>
       <ScrollView>
         <ScrollView horizontal={true} style={{ marginBottom: 5 }}>
@@ -228,7 +228,8 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 26,
+    color: 'white',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
 });

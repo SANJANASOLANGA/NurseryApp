@@ -141,7 +141,8 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 26,
+    color: 'white',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
 });
