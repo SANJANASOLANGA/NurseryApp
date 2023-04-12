@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     marginTop: 40,
     elevation: 10,
+    marginRight: 10
   },
   button: {
     width: 330,
