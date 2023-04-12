@@ -27,7 +27,7 @@ export default class AboutScreen extends Component {
           <Text style={styles.sub}>Privacy Policies</Text>
           <Text />
           <Text />
-          <Text style={styles.modal_sub}>Effective date: 2023-05-01</Text>
+          <Text style={styles.modal_sub}>Effective date: 2023-04-25</Text>
           <Text style={styles.modal_sub}>Introduction</Text>
           <Text style={styles.modal_text}>
             Sanjana S. A. D. S. built the EduKids Nursery app as a Free app.
@@ -195,13 +195,13 @@ export default class AboutScreen extends Component {
             this page.
           </Text>
           <Text style={styles.modal_text}>
-            These terms and conditions are effective as of 2023-05-01
+            These terms and conditions are effective as of 2023-04-25.
           </Text>
           <Text style={styles.sub}>Contact Us</Text>
           <Text />
-          <Text style={styles.contact_text}>edukids@gmail.com.</Text>
-          <Text style={styles.contact_text}>www.edukids.com</Text>
-          <Text style={styles.contact_text}>+94705149750</Text>
+          <Text style={styles.contact_text}>sanjanasolangaarachchi@gmail.com.</Text>
+          {/* <Text style={styles.contact_text}>www.edukids.com</Text> */}
+          <Text style={styles.contact_text}>+94775842753</Text>
           <Image
             style={styles.logo}
             source={require('../assets/images/logo-no-background.png')}
@@ -226,17 +226,18 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   main: {
-    fontSize: 35,
+    fontSize: 40,
     textAlign: 'center',
-    marginTop: 30,
-    margin: 20,
-    fontWeight: 'bold',
+    marginTop: '10%',
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   sub: {
-    fontSize: 30,
-    fontWeight: '500',
+    fontSize: 37,
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
     marginLeft: 20,
-    marginTop: 60,
+    marginTop: '10%',
   },
   button: {
     width: 200,
@@ -247,32 +248,42 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     margin: 10,
     elevation: 10,
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 26,
+    color: 'white',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   modal_text: {
     textAlign: 'justify',
-    fontSize: 15,
+    fontSize: 21,
     margin: 20,
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   contact_text: {
     textAlign: 'justify',
-    fontSize: 15,
+    fontSize: 23,
     marginLeft: 20,
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   modal_sub: {
-    fontSize: 17,
+    fontSize: 23,
     color: 'black',
     margin: 10,
     marginLeft: 20,
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   points: {
     textAlign: 'justify',
-    fontSize: 15,
+    fontSize: 21,
     margin: 10,
     marginLeft: 40,
+    color: '#54225e',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   logo: {
     width: 80,
