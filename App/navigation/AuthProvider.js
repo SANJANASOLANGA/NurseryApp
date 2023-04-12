@@ -85,7 +85,7 @@ export const AuthProvider = ({children}) => {
         register: async (email, password, confirmPassword) => {
           try {
             if (!email || !password || !confirmPassword) {
-              Alert.alert('Please fill Details');
+              Alert.alert('Please fill Details !');
               return;
             }
             if (password !== confirmPassword) {
@@ -107,20 +107,20 @@ export const AuthProvider = ({children}) => {
                   })
                   //ensure we catch any errors at this stage to advise us if something does go wrong
                   .catch(error => {
-                    Alert.alert(
-                      'Something went wrong with added user to firestore:\n\n' +
-                        error,
-                    );
-                    console.log(e)
+                    Alert.alert('Try again !', 'Something went wrong');
+                    console.log('error firebase ',e)
                   });
               })
               //we need to catch the whole sign up process if it fails too.
-              .catch(error => {
-                Alert.alert('Something went wrong with sign up:\n\n' + error);
-                console.log('error 1 ',error)
+              .catch(e => {
+                if (e.code === 'auth/email-already-in-use') {
+                  Alert.alert('Try again !','The email you entered already exists')
+                }else{
+                  Alert.alert('Try again !', 'Something went wrong')
+                }
               });
           } catch (e) {
-            Alert.alert(e);
+            Alert.alert('Try again !', 'Something went wrong');
             console.log('error 2 ',e)
           }
         },
