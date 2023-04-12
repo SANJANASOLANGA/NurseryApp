@@ -7,7 +7,7 @@ import {
   ScrollView,
   Image,
 } from 'react-native';
-import Card from '../../components/Card';
+import SinhalaCard from '../../components/SinhalaCard';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 export default class SinhalaCreativeScreen extends Component {
@@ -42,21 +42,21 @@ export default class SinhalaCreativeScreen extends Component {
         </View>
         <ScrollView>
           <View style={styles.body}>
-            <View style={styles.card_container}>
-              <Card
+            <View style={styles.Sinhalacard_container}>
+              <SinhalaCard
                 text={'Do you want to know Alphabet? Come try it !'}
-                main={'COLORS'}
+                main={'පාට හුරුව'}
                 onPress={this.NavigateToColors}
                 image={require('../../assets/images/colorsS.png')}
               />
-              <Card
+              <SinhalaCard
                 main={'Quiz of Colors'}
                 onPress={this.NavigateToColorsQuiz}
                 image={require('../../assets/images/colorsQSinhala.png')}
               />
-              <Card
+              <SinhalaCard
                 text={'Do you want to know Phrases? Come try it !'}
-                main={'POEMS'}
+                main={'කවි කියමු'}
                 onPress={this.NavigateToPoems}
                 image={require('../../assets/images/poemsS.jpg')}
               />
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 100,
     borderBottomRightRadius: 100,
   },
-  card_container: {
+  Sinhalacard_container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     color: '#54225e',
     marginBottom: '5%'
   },
-  card_text: {
+  Sinhalacard_text: {
     fontSize: 25,
     textAlign: 'center',
     marginTop: 30,

@@ -7,7 +7,7 @@ import {
   ScrollView,
   Image,
 } from 'react-native';
-import Card from '../../components/Card';
+import SinhalaCard from '../../components/SinhalaCard';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 export default class SinhalaCommunityScreen extends Component {
@@ -40,14 +40,14 @@ export default class SinhalaCommunityScreen extends Component {
         </View>
         <ScrollView>
           <View style={styles.body}>
-            <View style={styles.card_container}>
-              <Card
-                main={'FAMILY'}
+            <View style={styles.Sinhalacard_container}>
+              <SinhalaCard
+                main={'පුංචි අපේ පවුල'}
                 onPress={this.NavigateToMyFam}
                 image={require('../../assets/images/family1.png')}
               />
-              <Card
-                main={'SCHOOL'}
+              <SinhalaCard
+                main={'පුංචි අපේ පාසල'}
                 onPress={this.NavigateToSchool}
                 image={require('../../assets/images/school.png')}
               />
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 100,
     borderBottomRightRadius: 100,
   },
-  card_container: {
+  Sinhalacard_container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     color: '#54225e',
     marginBottom: '5%'
   },
-  card_text: {
+  Sinhalacard_text: {
     fontSize: 25,
     textAlign: 'center',
     marginTop: 30,

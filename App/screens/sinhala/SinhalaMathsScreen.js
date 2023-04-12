@@ -6,7 +6,7 @@ import {
   Text,
   ScrollView,
 } from 'react-native';
-import Card from '../../components/Card';
+import SinhalaCard from '../../components/SinhalaCard';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
@@ -46,24 +46,24 @@ export default class SinhalaMathsScreen extends Component {
         </View>
         <ScrollView>
           <View style={styles.body}>
-            <View style={styles.card_container}>
-              <Card
-                main={'NUMBERS'}
+            <View style={styles.Sinhalacard_container}>
+              <SinhalaCard
+                main={'ඉලක්කම් හුරුව'}
                 onPress={this.NavigateToAlphabet}
                 image={require('../../assets/images/mathsS.png')}
               />
-              <Card
+              <SinhalaCard
                 main={'Quiz of Numbers'}
                 onPress={this.NavigateToNumbersQuiz}
                 image={require('../../assets/images/mathsQSinhala.png')}
               />
-              <Card
+              <SinhalaCard
                 text={'Do you want to know Phrases? Come try it !'}
-                main={'SHAPES'}
+                main={'හැඩ තල හුරුව'}
                 onPress={this.NavigateToShapes}
                 image={require('../../assets/images/shapesS.jpg')}
               />
-              <Card
+              <SinhalaCard
                 main={'Quiz of Shapes'}
                 onPress={this.NavigateToShapesQuiz}
                 image={require('../../assets/images/shapesQSinhala.png')}
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 100,
     borderBottomRightRadius: 100,
   },
-  card_container: {
+  Sinhalacard_container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     color: '#54225e',
     marginBottom: '5%'
   },
-  card_text: {
+  Sinhalacard_text: {
     fontSize: 25,
     textAlign: 'center',
     marginTop: 30,

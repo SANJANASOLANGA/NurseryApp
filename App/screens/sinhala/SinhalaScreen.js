@@ -48,7 +48,7 @@ export default class SinhalaScreen extends Component {
             <View style={styles.card_container}>
               <SinhalaCard
                 // text={'Do you want to know Alphabet? Come try it !'}
-                main={'ALPHABET'}
+                main={'සිංහල අකුරු හුරුව'}
                 onPress={this.NavigateToAlphabet}
                 image={require('../../assets/images/sinhalaActivity.jpg')}
               />
@@ -60,7 +60,7 @@ export default class SinhalaScreen extends Component {
               />
               <SinhalaCard
                 // text={'Do you want to know Phrases? Come try it !'}
-                main={'PHRASES'}
+                main={'දෙබස් හුරුව'}
                 onPress={this.NavigateToPhrases}
                 image={require('../../assets/images/PhrasesE.png')}
               // name={'book'}
