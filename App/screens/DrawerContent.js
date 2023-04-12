@@ -45,14 +45,13 @@ export function DrawerContent(props) {
             </View>
           </View>
           <Text />
-          <Text />
           <Drawer.Section style={styles.drawerSection}>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="home-outline" color={color} size={size} />
               )}
               label="Home" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0' 
-              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship2'}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('HomeScreen');
               }}
@@ -62,7 +61,7 @@ export function DrawerContent(props) {
                 <Icon name="account-outline" color={color} size={size} />
               )}
               label="Profile" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('ProfileScreen');
               }}
@@ -70,7 +69,7 @@ export function DrawerContent(props) {
             <Text />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title={<Text style={styles.title}>Learning Area</Text>}>
+          <Drawer.Section title={<Text style={{fontSize: 23, fontFamily:'KGPrimaryPenmanship', color:'#54225e',}}>Learning Area</Text>}>
             
             <Text />
             <Text style={styles.subTitle}>English</Text>
@@ -79,7 +78,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Alphabet" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('AlphabetScreenDrawer');
               }}
@@ -89,7 +88,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Phrases" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('PhrasesScreenDrawer');
               }}
@@ -99,7 +98,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Numbers" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('NumbersScreenDrawer');
               }}
@@ -109,7 +108,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Shapes" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('ShapesScreenDrawer');
               }}
@@ -119,7 +118,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Colors" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('ColorsScreenDrawer');
               }}
@@ -129,7 +128,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Poems" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('PoemsScreenDrawer');
               }}
@@ -139,7 +138,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="Family" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('MyFamScreenDrawer');
               }}
@@ -149,7 +148,7 @@ export function DrawerContent(props) {
                 <Icon name="book-open" color={color} size={size} />
               )}
               label="School" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('SchoolScreenDrawer');
               }}
@@ -160,13 +159,13 @@ export function DrawerContent(props) {
                 <Icon name="bookmark-outline" color={color} size={size} />
               )}
               label="Activities" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('ActivityScreenDrawer');
               }}
             />
             <Text />
-            <Text style={styles.subTitle}>සිංහල</Text>
+            <Text style={{textAlign: 'center', fontSize: 17, color:'#54225e',}}>සිංහල</Text>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="book-open" color={color} size={size} />
@@ -260,13 +259,13 @@ export function DrawerContent(props) {
             />
           </Drawer.Section>
           <Text />
-          <Drawer.Section title={<Text style={styles.title}>EduKids</Text>}>
+          <Drawer.Section title={<Text style={{fontSize: 23, fontFamily:'KGPrimaryPenmanship', color:'#54225e',}}>EduKids</Text>}>
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="account-check-outline" color={color} size={size} />
               )}
               label="About Us" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-              labelStyle= {{fontSize: 16}}
+              labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
               onPress={() => {
                 props.navigation.navigate('AboutScreen');
               }}
@@ -279,7 +278,7 @@ export function DrawerContent(props) {
             <Icon name="exit-to-app" color={'#54225e'} size={size} />
           )}
           label="Log Out" inactiveTintColor='#54225e' ActiveTintColor= '#c055e0'
-          labelStyle= {{fontSize: 16}}
+          labelStyle= {{fontSize: 21, fontFamily:'KGPrimaryPenmanship'}}
           onPress={() => {
             logout();
           }}
@@ -348,8 +347,7 @@ const styles = StyleSheet.create({
   },
   subTitle:{
     textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 22,
     color:'#54225e',
     fontFamily:'KGPrimaryPenmanship'
   },
