@@ -129,6 +129,8 @@ export const AuthProvider = ({children}) => {
                   Alert.alert('Weak password !','Password should be at least 6 characters')
                 }else if (e.code === 'auth/network-request-failed') {
                   Alert.alert('Try again !','Please check your internet connection')
+                }else if (e.code === 'auth/invalid-email') {
+                  Alert.alert('Invalid email !','Please enter a valid email')
                 }else{
                   Alert.alert('Try again !', 'Something went wrong')
                   console.log('error 1 ',e)
