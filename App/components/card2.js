@@ -7,7 +7,7 @@ export default function Card2({text1, text2, text3, name}) {
     <View style={styles.card}>
       <View style={styles.card2}>
         <View>
-          <AntDesign name={name} size={25} color={'#54225e'}/>
+          <AntDesign name={name} size={22} color={'#54225e'}/>
         </View>
         <Text style={styles.text}>{text1}</Text>
       </View>
@@ -15,7 +15,7 @@ export default function Card2({text1, text2, text3, name}) {
         <Text style={styles.text2}>{text2}</Text>
         <Text style={styles.text3}>{text3}</Text>
         <View style={styles.vector}>
-          <AntDesign name={name} size={25} color={'#54225e'}/>
+          <AntDesign name={name} size={22} color={'#54225e'}/>
         </View>
       </View>
     </View>
