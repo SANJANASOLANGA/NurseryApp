@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-
+import { windowWidth } from '../constants/Dimensions';
 import {
   Container,
   Card,
@@ -47,7 +47,7 @@ const PostCard = ({item, onDelete, onPress}) => {
 
   return (
     <Card
-      style={{width: 385, height: 425, borderRadius: 0, margin: 20}}
+      style={{width: windowWidth-30, height: 425, borderRadius: 0, margin: 20}}
       key={item.id}>
       <UserInfo>
         <UserImg
