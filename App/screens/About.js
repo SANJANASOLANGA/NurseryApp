@@ -199,7 +199,7 @@ export default class AboutScreen extends Component {
           </Text>
           <Text style={styles.sub}>Contact Us</Text>
           <Text />
-          <Text style={styles.contact_text}>sanjanasolangaarachchi@gmail.com.</Text>
+          <Text style={styles.contact_text}>edukidsmobile@gmail.com</Text>
           {/* <Text style={styles.contact_text}>www.edukids.com</Text> */}
           <Text style={styles.contact_text}>+94775842753</Text>
           <Image

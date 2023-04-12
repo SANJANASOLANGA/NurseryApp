@@ -299,7 +299,7 @@ const SignupScreen = ({ navigation }) => {
                 <Text style={styles.modal_text}>
                   If you have any questions or suggestions about my Privacy
                   Policy, do not hesitate to contact me at
-                  sanjanasolangaarachchi@gmail.com.
+                  edukidsmobile@gmail.com.
                 </Text>
                 <View style={styles.modal_btnWrap}>
                   <Text />
