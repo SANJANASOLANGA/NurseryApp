@@ -14,6 +14,7 @@ const HomeActivities = ({ navigation }) => {
       source={require('../assets/images/bg.jpg')}
       style={styles.safearea}>
       <Text style={styles.heading}>Learning can be fun !</Text>
+      <ScrollView>
       <View style={styles.button_container}>
         <ScrollView horizontal={true}>
           <ImageBackground
@@ -31,7 +32,7 @@ const HomeActivities = ({ navigation }) => {
             </View>
           </ImageBackground>
           <ImageBackground
-            style={styles.card}
+            style={[styles.card, {marginRight: 25,}]}
             source={require('../assets/images/sinhalaActivity.jpg')}
             imageStyle={{ borderTopLeftRadius: 30, borderTopRightRadius: 30 }}
           >
@@ -45,7 +46,10 @@ const HomeActivities = ({ navigation }) => {
             </View>
           </ImageBackground>
         </ScrollView>
+        <Text style={styles.quote}>“Teaching is not about answering questions but about raising questions – opening doors for them in places that they could not imagine.” </Text>
+        <Text style={styles.quote}>-Yawar Baig</Text>
       </View>
+      </ScrollView>
     </ImageBackground>
   );
 };
@@ -88,15 +92,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     marginBottom: 125,
-    width: 350,
-    height: 320,
+    width: 330,
+    height: 300,
     borderRadius: 50,
     marginLeft: 25,
     marginTop: 40,
     elevation: 10,
   },
   button: {
-    width: 350,
+    width: 330,
     height: 75,
     backgroundColor: '#c055e0',
     alignItems: 'center',
@@ -107,4 +111,12 @@ const styles = StyleSheet.create({
     marginTop: 350,
     elevation: 10,
   },
+  quote: {
+    fontSize: 18,
+    color: '#54225e',
+    fontFamily: 'comicz',
+    marginLeft: '3%',
+    marginRight:'3%',
+    textAlign: 'justify'
+  }
 });
