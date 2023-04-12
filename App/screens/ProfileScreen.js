@@ -112,7 +112,7 @@ const ProfileScreen = ({ navigation, route }) => {
             size={30}
             style={{ margin: 5, color: '#54225e' }}
           />
-          <Text style={{color: '#54225e', fontWeight: 'bold'}}>Log Out</Text>
+          <Text style={{color: '#54225e', fontFamily:'KGPrimaryPenmanship', fontSize: 20}}>Log Out</Text>
         </TouchableOpacity>
         <Modal transparent={true} visible={show1}>
           <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
@@ -147,8 +147,9 @@ const ProfileScreen = ({ navigation, route }) => {
               fontSize: 40,
               fontWeight: '400',
               textAlign: 'center',
-              marginTop: 30,
-              color: '#54225e'
+              marginTop: '7%',
+              color: '#54225e',
+              fontFamily:'KGPrimaryPenmanship2',
             }}>
             Dashboard
           </Text>
@@ -197,18 +198,18 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   userName: {
-    fontSize: 30,
-    fontWeight: 'bold',
+    fontSize: 37,
     marginTop: 30,
     marginBottom: 10,
     color: '#54225e',
     fontFamily:'KGPrimaryPenmanship2'
   },
   aboutUser: {
-    fontSize: 20,
+    fontSize: 27,
     fontWeight: '600',
     textAlign: 'center',
-    color: '#54225e'
+    color: '#54225e',
+    fontFamily:'KGPrimaryPenmanship2',
   },
   userBtnWrapper: {
     alignItems: 'center',
