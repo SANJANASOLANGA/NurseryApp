@@ -66,6 +66,10 @@ const AuthStack = () => {
             shadowColor: 'transparent',
             elevation: 0,
           },
+          headerTitleStyle: {
+            fontFamily:'KGPrimaryPenmanship2',
+            fontSize: 24
+          },
           headerLeft: () => (
             <View style={{marginLeft: 10}}>
               <FontAwesome.Button
