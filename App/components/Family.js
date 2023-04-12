@@ -23,20 +23,20 @@ export default function FamilyCard({text1, text2, image}) {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30,
+    fontSize: 36,
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   text2: {
-    fontSize: 19,
+    fontSize: 25,
     textAlign: 'left',
     marginLeft: 15,
     marginTop: 15,
     color: '#54225e',
-    fontWeight: 500
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   text3: {
     fontSize: 25,

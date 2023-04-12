@@ -27,10 +27,10 @@ const styles = StyleSheet.create({
     marginTop: 70,
   },
   text2: {
-    fontSize: 30,
+    fontSize: 36,
     textAlign: 'left',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   text3: {
     fontSize: 25,

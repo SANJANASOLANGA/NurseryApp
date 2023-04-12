@@ -100,12 +100,12 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 33,
+    fontSize: 40,
     marginTop: '7%',
     textAlign: 'center',
     marginBottom: 20,
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   card_text: {
     fontSize: 25,
