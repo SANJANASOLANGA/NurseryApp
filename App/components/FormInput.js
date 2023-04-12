@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#f5fffa',
+    backgroundColor: '#f2e9f5',
     elevation: 3,
   },
   iconStyle: {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRightColor: '#ccc',
+    borderRightColor: '#cdbcd1',
     borderRightWidth: 1,
     width: 50,
   },
