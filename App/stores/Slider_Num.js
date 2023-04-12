@@ -95,7 +95,7 @@ const Slider_Num = props => {
             fontSize: 35,
             marginTop: 30,
             color: '#54225e',
-            fontWeight: 'bold',
+            fontFamily: 'KGPrimaryPenmanship2',
           }}>
           {item.subtitle}
         </Text>
