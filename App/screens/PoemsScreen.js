@@ -54,7 +54,7 @@ const PoemsScreen = ({ navigation }) => {
             renderItem={({ item }) => (
               <ImageBackground
                 source={require('../assets/images/poems.png')}
-                imageStyle={{ borderRadius: 15, width: 375, height: 500 }}
+                imageStyle={{ borderRadius: 15, width: 375, height: 560 }}
                 style={styles.card}
               >
                 <Text style={styles.text1}>{item.topic}</Text>
@@ -66,6 +66,7 @@ const PoemsScreen = ({ navigation }) => {
             )}
           />
         </View>
+      </ScrollView>
         <View style={styles.bottom}>
           <TouchableOpacity
             onPress={() => navigation.navigate('CreativeScreen')}
@@ -73,7 +74,6 @@ const PoemsScreen = ({ navigation }) => {
             <Text style={styles.btn_txt}> Menu</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView>
     </ImageBackground>
   );
 };
@@ -102,16 +102,15 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'space-around',
     marginLeft: 250,
-    marginTop: 20,
-    marginBottom: 15,
+    marginBottom: '20%',
   },
   text: {
-    fontSize: 33,
+    fontSize: 40,
     marginTop: '10%',
     textAlign: 'center',
     marginBottom: 20,
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   button: {
     width: 120,
@@ -132,31 +131,29 @@ const styles = StyleSheet.create({
   text1: {
     fontSize: 30,
     marginTop: 70,
-    fontWeight: '500',
+    fontFamily: 'comicz',
     color: '#54225e'
   },
   text2: {
     fontSize: 26,
-    textAlign: 'left',
+    textAlign: 'justify',
     marginLeft: 15,
     marginRight: 15,
-    fontStyle: 'italic',
-    fontWeight: '300',
-    color: 'purple'
+    fontFamily: 'comici',
+    color: 'purple',
   },
   text3: {
     fontSize: 20,
     textAlign: 'right',
     textAlignVertical: 'bottom',
     marginLeft: 150,
-    fontStyle: 'italic',
     marginTop: 60,
     color: '#300240',
-    fontWeight: 'bold',
+    fontFamily: 'comicz',
   },
   card: {
     width: 375,
-    height: 500,
+    height: 560,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -168,7 +165,7 @@ const styles = StyleSheet.create({
   },
   card2: {
     width: 335,
-    height: 270,
+    height: 330,
     backgroundColor: '#eecdf7',
     borderRadius: 15,
     marginTop: 20,
