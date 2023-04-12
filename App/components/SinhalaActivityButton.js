@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   buttonText: {
-    fontSize: 25,
+    fontSize: 22,
     fontWeight:'bold',
     alignItems: 'center',
     justifyContent: 'center',
