@@ -88,6 +88,9 @@ export const AuthProvider = ({children}) => {
               Alert.alert('Please fill Details !');
               return;
             }
+            if (password.length == 6){
+              console.log('equal')
+            }
             if (password !== confirmPassword) {
               Alert.alert("Password didn't match");
               return;
@@ -115,8 +118,11 @@ export const AuthProvider = ({children}) => {
               .catch(e => {
                 if (e.code === 'auth/email-already-in-use') {
                   Alert.alert('Try again !','The email you entered already exists')
+                }else if (e.code === 'auth/weak-password'){
+                  Alert.alert('Weak password !','Password should be at least 6 characters')
                 }else{
                   Alert.alert('Try again !', 'Something went wrong')
+                  console.log('error 1 ',e)
                 }
               });
           } catch (e) {
