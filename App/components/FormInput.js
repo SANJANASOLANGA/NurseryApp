@@ -49,10 +49,11 @@ const styles = StyleSheet.create({
   input: {
     padding: 10,
     flex: 1,
-    fontSize: 16,
+    fontSize: 24,
     color: '#54225e',
     justifyContent: 'center',
     alignItems: 'center',
+    fontFamily:'KGPrimaryPenmanship2'
   },
   inputField: {
     padding: 10,
