@@ -50,7 +50,7 @@ export default class SinhalaCreativeScreen extends Component {
                 image={require('../../assets/images/colorsS.png')}
               />
               <SinhalaCard
-                main={'Quiz of Colors'}
+                main={'පාට හුරුව පාඩම්'}
                 onPress={this.NavigateToColorsQuiz}
                 image={require('../../assets/images/colorsQSinhala.png')}
               />

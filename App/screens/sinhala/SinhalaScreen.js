@@ -53,7 +53,7 @@ export default class SinhalaScreen extends Component {
                 image={require('../../assets/images/sinhalaActivity.jpg')}
               />
               <SinhalaCard
-                main={'Quiz of Alphabet'}
+                main={'සිංහල අකුරු හුරුව පාඩම්'}
                 onPress={this.NavigateToAlphabetQuiz}
                 image={require('../../assets/images/sinhalaActivity.jpg')}
               // name={'edit'}

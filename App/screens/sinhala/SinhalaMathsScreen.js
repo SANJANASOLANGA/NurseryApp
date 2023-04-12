@@ -53,7 +53,7 @@ export default class SinhalaMathsScreen extends Component {
                 image={require('../../assets/images/mathsS.png')}
               />
               <SinhalaCard
-                main={'Quiz of Numbers'}
+                main={'ඉලක්කම් හුරුව පාඩම්'}
                 onPress={this.NavigateToNumbersQuiz}
                 image={require('../../assets/images/mathsQSinhala.png')}
               />
@@ -64,7 +64,7 @@ export default class SinhalaMathsScreen extends Component {
                 image={require('../../assets/images/shapesS.jpg')}
               />
               <SinhalaCard
-                main={'Quiz of Shapes'}
+                main={'හැඩ තල හුරුව පාඩම්'}
                 onPress={this.NavigateToShapesQuiz}
                 image={require('../../assets/images/shapesQSinhala.png')}
               />
