@@ -37,13 +37,13 @@ const LoginScreen = ({navigation}) => {
       }).catch((e) => {
         console.log(e)
         if (e.code === 'auth/invalid-email') {
-          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+          Alert.alert('Invalid Email !','Please enter the email you registered with us')
         }
         if (e.code === '[auth/user-not-found'){
-          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+          Alert.alert('Invalid Email !','Please enter the email you registered with us')
         }
         else{
-          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+          Alert.alert('Invalid Email !','Please enter the email you registered with us')
         }
       })
       
