@@ -7,7 +7,7 @@ import {
   Text,
   ScrollView,
 } from 'react-native';
-import ShapesCard from '../../components/shapesCard';
+import SinhalaShapesCard from '../../components/SinhalaShapesCard';
 
 export default class SinhalaShapesScreen extends Component {
   NavigateToMath = () => {
@@ -28,10 +28,10 @@ export default class SinhalaShapesScreen extends Component {
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
-              <ShapesCard image={require('../../assets/images/square.jpg')}  text='සමචතුරස්‍රය'/>
-              <ShapesCard image={require('../../assets/images/triangle.jpg')} text='ත්‍රිකෝණය' />
-              <ShapesCard image={require('../../assets/images/rectangle.jpg')} text='සෘජුකෝණාස්‍රය'/>
-              <ShapesCard image={require('../../assets/images/circle.jpg')} text='වෘත්තය'/>
+              <SinhalaShapesCard image={require('../../assets/images/square.jpg')}  text='සමචතුරස්‍රය'/>
+              <SinhalaShapesCard image={require('../../assets/images/triangle.jpg')} text='ත්‍රිකෝණය' />
+              <SinhalaShapesCard image={require('../../assets/images/rectangle.jpg')} text='සෘජුකෝණාස්‍රය'/>
+              <SinhalaShapesCard image={require('../../assets/images/circle.jpg')} text='වෘත්තය'/>
             </View>
           </ScrollView>
         </View>
