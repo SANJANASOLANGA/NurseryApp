@@ -250,8 +250,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 23,
+    fontFamily:'KGPrimaryPenmanship2',
     color: 'white'
   },
   modal_view: {

@@ -62,7 +62,7 @@
 //     getUser();
 //   }, []);
 
-  
+
 //   return (
 //     <ImageBackground
 //       source={require('../assets/images/bg.jpg')}
@@ -264,7 +264,7 @@
 //   },
 // });
 
-import React, {useEffect, useContext, useState} from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import {
   View,
   Text,
@@ -281,18 +281,18 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {windowHeight, windowWidth} from '../constants/Dimensions';
+import { windowHeight, windowWidth } from '../constants/Dimensions';
 
 // import Animated from 'react-native-reanimated';
 import BottomSheet from 'reanimated-bottom-sheet';
 import ImagePicker from 'react-native-image-crop-picker';
 
-import {AuthContext} from '../navigation/AuthProvider';
+import { AuthContext } from '../navigation/AuthProvider';
 import firestore from '@react-native-firebase/firestore';
 import storage from '@react-native-firebase/storage';
 
-const EditProfileScreen = ({navigation}) => {
-  const {user, logout} = useContext(AuthContext);
+const EditProfileScreen = ({ navigation }) => {
+  const { user, logout } = useContext(AuthContext);
   const [image, setImage] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [transferred, setTransferred] = useState(0);
@@ -365,7 +365,7 @@ const EditProfileScreen = ({navigation}) => {
 
       setTransferred(
         Math.round(taskSnapshot.bytesTransferred / taskSnapshot.totalBytes) *
-          100,
+        100,
       );
     });
 
@@ -422,7 +422,7 @@ const EditProfileScreen = ({navigation}) => {
 
   renderInner = () => (
     <View style={styles.panel}>
-      <View style={{alignItems: 'center'}}>
+      <View style={{ alignItems: 'center' }}>
         <Text style={styles.panelTitle}>Upload Photo</Text>
         <Text style={styles.panelSubtitle}>Choose Your Profile Picture</Text>
       </View>
@@ -474,79 +474,79 @@ const EditProfileScreen = ({navigation}) => {
             margin: 20,
             opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
           }}>
-          <View style={{alignItems: 'center'}}>
-            <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold', color: '#54225e'}}>
+          <View style={{ alignItems: 'center' }}>
+            <Text style={{ marginTop: 10, fontSize: 27, fontFamily:'KGPrimaryPenmanship2', color: '#54225e' }}>
               {userData ? userData.fname : ''} {userData ? userData.lname : ''}
             </Text>
-            <Text style={{marginBottom: 28, color: '#54225e'}}>{userData ? userData.city : ''} {userData ? userData.country : ''}</Text>
+            <Text style={{ marginBottom: 28, color: '#54225e', fontSize: 22, fontFamily:'KGPrimaryPenmanship2' }}>{userData ? userData.city : ''} {userData ? userData.country : ''}</Text>
           </View>
 
           <View style={styles.action}>
-            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }}/>
+            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }} />
             <TextInput
               placeholder="First Name"
               autoCorrect={false}
               value={userData ? userData.fname : ''}
-              onChangeText={txt => setUserData({...userData, fname: txt})}
+              onChangeText={txt => setUserData({ ...userData, fname: txt })}
               style={styles.textInput}
               placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
-            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }}/>
+            <FontAwesome name="user-o" size={20} style={{ color: '#54225e' }} />
             <TextInput
               placeholder="Last Name"
               value={userData ? userData.lname : ''}
-              onChangeText={txt => setUserData({...userData, lname: txt})}
+              onChangeText={txt => setUserData({ ...userData, lname: txt })}
               autoCorrect={false}
               style={styles.textInput}
               placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
-            <Ionicons name="ios-clipboard-outline" size={20} style={{ color: '#54225e' }}/>
+            <Ionicons name="ios-clipboard-outline" size={20} style={{ color: '#54225e' }} />
             <TextInput
               multiline
               numberOfLines={3}
               placeholder="About Me"
               value={userData ? userData.about : ''}
-              onChangeText={txt => setUserData({...userData, about: txt})}
+              onChangeText={txt => setUserData({ ...userData, about: txt })}
               autoCorrect={true}
-              style={[styles.textInput, {height: 40}]}
+              style={[styles.textInput, { height: 40 }]}
               placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
-            <Feather name="phone" size={20} style={{ color: '#54225e' }}/>
+            <Feather name="phone" size={20} style={{ color: '#54225e' }} />
             <TextInput
               placeholder="Phone"
               keyboardType="number-pad"
               autoCorrect={false}
               value={userData ? userData.phone : ''}
-              onChangeText={txt => setUserData({...userData, phone: txt})}
+              onChangeText={txt => setUserData({ ...userData, phone: txt })}
               style={styles.textInput}
               placeholderTextColor="#85568f"
             />
           </View>
 
           <View style={styles.action}>
-            <FontAwesome name="globe" size={20} style={{ color: '#54225e' }}/>
+            <FontAwesome name="globe" size={20} style={{ color: '#54225e' }} />
             <TextInput
               placeholder="Country"
               autoCorrect={false}
               value={userData ? userData.country : ''}
-              onChangeText={txt => setUserData({...userData, country: txt})}
+              onChangeText={txt => setUserData({ ...userData, country: txt })}
               style={styles.textInput}
               placeholderTextColor="#85568f"
             />
           </View>
           <View style={styles.action}>
-            <MaterialCommunityIcons name="map-marker-outline" size={20} style={{ color: '#54225e' }}/>
+            <MaterialCommunityIcons name="map-marker-outline" size={20} style={{ color: '#54225e' }} />
             <TextInput
               placeholder="City"
               autoCorrect={false}
               value={userData ? userData.city : ''}
-              onChangeText={txt => setUserData({...userData, city: txt})}
+              onChangeText={txt => setUserData({ ...userData, city: txt })}
               style={styles.textInput}
               placeholderTextColor="#85568f"
             />
@@ -593,7 +593,7 @@ const styles = StyleSheet.create({
   },
   header: {
     shadowColor: '#333333',
-    shadowOffset: {width: -1, height: -3},
+    shadowOffset: { width: -1, height: -3 },
     shadowRadius: 2,
     shadowOpacity: 0.4,
     borderTopLeftRadius: 20,
@@ -653,6 +653,8 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'ios' ? 0 : -12,
     paddingLeft: 10,
     color: '#54225e',
+    fontSize: 22,
+    fontFamily:'KGPrimaryPenmanship2'
   },
   buttonContainer: {
     margin: 20,
@@ -666,8 +668,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 23,
+    fontFamily:'KGPrimaryPenmanship2',
     color: 'white'
   },
 });

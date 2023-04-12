@@ -151,6 +151,7 @@ const AddMarkscreen = ({navigation}) => {
           value={post}
           onChangeText={content => setPost(content)}
           placeholderTextColor="#54225e"
+          fontFamily='KGPrimaryPenmanship2'
         />
         {uploading ? (
           <StatusWrapper>
@@ -205,8 +206,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: 'white'
+    fontSize: 23,
+    color: 'white',
+    fontFamily:'KGPrimaryPenmanship2'
   },
 });

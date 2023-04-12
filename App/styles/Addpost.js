@@ -12,7 +12,7 @@ export const InputWrapper = styled.View`
 export const InputField = styled.TextInput`
   justify-content: center;
   align-items: center;
-  font-size: 19px;
+  font-size: 23px;
   text-align: center;
   width: 90%;
   margin-bottom: 15px;
