@@ -27,17 +27,10 @@ const styles = StyleSheet.create({
     marginTop: 70,
   },
   text2: {
-    fontSize: 30,
+    fontSize: 37,
     textAlign: 'left',
-    fontWeight: 'bold',
     color: '#54225e',
-  },
-  text3: {
-    fontSize: 25,
-    textAlign: 'right',
-    textAlignVertical: 'bottom',
-    marginBottom: 15,
-    marginLeft: 150,
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   card: {
     width: 360,
