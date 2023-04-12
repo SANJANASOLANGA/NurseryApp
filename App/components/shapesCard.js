@@ -27,10 +27,10 @@ export default function ShapesCard({ text, image, onPress }) {
 
 const styles = StyleSheet.create({
   text2: {
-    fontSize: 30,
+    fontSize: 36,
     textAlign: 'left',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   card: {
     width: 360,

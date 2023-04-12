@@ -77,11 +77,11 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
   heading: {
-    fontSize: 33,
+    fontSize: 40,
     marginTop: "10%",
     textAlign: 'center',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   card_text: {
     fontSize: 33,
