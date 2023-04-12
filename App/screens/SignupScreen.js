@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 import {
   View,
   Text,
@@ -8,16 +8,16 @@ import {
   Image,
   ScrollView, ImageBackground
 } from 'react-native';
-import {AuthContext} from '../navigation/AuthProvider';
+import { AuthContext } from '../navigation/AuthProvider';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 
-const SignupScreen = ({navigation}) => {
+const SignupScreen = ({ navigation }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
 
-  const {register} = useContext(AuthContext);
+  const { register } = useContext(AuthContext);
 
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
@@ -25,7 +25,7 @@ const SignupScreen = ({navigation}) => {
   const onPressSignUp = () => {
     register(email, password, confirmPassword)
     navigation.navigate('Login')
-  } 
+  }
 
   return (
     <ImageBackground
@@ -66,7 +66,7 @@ const SignupScreen = ({navigation}) => {
       <FormButton
         buttonTitle="Sign Up"
         onPress={() => register(email, password, confirmPassword)}
-        // onPress = {onPressSignUp}
+      // onPress = {onPressSignUp}
       />
 
       <View style={styles.textPrivate}>
@@ -74,15 +74,15 @@ const SignupScreen = ({navigation}) => {
           By registering, you confirm that you accept our
         </Text>
         <TouchableOpacity onPress={() => setShow1(true)}>
-          <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>
+          <Text style={[styles.color_textPrivate, { color: '#e88832' }]}>
             Terms of service
           </Text>
         </TouchableOpacity>
         <Modal transparent={true} visible={show1}>
-          <View style={{backgroundColor: '#000000aa', flex: 1}}>
+          <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
             <View style={styles.modal_view}>
+              <Text style={styles.modal_heading}>Terms of service</Text>
               <ScrollView>
-                <Text style={styles.modal_heading}>Terms of service</Text>
                 <Text />
                 <Text style={styles.modal_text}>
                   By downloading or using the app, these terms will
@@ -222,15 +222,15 @@ const SignupScreen = ({navigation}) => {
         </Modal>
         <Text style={styles.color_textPrivate}> and </Text>
         <TouchableOpacity onPress={() => setShow2(true)}>
-          <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>
+          <Text style={[styles.color_textPrivate, { color: '#e88832' }]}>
             Privacy Policies
           </Text>
         </TouchableOpacity>
         <Modal transparent={true} visible={show2}>
-          <View style={{backgroundColor: '#000000aa', flex: 1}}>
+          <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
             <View style={styles.modal_view}>
+              <Text style={styles.modal_heading}>Privacy Policies</Text>
               <ScrollView>
-                <Text style={styles.modal_heading}>Privacy Policies</Text>
                 <Text />
                 <Text />
                 <Text style={styles.modal_sub}>Effective date: 2023-04-25</Text>
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
     marginBottom: 40,
     color: "#54225e",
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   navButton: {
     marginTop: 35,
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: '500',
     color: "#54225e",
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   textPrivate: {
     flexDirection: 'row',
@@ -362,13 +362,13 @@ const styles = StyleSheet.create({
     marginVertical: 15,
     justifyContent: 'center',
     marginBottom: 55,
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   color_textPrivate: {
     fontSize: 17,
     fontWeight: '400',
     color: "#54225e",
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   modal_view: {
     flex: 1,
@@ -379,13 +379,13 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     padding: 25,
     borderRadius: 5,
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   modal_heading: {
     fontSize: 25,
     color: 'black',
     textAlign: 'center',
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   modal_btnWrap: {
@@ -394,16 +394,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginTop: 150,
     flexDirection: 'row',
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   modal_btn: {
-    textAlign: 'right',
+    textAlign: 'left',
     fontSize: 15,
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
     marginHorizontal: 55,
-    marginRight: 110,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   ok: {
@@ -414,14 +413,14 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginHorizontal: 55,
     marginRight: 10,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   modal_text: {
     textAlign: 'justify',
     fontSize: 15,
     marginTop: 10,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   points: {
@@ -429,14 +428,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 10,
     marginLeft: 10,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
   modal_sub: {
     fontSize: 17,
     color: 'black',
     marginTop: 25,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: '#54225e'
   },
 });
