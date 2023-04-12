@@ -17,7 +17,7 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
       source={require('../../assets/images/bg.jpg')}
       style={styles.main}>
       <View style={styles.header}>
-        <Text style={styles.text}>Essential</Text>
+        <Text style={styles.text}>දෙබස් හුරුව</Text>
       </View>
       <View style={styles.body}>
         <ScrollView horizontal={true}>
@@ -76,7 +76,7 @@ const SinhalaPhrasesScreen = ({ navigation }) => {
         <TouchableOpacity
           onPress={() => navigation.navigate('SinhalaScreen')}
           style={styles.button}>
-          <Text style={styles.btn_txt}>දෙබස් හුරුව</Text>
+          <Text style={styles.btn_txt}>Menu</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('SinhalaPhrasesQuiz')}
