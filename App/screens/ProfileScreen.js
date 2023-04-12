@@ -90,18 +90,17 @@ const ProfileScreen = ({ navigation, route }) => {
     <ImageBackground
       source={require('../assets/images/bg.jpg')}
       style={{ flex: 1 }}>
-      <ScrollView>
-        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-
-          <Text style={styles.userName}>
-            {/* {userData ? userData.fname || 'New' : 'New'}{' '}
+      <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={styles.userName}>
+          {/* {userData ? userData.fname || 'New' : 'New'}{' '}
             {userData ? userData.lname || 'User' : 'User'} */}
-            {auth().currentUser.email}
-          </Text>
-          <Text style={styles.aboutUser}>
-            {userData ? userData.about || 'Please update your profile !' : ''}
-          </Text>
-        </View>
+          {auth().currentUser.email}
+        </Text>
+        <Text style={styles.aboutUser}>
+          {userData ? userData.about || 'Please update your profile !' : ''}
+        </Text>
+      </View>
+      <ScrollView>
         <TouchableOpacity
           onPress={() => setShow1(true)}
           style={{
@@ -112,7 +111,7 @@ const ProfileScreen = ({ navigation, route }) => {
             size={30}
             style={{ margin: 5, color: '#54225e' }}
           />
-          <Text style={{color: '#54225e', fontFamily:'KGPrimaryPenmanship', fontSize: 20}}>Log Out</Text>
+          <Text style={{ color: '#54225e', fontFamily: 'KGPrimaryPenmanship', fontSize: 20 }}>Log Out</Text>
         </TouchableOpacity>
         <Modal transparent={true} visible={show1}>
           <View style={{ backgroundColor: '#000000aa', flex: 1 }}>
@@ -149,7 +148,7 @@ const ProfileScreen = ({ navigation, route }) => {
               textAlign: 'center',
               marginTop: '7%',
               color: '#54225e',
-              fontFamily:'KGPrimaryPenmanship2',
+              fontFamily: 'KGPrimaryPenmanship2',
             }}>
             Dashboard
           </Text>
@@ -177,7 +176,7 @@ const ProfileScreen = ({ navigation, route }) => {
           <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => navigation.navigate('AddMarksScreen')}>
-            <Text style={styles.buttonText}>Add Your Marks</Text>
+            <Text style={styles.buttonText}>Add Marks</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -202,14 +201,14 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginBottom: 10,
     color: '#54225e',
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
   aboutUser: {
     fontSize: 27,
     fontWeight: '600',
     textAlign: 'center',
     color: '#54225e',
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   userBtnWrapper: {
     alignItems: 'center',
@@ -251,7 +250,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 23,
-    fontFamily:'KGPrimaryPenmanship2',
+    fontFamily: 'KGPrimaryPenmanship2',
     color: 'white'
   },
   modal_view: {
@@ -268,7 +267,7 @@ const styles = StyleSheet.create({
   modal_Text: {
     fontSize: 30,
     color: '#54225e',
-    fontFamily:'KGPrimaryPenmanship'
+    fontFamily: 'KGPrimaryPenmanship'
   },
   modal_btnWrap: {
     flex: 1,
@@ -288,6 +287,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     color: 'white',
     elevation: 5,
-    fontFamily:'KGPrimaryPenmanship2'
+    fontFamily: 'KGPrimaryPenmanship2'
   },
 });
