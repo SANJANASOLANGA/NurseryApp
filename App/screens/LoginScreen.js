@@ -110,7 +110,6 @@ const styles = StyleSheet.create({
     padding: 25,
     paddingTop: 60,
     paddingBottom: 100,
-    backgroundColor: 'red',
   },
   logo: {
     width: 85,
