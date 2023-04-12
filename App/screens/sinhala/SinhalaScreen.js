@@ -6,7 +6,7 @@ import {
   Text,
   ScrollView,
 } from 'react-native';
-import Card from '../../components/Card';
+import SinhalaCard from '../../components/SinhalaCard';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
@@ -46,26 +46,26 @@ export default class SinhalaScreen extends Component {
         <ScrollView>
           <View style={styles.body}>
             <View style={styles.card_container}>
-              <Card
+              <SinhalaCard
                 // text={'Do you want to know Alphabet? Come try it !'}
                 main={'ALPHABET'}
                 onPress={this.NavigateToAlphabet}
                 image={require('../../assets/images/sinhalaActivity.jpg')}
               />
-              <Card
+              <SinhalaCard
                 main={'Quiz of Alphabet'}
                 onPress={this.NavigateToAlphabetQuiz}
                 image={require('../../assets/images/sinhalaActivity.jpg')}
               // name={'edit'}
               />
-              <Card
+              <SinhalaCard
                 // text={'Do you want to know Phrases? Come try it !'}
                 main={'PHRASES'}
                 onPress={this.NavigateToPhrases}
                 image={require('../../assets/images/PhrasesE.png')}
               // name={'book'}
               />
-              <Card
+              <SinhalaCard
                 main={'Quiz of Phrases'}
                 onPress={this.NavigateToPhrasesQuiz}
                 image={require('../../assets/images/PhrasesQ.png')}

@@ -48,7 +48,7 @@ export default class MathsScreen extends Component {
           <View style={styles.body}>
             <View style={styles.card_container}>
               <Card
-                main={'NUMBERS'}
+                main={'Numbers'}
                 onPress={this.NavigateToAlphabet}
                 image={require('../assets/images/mathsS.png')}
               />
@@ -59,7 +59,7 @@ export default class MathsScreen extends Component {
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
-                main={'SHAPES'}
+                main={'Shapes'}
                 onPress={this.NavigateToShapes}
                 image={require('../assets/images/shapesE.png')}
               />
@@ -139,8 +139,8 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 33,
-    fontWeight: 'bold',
+    fontSize: 42,
+    fontFamily: 'KGPrimaryPenmanship2',
     textAlign: 'center',
     textAlignVertical: 'center',
     marginTop: '8%',

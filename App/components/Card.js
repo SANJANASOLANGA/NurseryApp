@@ -22,8 +22,8 @@ export default function Card({main, image, onPress}) {
 
 const styles = StyleSheet.create({
   textArea_text: {
-    fontSize: 28,
-    fontWeight: 'bold',
+    fontSize: 30,
+    fontFamily: 'KGPrimaryPenmanship2',
     textAlign: 'center',
     color: 'white',
   },

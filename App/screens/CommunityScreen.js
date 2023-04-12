@@ -43,13 +43,13 @@ export default class CommunityScreen extends Component {
             <View style={styles.card_container}>
               <Card
                 // text={'Do you want to know Alphabet? Come try it !'}
-                main={'FAMILY'}
+                main={'Family'}
                 onPress={this.NavigateToMyFam}
                 image={require('../assets/images/familyE.jpg')}
               />
               <Card
                 // text={'Do you want to know Phrases? Come try it !'}
-                main={'SCHOOL'}
+                main={'School'}
                 onPress={this.NavigateToSchool}
                 image={require('../assets/images/school.png')}
               />
@@ -124,8 +124,8 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 33,
-    fontWeight: 'bold',
+    fontSize: 42,
+    fontFamily: 'KGPrimaryPenmanship2',
     textAlign: 'center',
     textAlignVertical: 'center',
     marginTop: '8%',

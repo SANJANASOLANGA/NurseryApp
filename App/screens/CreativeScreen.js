@@ -45,7 +45,7 @@ export default class CreativeScreen extends Component {
             <View style={styles.card_container}>
               <Card
                 text={'Do you want to know Alphabet? Come try it !'}
-                main={'COLORS'}
+                main={'Colors'}
                 onPress={this.NavigateToColors}
                 image={require('../assets/images/colorsE.png')}
               />
@@ -56,7 +56,7 @@ export default class CreativeScreen extends Component {
               />
               <Card
                 text={'Do you want to know Phrases? Come try it !'}
-                main={'POEMS'}
+                main={'Poems'}
                 onPress={this.NavigateToPoems}
                 image={require('../assets/images/poemE.jpg')}
               />
@@ -131,8 +131,8 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 33,
-    fontWeight: 'bold',
+    fontSize: 42,
+    fontFamily: 'KGPrimaryPenmanship2',
     textAlign: 'center',
     textAlignVertical: 'center',
     marginTop: '8%',
