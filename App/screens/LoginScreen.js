@@ -33,14 +33,22 @@ const LoginScreen = ({navigation}) => {
       console.log('email is ',email)
       firebase.auth().sendPasswordResetEmail(email)
       .then(() => {
-        Alert.alert('Password reset link have send to the your email !')
-      }).catch((error) => {
-        Alert.alert('Errorrrr')
-        console.log(error)
+        Alert.alert('Password reset link sent to your email','Please check your email inbox !')
+      }).catch((e) => {
+        console.log(e)
+        if (e.code === 'auth/invalid-email') {
+          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+        }
+        if (e.code === '[auth/user-not-found'){
+          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+        }
+        else{
+          Alert.alert('Invalid Email','Please enter the email you registered with us !')
+        }
       })
       
     }else{
-      Alert.alert('Please enter a valid password !')
+      Alert.alert('Please enter a your email !')
     }
   }
 
