@@ -8,7 +8,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import SchoolCard from '../../components/School';
+import SinhalaSchoolCard from '../../components/SinhalaSchool';
 export default class SinhalaSchoolScreen extends Component {
   constructor() {
     super();
@@ -32,15 +32,15 @@ export default class SinhalaSchoolScreen extends Component {
         <View style={styles.body}>
           <ScrollView horizontal={true}>
             <View style={styles.card_container}>
-              <SchoolCard
+              <SinhalaSchoolCard
                 image={require('../../assets/images/principal.jpg')}
                 text1={'විදුහල්පතිතුමා'}
               />
-              <SchoolCard
+              <SinhalaSchoolCard
                 image={require('../../assets/images/madam.jpg')}
                 text1={'ගුරුතුමිය'}
               />
-              <SchoolCard
+              <SinhalaSchoolCard
                 image={require('../../assets/images/sir.jpg')}
                 text1={'ගුරුතුමා'}
               />
