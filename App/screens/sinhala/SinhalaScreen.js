@@ -66,7 +66,7 @@ export default class SinhalaScreen extends Component {
               // name={'book'}
               />
               <SinhalaCard
-                main={'Quiz of Phrases'}
+                main={'දෙබස් හුරුව පාඩම්'}
                 onPress={this.NavigateToPhrasesQuiz}
                 image={require('../../assets/images/PhrasesQ.png')}
               // name={'edit'}
