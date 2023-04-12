@@ -22,7 +22,7 @@ export default function Card({main, image, onPress}) {
 
 const styles = StyleSheet.create({
   textArea_text: {
-    fontSize: 24,
+    fontSize: 21,
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'white',
