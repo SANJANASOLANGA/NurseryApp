@@ -92,8 +92,8 @@ export default OnboardingScreen;
 
 const styles = StyleSheet.create({
   image: {
-    width: 360,
-    height: 450,
+    width: 350,
+    height: 420,
   },
   buttons: {
     fontSize: 22,
