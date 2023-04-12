@@ -166,11 +166,11 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
   text: {
-    fontSize: 33,
+    fontSize: 40,
     marginTop: "7%",
     textAlign: 'center',
     color: '#54225e',
-    fontWeight: 'bold',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
   buttonContainer: {
     width: '40%',
@@ -196,7 +196,8 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   btn_txt: {
-    fontSize: 20,
-    color: 'white'
+    fontSize: 26,
+    color: 'white',
+    fontFamily: 'KGPrimaryPenmanship2',
   },
 });
