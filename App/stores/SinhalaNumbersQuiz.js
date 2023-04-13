@@ -381,7 +381,7 @@ const SinhalaNumbersQuiz = ({ navigation }) => {
                     textAlign: 'center',
                     fontSize: 26, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                   }}>
-                  Get a screenshot of your result and add it to your profile and grow up profile
+                  Get a screenshot of your result, add it to your profile and grow up profile
                 </Text><Text></Text>
                 <TouchableOpacity
                   onPress={() => navigation.navigate('ProfileScreen')}

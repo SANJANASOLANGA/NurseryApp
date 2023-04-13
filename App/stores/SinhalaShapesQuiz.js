@@ -379,18 +379,10 @@ const SinhalaShapesQuiz = ({ navigation }) => {
                 <Text
                   style={{
                     textAlign: 'center',
-                    fontSize: 20,
+                    fontSize: 26, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
                   }}>
-                  Get a Screenshot of Your Result
-                </Text>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    fontSize: 20,
-                    marginBottom: 30,
-                  }}>
-                  Add to Your Profile and Grow up Profile
-                </Text>
+                  Get a screenshot of your result, add it to your profile and grow up profile
+                </Text><Text></Text>
                 <TouchableOpacity
                   onPress={() => navigation.navigate('ProfileScreen')}
                   style={{
