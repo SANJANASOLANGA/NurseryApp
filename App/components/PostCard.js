@@ -17,7 +17,7 @@ import {
 } from '../styles/FeedStyles';
 
 import ProgressiveImage from '../components/ProgressiveImage';
-
+import auth from '@react-native-firebase/auth';
 import {AuthContext} from '../navigation/AuthProvider';
 
 import moment from 'moment';
@@ -63,8 +63,8 @@ const PostCard = ({item, onDelete, onPress}) => {
         <UserInfoText>
           <TouchableOpacity onPress={onPress}>
             <UserName>
-              {userData ? userData.fname || 'New' : 'New'}{' '}
-              {userData ? userData.lname || 'User' : 'User'}
+              {userData ? userData.fname || auth().currentUser.email : ''}{' '}
+              {userData ? userData.lname || '' : ''}
             </UserName>
           </TouchableOpacity>
           <PostTime>{moment(item.postTime.toDate()).fromNow()}</PostTime>
