@@ -66,6 +66,7 @@ const SinhalaPoemsScreen = ({ navigation }) => {
             )}
           />
         </View>
+      </ScrollView>
         <View style={styles.bottom}>
           <TouchableOpacity
             onPress={() => navigation.navigate('SinhalaCreativeScreen')}
@@ -73,7 +74,6 @@ const SinhalaPoemsScreen = ({ navigation }) => {
             <Text style={styles.btn_txt}> Menu</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView>
     </ImageBackground>
   );
 };
@@ -102,8 +102,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'space-around',
     marginLeft: 250,
-    marginTop: 20,
-    marginBottom: 15,
+    marginBottom: '20%',
   },
   text: {
     fontSize: 33,
