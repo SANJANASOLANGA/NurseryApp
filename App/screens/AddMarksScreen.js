@@ -57,7 +57,7 @@ const AddMarkscreen = ({navigation}) => {
     console.log('Post: ', post);
 
     if (imageUrl == null){
-      Alert.alert('Add your post first')
+      Alert.alert('Add your post first !')
     }
     else{
       firestore()
@@ -155,7 +155,7 @@ const AddMarkscreen = ({navigation}) => {
         />
         {uploading ? (
           <StatusWrapper>
-            <Text style={{fontSize: 21, color: '#54225e', fontFamily:'KGPrimaryPenmanship2' }}>{transferred} % Completed!</Text>
+            <Text style={{fontSize: 20, color: '#54225e', fontFamily:'KGPrimaryPenmanship2' }}>{transferred} % Completed!</Text>
             <ActivityIndicator size="large" color="#8a36d1" />
           </StatusWrapper>
         ) : (
