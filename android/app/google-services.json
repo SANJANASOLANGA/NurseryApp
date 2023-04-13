@@ -15,15 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "992403560552-61t2eivj3gmnp633ogrvqohi36j7q64p.apps.googleusercontent.com",
+          "client_id": "992403560552-l3e44gmjjv1c57ga3ags7iq786slm1nl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.edukids",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+            "certificate_hash": "7192067123fc347ae60e3b85f6ff798c38458f90"
           }
         },
         {
-          "client_id": "992403560552-qhe9jq6d9p01tlr0fp76etbqd7d58clm.apps.googleusercontent.com",
+          "client_id": "992403560552-ccq7af5th6oc9637ivtplgjlf0p6lpqm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -36,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "992403560552-qhe9jq6d9p01tlr0fp76etbqd7d58clm.apps.googleusercontent.com",
+              "client_id": "992403560552-ccq7af5th6oc9637ivtplgjlf0p6lpqm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -51,12 +51,13 @@ export const AuthProvider = ({children}) => {
             // Sign-in the user with the credential
             await auth()
               .signInWithCredential(googleCredential)
-              .catch(error => {
-                Alert.alert('Something went wrong with signin:\n\n' + error);
+              .catch(e => {
+                Alert.alert('Something went wrong with signin');
+                console.log(e)
               });
-          } catch (error) {
-            Alert.alert({error});
-            console.log({error})
+          } catch (e) {
+            Alert.alert('error 1');
+            console.log(e)
           }
         },
         // fbLogin: async () => {
