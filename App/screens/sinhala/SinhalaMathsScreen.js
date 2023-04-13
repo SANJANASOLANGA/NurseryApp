@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   heading: {
-    fontSize: 30,
+    fontSize: 27,
     fontWeight: 'bold',
     textAlign: 'center',
     textAlignVertical: 'center',
