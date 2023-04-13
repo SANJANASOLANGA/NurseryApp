@@ -85,13 +85,13 @@ const SinhalaShapesQuiz = ({ navigation }) => {
           }}>
           <Text
             style={{
-              fontSize: 20,
+              fontSize: 26,
               opacity: 0.6,
-              marginRight: 2,
+              marginRight: 2, fontFamily:'KGPrimaryPenmanship', color: '#54225e'
             }}>
             {currentQuestionIndex + 1}
           </Text>
-          <Text style={{ fontSize: 18, opacity: 0.6 }}>
+          <Text style={{ fontSize: 23, opacity: 0.6, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
             / {allQuestions.length}
           </Text>
         </View>
