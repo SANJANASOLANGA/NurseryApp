@@ -93,7 +93,7 @@ const AlphabetQuiz = ({ navigation }) => {
             }}>
             {currentQuestionIndex + 1}
           </Text>
-          <Text style={{ fontSize: 26, opacity: 0.6, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
+          <Text style={{ fontSize: 23, opacity: 0.6, fontFamily:'KGPrimaryPenmanship', color: '#54225e' }}>
             / {allQuestions.length}
           </Text>
         </View>
