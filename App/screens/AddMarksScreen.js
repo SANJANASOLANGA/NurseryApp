@@ -57,7 +57,7 @@ const AddMarkscreen = ({navigation}) => {
     console.log('Post: ', post);
 
     if (imageUrl == null){
-      Alert.alert('Add your feed first')
+      Alert.alert('Add your post first')
     }
     else{
       firestore()
