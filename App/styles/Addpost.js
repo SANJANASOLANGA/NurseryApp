@@ -6,7 +6,6 @@ export const InputWrapper = styled.View`
   align-items: center;
   width: 100%;
   background-color: #2e64e515;
-  margin-top: 10%
 `;
 
 export const InputField = styled.TextInput`
@@ -23,7 +22,6 @@ export const AddImage = styled.Image`
   width: 80%;
   height: 350px;
   border-radius: 10px;
-  margin-bottom: 70px;
 `;
 
 export const StatusWrapper = styled.View`
