@@ -73,8 +73,8 @@ const AddMarkscreen = ({navigation}) => {
       .then(() => {
         console.log('Feed Added!');
         Alert.alert(
-          'Feed Added!',
-          'Your feed has been published successfully now in your profile!',
+          'Post Added !',
+          'Your post has been published successfully now in your profile',
         );
         setPost(null);
         navigation.navigate('ProfileScreen')
@@ -155,7 +155,7 @@ const AddMarkscreen = ({navigation}) => {
         />
         {uploading ? (
           <StatusWrapper>
-            <Text>{transferred} % Completed!</Text>
+            <Text style={{fontSize: 21, color: '#54225e', fontFamily:'KGPrimaryPenmanship2' }}>{transferred} % Completed!</Text>
             <ActivityIndicator size="large" color="#8a36d1" />
           </StatusWrapper>
         ) : (
