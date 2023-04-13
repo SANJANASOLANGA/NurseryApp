@@ -29,7 +29,7 @@ const LoginScreen = ({navigation}) => {
   }
 
   const resetPassword = () =>{
-    if (email!=null){
+    if (email && email.trim()!==''){
       console.log('email is ',email)
       firebase.auth().sendPasswordResetEmail(email)
       .then(() => {
@@ -38,16 +38,23 @@ const LoginScreen = ({navigation}) => {
         console.log(e)
         if (e.code === 'auth/invalid-email') {
           Alert.alert('Invalid Email !','Please enter the email you registered with us')
+          console.log('error 4', e)
         }
-        if (e.code === '[auth/user-not-found'){
+        else if (e.code === '[auth/user-not-found'){
           Alert.alert('Invalid Email !','Please enter the email you registered with us')
         }
         else{
           Alert.alert('Invalid Email !','Please enter the email you registered with us')
+          console.log('error 1', e)
         }
       })
       
-    }else{
+    }
+    else if (email && email.trim() ===''){
+      Alert.alert('Please enter a your email !')
+      console.log('error 3')
+    }
+    else{
       Alert.alert('Please enter a your email !')
     }
   }
