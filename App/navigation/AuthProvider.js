@@ -124,7 +124,7 @@ export const AuthProvider = ({children}) => {
               //we need to catch the whole sign up process if it fails too.
               .catch(e => {
                 if (e.code === 'auth/email-already-in-use') {
-                  Alert.alert('Try again !','The email you entered already exists')
+                  Alert.alert('Try again with another email!','The email you entered already exists')
                 }else if (e.code === 'auth/weak-password'){
                   Alert.alert('Weak password !','Password should be at least 6 characters')
                 }else if (e.code === 'auth/network-request-failed') {
