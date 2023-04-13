@@ -145,7 +145,7 @@ const AddMarkscreen = ({navigation}) => {
         {image != null ? <AddImage source={{uri: image}} /> : null}
 
         <InputField
-          placeholder="Add your marks here"
+          placeholder="Say something about your marks"
           multiline
           numberOfLines={4}
           value={post}
@@ -160,7 +160,7 @@ const AddMarkscreen = ({navigation}) => {
           </StatusWrapper>
         ) : (
           <TouchableOpacity style={styles.buttonContainer} onPress={submitPost}>
-            <Text style={styles.buttonText}>Add Your Marks</Text>
+            <Text style={styles.buttonText}>Add Post</Text>
           </TouchableOpacity>
         )}
         <TouchableOpacity
@@ -195,14 +195,14 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   buttonContainer: {
-    width: '60%',
+    width: '50%',
     height: windowHeight / 15,
     backgroundColor: '#8a36d1',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 13,
-    marginTop: 20,
-    marginRight: 70,
+    marginTop: '4%',
+    marginRight: '20%',
     elevation: 5,
   },
   buttonText: {
