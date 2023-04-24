@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {View, StyleSheet, Image} from 'react-native';
+import { windowWidth } from '../constants/Dimensions';
 import {
   Avatar,
   Title,
@@ -39,7 +40,7 @@ export function DrawerContent(props) {
             style={styles.logo}
             source={require('../assets/images/logo-no-background.png')}
           />
-                <Title style={{fontFamily:'KGPrimaryPenmanship2', fontSize: 24, color: '#54225e'}}>{user.email}</Title>
+                <Title style={{fontFamily:'KGPrimaryPenmanship2', fontSize: windowWidth*0.04, color: '#54225e'}}>{user.email}</Title>
                 {/* <Caption style={styles.caption}>@{user.uid}</Caption> */}
               </View>
             </View>

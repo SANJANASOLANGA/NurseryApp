@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   userName: {
-    fontSize: 37,
+    fontSize: windowWidth*0.07,
     marginTop: 30,
     marginBottom: 10,
     color: '#54225e',
