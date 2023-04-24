@@ -524,7 +524,7 @@ const EditProfileScreen = ({ navigation }) => {
               autoCorrect={false}
               value={userData ? userData.phone : ''}
               onChangeText={txt => setUserData({ ...userData, phone: txt })}
-              style={styles.textInput}
+              style={[styles.textInput, {fontSize:19}]}
               placeholderTextColor="#85568f"
             />
           </View>
